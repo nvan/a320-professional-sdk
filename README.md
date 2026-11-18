@@ -101,7 +101,7 @@ connect and subscribe again.
 
 The **Plugin API** has its own version, `MAJOR.MINOR.PATCH`, starting at **1.0.0**:
 
-- **PATCH** (1.0.0 → 1.0.1): datarefs added.
+- **PATCH** (1.0.0 → 1.0.1): datarefs added (or made writable).
 - **MINOR** (1.0.x → 1.1.0): functions or services added (for example weather).
 - **MAJOR** (1.x → 2.0.0): a rewrite that breaks older plugins. Not planned: the API only grows, nothing is ever removed.
 
@@ -111,6 +111,7 @@ The **Plugin API** has its own version, `MAJOR.MINOR.PATCH`, starting at **1.0.0
 | 1.1.0 | `deviceId` in each device's settings (C#: `DeviceSettings.DeviceId`): the device's stable id, to store per-device data |
 | 1.1.1 | Datarefs `gear.{nose,left,right}.doorPosition` and `.transit`, `hyd.rat.turbineRpm`, `hyd.rat.turbineAngleDeg` |
 | 1.1.2 | Datarefs `mip.gear.leverSolenoid` (L/G lever locked DOWN), `ctl.sidestickSolenoid.capt` / `.fo` (sidestick locked in neutral, AP engaged) |
+| 1.1.3 | `instructor.sim.paused` writable (1 pause, 0 resume, as the IOS PAUSE / PLAY; the value stays the simulator's state); `instructor.simRate` (writable before too) documented for clients: 1, 2, 4 or 8, any other value refused |
 
 Each plugin declares the **minimum** Plugin API it needs (and a maximum only after a drastic change). It works on every
 product version that provides that API or later within the same MAJOR. NVAN may also mark specific versions compatible

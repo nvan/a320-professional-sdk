@@ -198,30 +198,30 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `adirs.adr1.aoaDeg` | float | output | read |  | ADR 1 angle of attack (degrees, its AOA probe; NaN when not valid) |
+| `adirs.adr1.aoaDeg` | float | output | read | `0` | ADR 1 angle of attack (degrees, its AOA probe; NaN when not valid) |
 | `adirs.adr1.aoaValid` | bool | output | read | `0` | ADR 1 angle of attack valid (normal operation) |
-| `adirs.adr1.mach` | float | output | read |  | ADR 1 Mach number (NaN when not valid) |
-| `adirs.adr2.aoaDeg` | float | output | read |  | ADR 2 angle of attack (degrees, its AOA probe; NaN when not valid) |
+| `adirs.adr1.mach` | float | output | read | `0` | ADR 1 Mach number (NaN when not valid) |
+| `adirs.adr2.aoaDeg` | float | output | read | `0` | ADR 2 angle of attack (degrees, its AOA probe; NaN when not valid) |
 | `adirs.adr2.aoaValid` | bool | output | read | `0` | ADR 2 angle of attack valid (normal operation) |
-| `adirs.adr2.mach` | float | output | read |  | ADR 2 Mach number (NaN when not valid) |
-| `adirs.adr3.aoaDeg` | float | output | read |  | ADR 3 angle of attack (degrees, its AOA probe; NaN when not valid) |
+| `adirs.adr2.mach` | float | output | read | `0` | ADR 2 Mach number (NaN when not valid) |
+| `adirs.adr3.aoaDeg` | float | output | read | `0` | ADR 3 angle of attack (degrees, its AOA probe; NaN when not valid) |
 | `adirs.adr3.aoaValid` | bool | output | read | `0` | ADR 3 angle of attack valid (normal operation) |
-| `adirs.adr3.mach` | float | output | read |  | ADR 3 Mach number (NaN when not valid) |
-| `adirs.ir1.fpaDeg` | float | output | read |  | IR 1 flight path angle (degrees, + climbing; NaN when not valid) |
-| `adirs.ir1.headingMagDeg` | float | output | read |  | IR 1 magnetic heading (degrees; NaN when not valid, e.g. polar TRUE reference) |
-| `adirs.ir1.headingTrueDeg` | float | output | read |  | IR 1 true heading (degrees; NaN when not valid) |
-| `adirs.ir1.trackMagDeg` | float | output | read |  | IR 1 magnetic track (degrees; NaN when not valid) |
-| `adirs.ir1.trackTrueDeg` | float | output | read |  | IR 1 true track (degrees; NaN when not valid) |
-| `adirs.ir2.fpaDeg` | float | output | read |  | IR 2 flight path angle (degrees, + climbing; NaN when not valid) |
-| `adirs.ir2.headingMagDeg` | float | output | read |  | IR 2 magnetic heading (degrees; NaN when not valid, e.g. polar TRUE reference) |
-| `adirs.ir2.headingTrueDeg` | float | output | read |  | IR 2 true heading (degrees; NaN when not valid) |
-| `adirs.ir2.trackMagDeg` | float | output | read |  | IR 2 magnetic track (degrees; NaN when not valid) |
-| `adirs.ir2.trackTrueDeg` | float | output | read |  | IR 2 true track (degrees; NaN when not valid) |
-| `adirs.ir3.fpaDeg` | float | output | read |  | IR 3 flight path angle (degrees, + climbing; NaN when not valid) |
-| `adirs.ir3.headingMagDeg` | float | output | read |  | IR 3 magnetic heading (degrees; NaN when not valid, e.g. polar TRUE reference) |
-| `adirs.ir3.headingTrueDeg` | float | output | read |  | IR 3 true heading (degrees; NaN when not valid) |
-| `adirs.ir3.trackMagDeg` | float | output | read |  | IR 3 magnetic track (degrees; NaN when not valid) |
-| `adirs.ir3.trackTrueDeg` | float | output | read |  | IR 3 true track (degrees; NaN when not valid) |
+| `adirs.adr3.mach` | float | output | read | `0` | ADR 3 Mach number (NaN when not valid) |
+| `adirs.ir1.fpaDeg` | float | output | read | `0` | IR 1 flight path angle (degrees, + climbing; NaN when not valid) |
+| `adirs.ir1.headingMagDeg` | float | output | read | `0` | IR 1 magnetic heading (degrees; NaN when not valid, e.g. polar TRUE reference) |
+| `adirs.ir1.headingTrueDeg` | float | output | read | `0` | IR 1 true heading (degrees; NaN when not valid) |
+| `adirs.ir1.trackMagDeg` | float | output | read | `0` | IR 1 magnetic track (degrees; NaN when not valid) |
+| `adirs.ir1.trackTrueDeg` | float | output | read | `0` | IR 1 true track (degrees; NaN when not valid) |
+| `adirs.ir2.fpaDeg` | float | output | read | `0` | IR 2 flight path angle (degrees, + climbing; NaN when not valid) |
+| `adirs.ir2.headingMagDeg` | float | output | read | `0` | IR 2 magnetic heading (degrees; NaN when not valid, e.g. polar TRUE reference) |
+| `adirs.ir2.headingTrueDeg` | float | output | read | `0` | IR 2 true heading (degrees; NaN when not valid) |
+| `adirs.ir2.trackMagDeg` | float | output | read | `0` | IR 2 magnetic track (degrees; NaN when not valid) |
+| `adirs.ir2.trackTrueDeg` | float | output | read | `0` | IR 2 true track (degrees; NaN when not valid) |
+| `adirs.ir3.fpaDeg` | float | output | read | `0` | IR 3 flight path angle (degrees, + climbing; NaN when not valid) |
+| `adirs.ir3.headingMagDeg` | float | output | read | `0` | IR 3 magnetic heading (degrees; NaN when not valid, e.g. polar TRUE reference) |
+| `adirs.ir3.headingTrueDeg` | float | output | read | `0` | IR 3 true heading (degrees; NaN when not valid) |
+| `adirs.ir3.trackMagDeg` | float | output | read | `0` | IR 3 magnetic track (degrees; NaN when not valid) |
+| `adirs.ir3.trackTrueDeg` | float | output | read | `0` | IR 3 true track (degrees; NaN when not valid) |
 
 ## ADIRS / ATT heading (MCDU IRS MONITOR SET HDG)
 
@@ -246,27 +246,27 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `aircond.aftCabinTempC` | float | light | read | `15` | Aft cabin zone temperature (°C) |
-| `aircond.cargoAftDuctTempC` | float | light | read | `15` | Aft cargo inlet duct temperature (°C) |
-| `aircond.cargoAftTempC` | float | light | read | `15` | Aft cargo compartment temperature (°C) |
-| `aircond.cargoFwdDuctTempC` | float | light | read | `15` | Forward cargo inlet duct temperature (°C) |
-| `aircond.cargoFwdTempC` | float | light | read | `15` | Forward cargo compartment temperature (°C) |
-| `aircond.cockpitTempC` | float | light | read | `15` | Cockpit zone temperature (°C) |
-| `aircond.fwdCabinTempC` | float | light | read | `15` | Forward cabin zone temperature (°C) |
+| `aircond.aftCabinTempC` | float | light | read | `0` | Aft cabin zone temperature (°C) |
+| `aircond.cargoAftDuctTempC` | float | light | read | `0` | Aft cargo inlet duct temperature (°C) |
+| `aircond.cargoAftTempC` | float | light | read | `0` | Aft cargo compartment temperature (°C) |
+| `aircond.cargoFwdDuctTempC` | float | light | read | `0` | Forward cargo inlet duct temperature (°C) |
+| `aircond.cargoFwdTempC` | float | light | read | `0` | Forward cargo compartment temperature (°C) |
+| `aircond.cockpitTempC` | float | light | read | `0` | Cockpit zone temperature (°C) |
+| `aircond.fwdCabinTempC` | float | light | read | `0` | Forward cabin zone temperature (°C) |
 | `aircond.pack1FlowKgS` | float | light | read | `0` | Pack 1 flow (kg/s) |
 | `aircond.pack2FlowKgS` | float | light | read | `0` | Pack 2 flow (kg/s) |
 | `bleed.apuValve` | float | light | read | `0` | APU bleed valve position (0 .. 1) |
 | `bleed.side1PressurePsi` | float | light | read | `0` | Bleed duct pressure, side 1 (psi, precooler inlet) |
-| `bleed.side1TempC` | float | light | read | `15` | Bleed temperature, side 1 (°C, precooler outlet) |
+| `bleed.side1TempC` | float | light | read | `0` | Bleed temperature, side 1 (°C, precooler outlet) |
 | `bleed.side2PressurePsi` | float | light | read | `0` | Bleed duct pressure, side 2 (psi) |
-| `bleed.side2TempC` | float | light | read | `15` | Bleed temperature, side 2 (°C) |
+| `bleed.side2TempC` | float | light | read | `0` | Bleed temperature, side 2 (°C) |
 | `bleed.xBleedValve` | float | light | read | `0` | Crossbleed valve position (0 closed .. 1 open) |
-| `press.activeSystem` | int | light | read | `1` | Active pressurization system (1, 2; 0 = MAN) |
+| `press.activeSystem` | int | light | read | `0` | Active pressurization system (1, 2; 0 = MAN) |
 | `press.cabinAltitudeFt` | float | light | read | `0` | Cabin altitude (ft) |
 | `press.cabinVsFpm` | float | light | read | `0` | Cabin vertical speed (ft/min) |
 | `press.deltaPPsi` | float | light | read | `0` | Cabin differential pressure (psi) |
 | `press.mode` | int | light | read | `0` | CPC mode (0 GN, 1 TO, 2 CL, 3 CR, 4 DE, 5 AB) |
-| `press.outflowValve` | float | light | read | `1` | Outflow valve position (0 closed .. 1 open) |
+| `press.outflowValve` | float | light | read | `0` | Outflow valve position (0 closed .. 1 open) |
 
 ## Aircraft
 
@@ -276,7 +276,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `aircraft.catalogRevision` | int | output | read | `0` | Raised by every new catalog of installed variants and liveries from the simulator (the IOS fetches it again) |
 | `aircraft.changing` | bool | output | read | `0` | An aircraft variant / livery change is under way (until the simulator shows it loaded or refuses it) |
 | `aircraft.draims` | bool | output | read | `0` | Cockpit radio / audio equipment of the loaded variant: 1 = DRAIMS (aural alerts in the headsets too; Displays shows the DRAIMS panels), 0 = classic RMPs, ACPs and ATC/TCAS panel (aural alerts on the loudspeakers only) |
-| `aircraft.engineType` | int | output | read | `1` | Engine type of the loaded variant (1 = CFM56-5B, 2 = IAE V2500-A5), from the simulator model |
+| `aircraft.engineType` | int | output | read | `0` | Engine type of the loaded variant (1 = CFM56-5B, 2 = IAE V2500-A5), from the simulator model |
 | `aircraft.livery` | string | output | read | `""` | Livery the simulator has loaded (its folder in the aircraft's liveries/; empty: the variant's own paint) |
 | `aircraft.liveryName` | string | output | read | `""` | Name of the loaded livery (its nvan-livery.json name, else the folder name; Default: the variant's own paint) |
 | `aircraft.registration` | string | output | read | `""` | Registration of the loaded model (its .model.json next to the .acf; empty: not given) |
@@ -316,8 +316,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
 | `ddrmi.vorOnly` | bool | service | write | `0` | DDRMI type (aircraft option saved in systems.json): 0 = VOR/ADF (selectors for each pointer), 1 = VOR-only (both pointers always VOR 1 / VOR 2, no selectors) |
-| `elec.acEssFeedAuto` | bool | service | write | `1` | AC ESS FEED auto switching (aircraft option saved in systems.json): 1 = installed (AC BUS 2 supplies the AC ESS BUS automatically when AC BUS 1 is lost), 0 = not installed (the crew selects AC ESS FEED ALTN) |
-| `wheel.tpis.installed` | bool | service | write | `1` | Tire pressure indicating system installed (aircraft option saved in systems.json): WHEEL page tire pressures, WHEEL TYRE LO PR |
+| `elec.acEssFeedAuto` | bool | service | write | `0` | AC ESS FEED auto switching (aircraft option saved in systems.json): 1 = installed (AC BUS 2 supplies the AC ESS BUS automatically when AC BUS 1 is lost), 0 = not installed (the crew selects AC ESS FEED ALTN) |
+| `wheel.tpis.installed` | bool | service | write | `0` | Tire pressure indicating system installed (aircraft option saved in systems.json): WHEEL page tire pressures, WHEEL TYRE LO PR |
 
 ## APU (indications)
 
@@ -325,8 +325,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `apu.avail` | bool | light | read | `0` | APU AVAIL |
 | `apu.coolingLeftS` | float | light | read | `0` | Cooling period left after MASTER SW OFF (s) |
-| `apu.egtC` | float | light | read | `15` | APU EGT (°C) |
-| `apu.egtMaxC` | float | light | read | `675` | EGT max computed by the ECB (°C): APU page red mark, amber mark 33 °C below |
+| `apu.egtC` | float | light | read | `0` | APU EGT (°C) |
+| `apu.egtMaxC` | float | light | read | `0` | EGT max computed by the ECB (°C): APU page red mark, amber mark 33 °C below |
 | `apu.fault` | bool | light | read | `0` | Automatic shutdown (MASTER SW FAULT) |
 | `apu.flap` | float | light | read | `0` | Air intake flap position (0 closed .. 1 open) |
 | `apu.fuelFlowKgH` | float | light | read | `0` | APU fuel flow (kg/h, from the left feed line) |
@@ -355,7 +355,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
 | `amu.auralsInHeadset` | bool | output | read | `0` | Aural alerts also in the crew headsets (the loaded variant has DRAIMS, aircraft.draims; classic RMP / ACP aircraft: loudspeakers only) |
-| `amu.capt.acp` | int | output | read | `1` | Captain: ACP in use (1..3; 0 = none: ACP 3 taken by AUDIO SWITCHING) |
+| `amu.capt.acp` | int | output | read | `0` | Captain: ACP in use (1..3; 0 = none: ACP 3 taken by AUDIO SWITCHING) |
 | `amu.capt.adf1` | float | output | read | `0` | Captain headset: ADF 1 reception gain (0..1; 0 = not selected, lost or not received) |
 | `amu.capt.adf2` | float | output | read | `0` | Captain headset: ADF 2 reception gain (0..1; 0 = not selected, lost or not received) |
 | `amu.capt.cab` | float | output | read | `0` | Captain headset: CAB reception gain (0..1; 0 = not selected, lost or not received) |
@@ -370,14 +370,14 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `amu.capt.mls` | float | output | read | `0` | Captain headset: MLS reception gain (0..1; 0 = not selected, lost or not received) |
 | `amu.capt.ok` | bool | output | read | `0` | Captain: audio channel working (ACP and AMU card) |
 | `amu.capt.pa` | float | output | read | `0` | Captain headset: PA reception gain (0..1; 0 = not selected, lost or not received) |
-| `amu.capt.side` | int | output | read | `1` | Captain: onside LS / MKR receivers of its ACP (1 or 2; 0 = no ACP) |
+| `amu.capt.side` | int | output | read | `0` | Captain: onside LS / MKR receivers of its ACP (1 or 2; 0 = no ACP) |
 | `amu.capt.vhf1` | float | output | read | `0` | Captain headset: VHF 1 reception gain (0..1; 0 = not selected, lost or not received) |
 | `amu.capt.vhf2` | float | output | read | `0` | Captain headset: VHF 2 reception gain (0..1; 0 = not selected, lost or not received) |
 | `amu.capt.vhf3` | float | output | read | `0` | Captain headset: VHF 3 reception gain (0..1; 0 = not selected, lost or not received) |
 | `amu.capt.voice` | bool | output | read | `0` | Captain: VOICE filter (navaid idents filtered out) |
 | `amu.capt.vor1` | float | output | read | `0` | Captain headset: VOR 1 reception gain (0..1; 0 = not selected, lost or not received) |
 | `amu.capt.vor2` | float | output | read | `0` | Captain headset: VOR 2 reception gain (0..1; 0 = not selected, lost or not received) |
-| `amu.fo.acp` | int | output | read | `2` | F/O: ACP in use (1..3; 0 = none: ACP 3 taken by AUDIO SWITCHING) |
+| `amu.fo.acp` | int | output | read | `0` | F/O: ACP in use (1..3; 0 = none: ACP 3 taken by AUDIO SWITCHING) |
 | `amu.fo.adf1` | float | output | read | `0` | F/O headset: ADF 1 reception gain (0..1; 0 = not selected, lost or not received) |
 | `amu.fo.adf2` | float | output | read | `0` | F/O headset: ADF 2 reception gain (0..1; 0 = not selected, lost or not received) |
 | `amu.fo.cab` | float | output | read | `0` | F/O headset: CAB reception gain (0..1; 0 = not selected, lost or not received) |
@@ -392,7 +392,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `amu.fo.mls` | float | output | read | `0` | F/O headset: MLS reception gain (0..1; 0 = not selected, lost or not received) |
 | `amu.fo.ok` | bool | output | read | `0` | F/O: audio channel working (ACP and AMU card) |
 | `amu.fo.pa` | float | output | read | `0` | F/O headset: PA reception gain (0..1; 0 = not selected, lost or not received) |
-| `amu.fo.side` | int | output | read | `2` | F/O: onside LS / MKR receivers of its ACP (1 or 2; 0 = no ACP) |
+| `amu.fo.side` | int | output | read | `0` | F/O: onside LS / MKR receivers of its ACP (1 or 2; 0 = no ACP) |
 | `amu.fo.vhf1` | float | output | read | `0` | F/O headset: VHF 1 reception gain (0..1; 0 = not selected, lost or not received) |
 | `amu.fo.vhf2` | float | output | read | `0` | F/O headset: VHF 2 reception gain (0..1; 0 = not selected, lost or not received) |
 | `amu.fo.vhf3` | float | output | read | `0` | F/O headset: VHF 3 reception gain (0..1; 0 = not selected, lost or not received) |
@@ -402,7 +402,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `amu.loudspeaker.capt` | float | output | read | `0` | Captain loudspeaker gain (knob × supply; plays the captain's selected radio, navaid and INT receptions) |
 | `amu.loudspeaker.fo` | float | output | read | `0` | F/O loudspeaker gain (knob × supply; plays the F/O's selected radio, navaid and INT receptions) |
 | `amu.mech.int` | float | output | read | `0` | Ground mechanic (external power panel jack): interphone available (1) or not (0) |
-| `amu.obs.acp` | int | output | read | `3` | Third occupant: ACP in use (1..3; 0 = none: ACP 3 taken by AUDIO SWITCHING) |
+| `amu.obs.acp` | int | output | read | `0` | Third occupant: ACP in use (1..3; 0 = none: ACP 3 taken by AUDIO SWITCHING) |
 | `amu.obs.adf1` | float | output | read | `0` | Third occupant headset: ADF 1 reception gain (0..1; 0 = not selected, lost or not received) |
 | `amu.obs.adf2` | float | output | read | `0` | Third occupant headset: ADF 2 reception gain (0..1; 0 = not selected, lost or not received) |
 | `amu.obs.cab` | float | output | read | `0` | Third occupant headset: CAB reception gain (0..1; 0 = not selected, lost or not received) |
@@ -417,7 +417,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `amu.obs.mls` | float | output | read | `0` | Third occupant headset: MLS reception gain (0..1; 0 = not selected, lost or not received) |
 | `amu.obs.ok` | bool | output | read | `0` | Third occupant: audio channel working (ACP and AMU card) |
 | `amu.obs.pa` | float | output | read | `0` | Third occupant headset: PA reception gain (0..1; 0 = not selected, lost or not received) |
-| `amu.obs.side` | int | output | read | `1` | Third occupant: onside LS / MKR receivers of its ACP (1 or 2; 0 = no ACP) |
+| `amu.obs.side` | int | output | read | `0` | Third occupant: onside LS / MKR receivers of its ACP (1 or 2; 0 = no ACP) |
 | `amu.obs.vhf1` | float | output | read | `0` | Third occupant headset: VHF 1 reception gain (0..1; 0 = not selected, lost or not received) |
 | `amu.obs.vhf2` | float | output | read | `0` | Third occupant headset: VHF 2 reception gain (0..1; 0 = not selected, lost or not received) |
 | `amu.obs.vhf3` | float | output | read | `0` | Third occupant headset: VHF 3 reception gain (0..1; 0 = not selected, lost or not received) |
@@ -470,11 +470,11 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `cids.fap.readingLights` | bool | switch | write | `0` | Passenger reading lights enabled (placeholder) |
 | `cids.fap.tempTrimAft` | float | analog | write | `0` | FAP cabin temperature control, AFT CABIN zone: offset to the cockpit selection (°C, -2.5..+2.5; reset to 0 when the CIDS is lost) |
 | `cids.fap.tempTrimFwd` | float | analog | write | `0` | FAP cabin temperature control, FWD CABIN zone: offset to the cockpit selection (°C, -2.5..+2.5; reset to 0 when the CIDS is lost) |
-| `cids.fap.waste.levelPct` | float | output | read | `-1` | Waste tank level on the FAP (%, -1 = not available) |
+| `cids.fap.waste.levelPct` | float | output | read | `0` | Waste tank level on the FAP (%, -1 = not available) |
 | `cids.fap.waste.tankFull` | bool | output | read | `0` | Waste tank full (toilets inoperative) |
 | `cids.fap.waste.vscFault` | bool | output | read | `0` | Vacuum system controller fault reported |
 | `cids.fap.water.indicationFault` | bool | output | read | `0` | Water quantity indication fault |
-| `cids.fap.water.quantityPct` | float | output | read | `-1` | Potable water quantity on the FAP (%, -1 = not available) |
+| `cids.fap.water.quantityPct` | float | output | read | `0` | Potable water quantity on the FAP (%, -1 = not available) |
 
 ## Circuit breakers / 105VU
 
@@ -1091,21 +1091,21 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `ddrmi.dme1` | float | output | read | `-1` | DDRMI DME 1 window distance (NM as shown: tenths below 20 NM, whole NM above; -1 when not a distance) |
+| `ddrmi.dme1` | float | output | read | `0` | DDRMI DME 1 window distance (NM as shown: tenths below 20 NM, whole NM above; -1 when not a distance) |
 | `ddrmi.dme1Text` | string | output | read | `"012.4"` | DDRMI DME 1 LCD as shown ("012.4", "240", "----" no computed data, "888.8" ANN LT TEST, "" blank) |
 | `ddrmi.dme1Valid` | bool | output | read | `0` | DDRMI DME 1 window shows a distance |
-| `ddrmi.dme2` | float | output | read | `-1` | DDRMI DME 2 window distance (NM as shown; -1 when not a distance) |
+| `ddrmi.dme2` | float | output | read | `0` | DDRMI DME 2 window distance (NM as shown; -1 when not a distance) |
 | `ddrmi.dme2Text` | string | output | read | `""` | DDRMI DME 2 LCD as shown (same format as ddrmi.dme1Text) |
 | `ddrmi.dme2Valid` | bool | output | read | `0` | DDRMI DME 2 window shows a distance |
-| `ddrmi.hdgFlag` | bool | output | read | `1` | DDRMI HDG flag in view (heading not valid, unpowered, failed) |
+| `ddrmi.hdgFlag` | bool | output | read | `0` | DDRMI HDG flag in view (heading not valid, unpowered, failed) |
 | `ddrmi.heading` | float | output | read | `0` | DDRMI compass card: magnetic heading under the lubber line (degrees 0..360, servo position; frozen when unpowered or flagged) |
 | `ddrmi.light` | float | output | read | `0` | DDRMI dial and LCD lighting (its lamps on the main panel integral lighting, INTEG LT MAIN PNL & PED: 0 off, 0.27 .. 1) |
 | `ddrmi.powered` | bool | output | read | `0` | DDRMI powered (115 V AC ESS, C/B 12FN) and working |
-| `ddrmi.ptr1Bearing` | float | output | read | `90` | DDRMI single dotted bar pointer (VOR 1 / ADF 1): bearing it points to on the card (degrees 0..360); its angle on the dial from the lubber line = ptr1Bearing - heading (90 = parked at 3 o'clock) |
-| `ddrmi.ptr1Flag` | bool | output | read | `1` | DDRMI VOR 1/ADF 1 flag in view (receiver failed, heading not valid, unpowered) |
+| `ddrmi.ptr1Bearing` | float | output | read | `0` | DDRMI single dotted bar pointer (VOR 1 / ADF 1): bearing it points to on the card (degrees 0..360); its angle on the dial from the lubber line = ptr1Bearing - heading (90 = parked at 3 o'clock) |
+| `ddrmi.ptr1Flag` | bool | output | read | `0` | DDRMI VOR 1/ADF 1 flag in view (receiver failed, heading not valid, unpowered) |
 | `ddrmi.ptr1Valid` | bool | output | read | `0` | DDRMI single bar pointer shows a received station (else parked at 3 o'clock) |
-| `ddrmi.ptr2Bearing` | float | output | read | `90` | DDRMI double bar pointer (VOR 2 / ADF 2): bearing it points to on the card (degrees 0..360); dial angle = ptr2Bearing - heading |
-| `ddrmi.ptr2Flag` | bool | output | read | `1` | DDRMI VOR 2/ADF 2 flag in view (receiver failed, heading not valid, unpowered) |
+| `ddrmi.ptr2Bearing` | float | output | read | `0` | DDRMI double bar pointer (VOR 2 / ADF 2): bearing it points to on the card (degrees 0..360); dial angle = ptr2Bearing - heading |
+| `ddrmi.ptr2Flag` | bool | output | read | `0` | DDRMI VOR 2/ADF 2 flag in view (receiver failed, heading not valid, unpowered) |
 | `ddrmi.ptr2Valid` | bool | output | read | `0` | DDRMI double bar pointer shows a received station (else parked at 3 o'clock) |
 
 ## Doors
@@ -1113,7 +1113,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
 | `doors.aftCargo.hold` | int | output | read | `0` | AFT cargo door selector held but not moving: 0 no, 1 locking handle down, 2 no electric power for the yellow pump, 3 no yellow pressure |
-| `doors.aftCargo.lockingHandle` | bool | service | write | `1` | AFT cargo door locking handle down: latched and locked (only with the door closed) |
+| `doors.aftCargo.lockingHandle` | bool | service | write | `0` | AFT cargo door locking handle down: latched and locked (only with the door closed) |
 | `doors.aftCargo.open` | bool | service | write | `0` | AFT cargo door open (1 = not closed and locked) |
 | `doors.aftCargo.openLockedLight` | bool | output | read | `0` | AFT cargo door green OPEN AND LOCKED indicator light |
 | `doors.aftCargo.position` | float | output | read | `0` | AFT cargo door position (0 closed .. 1 open) |
@@ -1130,7 +1130,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `doors.avionics4.open` | bool | service | write | `0` | Avionics compartment access door 4 (aft) open (1 = not closed and locked) |
 | `doors.bulkCargo.open` | bool | service | write | `0` | BULK cargo door open (1 = not closed and locked) |
 | `doors.fwdCargo.hold` | int | output | read | `0` | FWD cargo door selector held but not moving: 0 no, 1 locking handle down, 2 no electric power for the yellow pump, 3 no yellow pressure |
-| `doors.fwdCargo.lockingHandle` | bool | service | write | `1` | FWD cargo door locking handle down: latched and locked (only with the door closed) |
+| `doors.fwdCargo.lockingHandle` | bool | service | write | `0` | FWD cargo door locking handle down: latched and locked (only with the door closed) |
 | `doors.fwdCargo.open` | bool | service | write | `0` | FWD cargo door open (1 = not closed and locked) |
 | `doors.fwdCargo.openLockedLight` | bool | output | read | `0` | FWD cargo door green OPEN AND LOCKED indicator light |
 | `doors.fwdCargo.position` | float | output | read | `0` | FWD cargo door position (0 closed .. 1 open) |
@@ -1173,7 +1173,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `efb.settingsRevision` | int | output | read | `1` | Revision of the EFB settings kept by Systems (GET /api/efb/settings): raised by every change, the EFBs fetch them again |
+| `efb.settingsRevision` | int | output | read | `0` | Revision of the EFB settings kept by Systems (GET /api/efb/settings): raised by every change, the EFBs fetch them again |
 
 ## Electrical (parameters)
 
@@ -1183,15 +1183,15 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `elec.apuGen.loadPercent` | float | output | read | `0` | APU GEN load (%, ELEC page) |
 | `elec.apuGen.volts` | float | output | read | `0` | APU GEN voltage (V, ELEC page) |
 | `elec.bat1.amps` | float | output | read | `0` | BAT 1 current (A, ELEC page; + discharging, − charging, 0 with its contactor open) |
-| `elec.bat1.volts` | float | output | read | `26.19` | BAT 1 voltage (V, ELEC page) |
+| `elec.bat1.volts` | float | output | read | `0` | BAT 1 voltage (V, ELEC page) |
 | `elec.bat2.amps` | float | output | read | `0` | BAT 2 current (A, ELEC page; + discharging, − charging, 0 with its contactor open) |
-| `elec.bat2.volts` | float | output | read | `26.19` | BAT 2 voltage (V, ELEC page) |
+| `elec.bat2.volts` | float | output | read | `0` | BAT 2 voltage (V, ELEC page) |
 | `elec.emerGen.hz` | float | output | read | `0` | EMER GEN frequency (Hz, ELEC page) |
 | `elec.emerGen.volts` | float | output | read | `0` | EMER GEN voltage (V, ELEC page) |
 | `elec.essTr.amps` | float | output | read | `0` | ESS TR current (A, ELEC page) |
 | `elec.essTr.volts` | float | output | read | `0` | ESS TR voltage (V, ELEC page) |
-| `elec.extPwr.hz` | float | output | read | `400` | EXT PWR frequency (Hz, ELEC page) |
-| `elec.extPwr.volts` | float | output | read | `115` | EXT PWR voltage (V, ELEC page) |
+| `elec.extPwr.hz` | float | output | read | `0` | EXT PWR frequency (Hz, ELEC page) |
+| `elec.extPwr.volts` | float | output | read | `0` | EXT PWR voltage (V, ELEC page) |
 | `elec.gen1.hz` | float | output | read | `0` | GEN 1 frequency (Hz, ELEC page) |
 | `elec.gen1.loadPercent` | float | output | read | `0` | GEN 1 load (%, ELEC page) |
 | `elec.gen1.volts` | float | output | read | `0` | GEN 1 voltage (V, ELEC page) |
@@ -1236,15 +1236,15 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `engine1.egtC` | float | output | read | `15` | Engine 1 EGT (°C) |
+| `engine1.egtC` | float | output | read | `0` | Engine 1 EGT (°C) |
 | `engine1.fuelFlowKgH` | float | output | read | `0` | Engine 1 fuel flow (kg/h) |
 | `engine1.oilPressurePsi` | float | output | read | `0` | Engine 1 oil pressure (psi) |
-| `engine1.oilQuantityQt` | float | output | read | `17` | Engine 1 oil quantity (qt) |
+| `engine1.oilQuantityQt` | float | output | read | `0` | Engine 1 oil quantity (qt) |
 | `engine1.oilTempC` | float | output | read | `0` | Engine 1 oil temperature (°C) |
-| `engine2.egtC` | float | output | read | `15` | Engine 2 EGT (°C) |
+| `engine2.egtC` | float | output | read | `0` | Engine 2 EGT (°C) |
 | `engine2.fuelFlowKgH` | float | output | read | `0` | Engine 2 fuel flow (kg/h) |
 | `engine2.oilPressurePsi` | float | output | read | `0` | Engine 2 oil pressure (psi) |
-| `engine2.oilQuantityQt` | float | output | read | `17` | Engine 2 oil quantity (qt) |
+| `engine2.oilQuantityQt` | float | output | read | `0` | Engine 2 oil quantity (qt) |
 | `engine2.oilTempC` | float | output | read | `0` | Engine 2 oil temperature (°C) |
 
 ## Failures / ADIRS
@@ -2634,19 +2634,19 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `fire.apu.bottle` | float | light | read | `1` | APU bottle agent (1 full .. 0 empty) |
+| `fire.apu.bottle` | float | light | read | `0` | APU bottle agent (1 full .. 0 empty) |
 | `fire.apu.burning` | bool | light | read | `0` | APU fire burning (simulation: the failure, until extinguished) |
 | `fire.apu.warning` | bool | light | read | `0` | APU fire warning (FDU: detection or TEST) |
 | `fire.avionicsSmoke` | bool | light | read | `0` | Avionics smoke detected (extraction duct detector, > 5 s) |
-| `fire.cargo.bottle` | float | light | read | `1` | Cargo bottle agent (1 full .. 0 empty) |
+| `fire.cargo.bottle` | float | light | read | `0` | Cargo bottle agent (1 full .. 0 empty) |
 | `fire.cargoAftSmoke` | bool | light | read | `0` | Aft cargo smoke warning (SDCU, or TEST) |
 | `fire.cargoFwdSmoke` | bool | light | read | `0` | Forward cargo smoke warning (SDCU, or TEST) |
-| `fire.eng1.bottle1` | float | light | read | `1` | ENG 1 bottle 1 agent (1 full .. 0 empty) |
-| `fire.eng1.bottle2` | float | light | read | `1` | ENG 1 bottle 2 agent (1 full .. 0 empty) |
+| `fire.eng1.bottle1` | float | light | read | `0` | ENG 1 bottle 1 agent (1 full .. 0 empty) |
+| `fire.eng1.bottle2` | float | light | read | `0` | ENG 1 bottle 2 agent (1 full .. 0 empty) |
 | `fire.eng1.burning` | bool | light | read | `0` | Engine 1 fire burning (simulation: the failure, until extinguished) |
 | `fire.eng1.warning` | bool | light | read | `0` | ENG 1 fire warning (FDU: detection or TEST) |
-| `fire.eng2.bottle1` | float | light | read | `1` | ENG 2 bottle 1 agent (1 full .. 0 empty) |
-| `fire.eng2.bottle2` | float | light | read | `1` | ENG 2 bottle 2 agent (1 full .. 0 empty) |
+| `fire.eng2.bottle1` | float | light | read | `0` | ENG 2 bottle 1 agent (1 full .. 0 empty) |
+| `fire.eng2.bottle2` | float | light | read | `0` | ENG 2 bottle 2 agent (1 full .. 0 empty) |
 | `fire.eng2.burning` | bool | light | read | `0` | Engine 2 fire burning (simulation: the failure, until extinguished) |
 | `fire.eng2.warning` | bool | light | read | `0` | ENG 2 fire warning (FDU: detection or TEST) |
 | `fire.lavSmoke` | bool | light | read | `0` | Lavatory smoke detected (SDCU) |
@@ -2697,25 +2697,25 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `fctl.thsControlled` | bool | output | read | `0` | THS driven (hydraulic motor G or Y and a computer's electric motor, or the manual wheel) |
 | `fctl.thsDeg` | float | output | read | `0` | Actual thsDeg (sign conventions: SystemsCommands) |
 | `fctl.thsOrderDegS` | float | output | read | `0` | Pitch computer: THS rate order (deg/s, + nose up; autotrim or the trim reset after landing) |
-| `fctl.travelLimitDeg` | float | output | read | `30` | Actual travelLimitDeg (sign conventions: SystemsCommands) |
+| `fctl.travelLimitDeg` | float | output | read | `0` | Actual travelLimitDeg (sign conventions: SystemsCommands) |
 | `fctl.yawLaw` | int | output | read | `0` | Yaw: 0 mechanical, 1 normal, 2 alternate |
 
 ## FMGC (diagnostics)
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `fmgc.diag.aircraftNm` | float | output | read | `-99999` | Aircraft position on the profile of the last computation (profile distance, 10 Hz) (NM) (-99999 = none). Diagnostic, not an aircraft indication. |
-| `fmgc.diag.crzFl` | int | output | read | `-99999` | CRZ FL of the FM (hundreds of feet) (-99999 = none). Diagnostic, not an aircraft indication. |
-| `fmgc.diag.decelNm` | float | output | read | `-99999` | DECEL in profile distance (NM) (-99999 = none). Diagnostic, not an aircraft indication. |
+| `fmgc.diag.aircraftNm` | float | output | read | `0` | Aircraft position on the profile of the last computation (profile distance, 10 Hz) (NM) (-99999 = none). Diagnostic, not an aircraft indication. |
+| `fmgc.diag.crzFl` | int | output | read | `0` | CRZ FL of the FM (hundreds of feet) (-99999 = none). Diagnostic, not an aircraft indication. |
+| `fmgc.diag.decelNm` | float | output | read | `0` | DECEL in profile distance (NM) (-99999 = none). Diagnostic, not an aircraft indication. |
 | `fmgc.diag.pastTod` | bool | output | read | `0` | The aircraft is past the start of the descent path. Diagnostic, not an aircraft indication. |
-| `fmgc.diag.pathAltFt` | float | output | read | `-99999` | Descent path altitude at the aircraft (the cruise level before the T/D) (ft) (-99999 = none). Diagnostic, not an aircraft indication. |
-| `fmgc.diag.pathTopAltFt` | float | output | read | `-99999` | Altitude of the start of the descent path (the cruise level when the T/D was found) (ft) (-99999 = none). Diagnostic, not an aircraft indication. |
-| `fmgc.diag.pathTopNm` | float | output | read | `-99999` | Start of the descent path (its top, the T/D when at the cruise level) in profile distance (NM) (-99999 = none). Diagnostic, not an aircraft indication. |
+| `fmgc.diag.pathAltFt` | float | output | read | `0` | Descent path altitude at the aircraft (the cruise level before the T/D) (ft) (-99999 = none). Diagnostic, not an aircraft indication. |
+| `fmgc.diag.pathTopAltFt` | float | output | read | `0` | Altitude of the start of the descent path (the cruise level when the T/D was found) (ft) (-99999 = none). Diagnostic, not an aircraft indication. |
+| `fmgc.diag.pathTopNm` | float | output | read | `0` | Start of the descent path (its top, the T/D when at the cruise level) in profile distance (NM) (-99999 = none). Diagnostic, not an aircraft indication. |
 | `fmgc.diag.phase` | int | output | read | `0` | FM flight phase: 0 PREFLIGHT, 1 TAKEOFF, 2 CLIMB, 3 CRUISE, 4 DESCENT, 5 APPROACH, 6 GO AROUND, 7 DONE. Diagnostic, not an aircraft indication. |
 | `fmgc.diag.showLinearDev` | bool | output | read | `0` | PFD linear deviation (green VDEV dot) shown. Diagnostic, not an aircraft indication. |
 | `fmgc.diag.showVdev` | bool | output | read | `0` | PROG VDEV shown. Diagnostic, not an aircraft indication. |
-| `fmgc.diag.todNm` | float | output | read | `-99999` | Predicted T/D of the vertical profile from the aircraft at the last 1 Hz computation (NM) (-99999 = none). Diagnostic, not an aircraft indication. |
-| `fmgc.diag.vdevFt` | float | output | read | `-99999` | Vertical deviation from the descent path, + above (ft) (-99999 = none). Diagnostic, not an aircraft indication. |
+| `fmgc.diag.todNm` | float | output | read | `0` | Predicted T/D of the vertical profile from the aircraft at the last 1 Hz computation (NM) (-99999 = none). Diagnostic, not an aircraft indication. |
+| `fmgc.diag.vdevFt` | float | output | read | `0` | Vertical deviation from the descent path, + above (ft) (-99999 = none). Diagnostic, not an aircraft indication. |
 
 ## FMGC (indications)
 
@@ -2737,16 +2737,16 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `fmgc.perf.apprQnh` | string | output | read | `"1013"` | PERF APPR QNH "1013" / "29.92" as the MCDU shows it ("" = none) |
 | `fmgc.perf.apprTemp` | string | output | read | `""` | PERF APPR TEMP (°C) as the MCDU shows it ("" = none) |
 | `fmgc.perf.apprWind` | string | output | read | `"240/012"` | PERF APPR MAG WIND "240/012" as the MCDU shows it ("" = none) |
-| `fmgc.perf.baroFt` | int | output | read | `-1` | PERF APPR BARO minimum (MDA, ft, -1 = not entered) |
+| `fmgc.perf.baroFt` | int | output | read | `0` | PERF APPR BARO minimum (MDA, ft, -1 = not entered) |
 | `fmgc.perf.engOutAcc` | string | output | read | `""` | PERF TAKE OFF ENG OUT ACC (ft) as the MCDU shows it ("" = none) |
-| `fmgc.perf.flaps` | int | output | read | `-1` | PERF TAKE OFF FLAPS (1..3, -1 = not entered) |
+| `fmgc.perf.flaps` | int | output | read | `0` | PERF TAKE OFF FLAPS (1..3, -1 = not entered) |
 | `fmgc.perf.flapsThsText` | string | output | read | `"1/DN0.8"` | PERF TAKE OFF FLAPS/THS "1/DN0.8" as the MCDU shows it ("" = none) |
-| `fmgc.perf.flexTempC` | float | output | read |  | PERF TAKE OFF FLEX TO TEMP (°C, NaN = not entered) |
+| `fmgc.perf.flexTempC` | float | output | read | `0` | PERF TAKE OFF FLEX TO TEMP (°C, NaN = not entered) |
 | `fmgc.perf.flexText` | string | output | read | `"63"` | PERF TAKE OFF FLEX TO TEMP "63" as the MCDU shows it ("" = none) |
 | `fmgc.perf.ldgConf` | string | output | read | `"FULL"` | PERF APPR LDG CONF "FULL" / "3" as the MCDU shows it ("" = none) |
-| `fmgc.perf.radioFt` | int | output | read | `-1` | PERF APPR RADIO minimum (DH, ft, -1 = not entered, -2 = NO) |
+| `fmgc.perf.radioFt` | int | output | read | `0` | PERF APPR RADIO minimum (DH, ft, -1 = not entered, -2 = NO) |
 | `fmgc.perf.thrRedAcc` | string | output | read | `"1510/1510"` | PERF TAKE OFF THR RED/ACC "1510/1510" as the MCDU shows it ("" = none) |
-| `fmgc.perf.thsDeg` | float | output | read |  | PERF TAKE OFF THS (°, + UP, NaN = not entered) |
+| `fmgc.perf.thsDeg` | float | output | read | `0` | PERF TAKE OFF THS (°, + UP, NaN = not entered) |
 | `fmgc.perf.toShift` | string | output | read | `""` | PERF TAKE OFF TO SHIFT (m) as the MCDU shows it ("" = none) |
 | `fmgc.perf.transAlt` | string | output | read | `""` | PERF TAKE OFF TRANS ALT (ft) as the MCDU shows it ("" = none) |
 | `fmgc.perf.v1` | int | output | read | `0` | PERF TAKE OFF V1 (kt, 0 = not entered) |
@@ -2776,15 +2776,15 @@ for texts, else what a running Systems reported when the list was made (cold and
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
 | `fuel.alerts` | int | light | read | `0` | Alert conditions for the FWC (FuelAlerts bit mask) |
-| `fuel.engine1Fed` | bool | light | read | `1` | Fuel reaches engine 1 (pump pressure or suction feed); 0 = starved |
-| `fuel.engine1Suction` | bool | light | read | `1` | Engine 1 fed by suction (gravity) only |
-| `fuel.engine2Fed` | bool | light | read | `1` | Fuel reaches engine 2 (pump pressure or suction feed); 0 = starved |
-| `fuel.engine2Suction` | bool | light | read | `1` | Engine 2 fed by suction (gravity) only |
-| `fuel.fobKg` | float | light | read | `-1` | Fuel on board (kg, FQI; -1 without the FQI) |
+| `fuel.engine1Fed` | bool | light | read | `0` | Fuel reaches engine 1 (pump pressure or suction feed); 0 = starved |
+| `fuel.engine1Suction` | bool | light | read | `0` | Engine 1 fed by suction (gravity) only |
+| `fuel.engine2Fed` | bool | light | read | `0` | Fuel reaches engine 2 (pump pressure or suction feed); 0 = starved |
+| `fuel.engine2Suction` | bool | light | read | `0` | Engine 2 fed by suction (gravity) only |
+| `fuel.fobKg` | float | light | read | `0` | Fuel on board (kg, FQI; -1 without the FQI) |
 | `fuel.fqiValid` | bool | light | read | `0` | FQI computing (a channel powered and working) |
 | `fuel.frv1Open` | bool | light | read | `0` | Engine 1 IDG fuel return valve open |
 | `fuel.frv2Open` | bool | light | read | `0` | Engine 2 IDG fuel return valve open |
-| `fuel.gravityCeilingFt` | float | light | read | `15000` | Gravity (suction) feed ceiling (ft; 99999 with the fuel deaerated) |
+| `fuel.gravityCeilingFt` | float | light | read | `0` | Gravity (suction) feed ceiling (ft; 99999 with the fuel deaerated) |
 | `fuel.pump.ctr1.pressure` | bool | light | read | `0` | Pump ctr1 delivery pressure normal |
 | `fuel.pump.ctr1.running` | bool | light | read | `0` | Pump ctr1 running |
 | `fuel.pump.ctr2.pressure` | bool | light | read | `0` | Pump ctr2 delivery pressure normal |
@@ -2798,16 +2798,16 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `fuel.pump.r2.pressure` | bool | light | read | `0` | Pump r2 delivery pressure normal |
 | `fuel.pump.r2.running` | bool | light | read | `0` | Pump r2 running |
 | `fuel.qty.centerKg` | float | light | read | `0` | Fuel in the center tank cell (kg) |
-| `fuel.qty.lInnerKg` | float | light | read | `5567` | Fuel in the lInner tank cell (kg) |
-| `fuel.qty.lOuterKg` | float | light | read | `680` | Fuel in the lOuter tank cell (kg) |
-| `fuel.qty.rInnerKg` | float | light | read | `5567` | Fuel in the rInner tank cell (kg) |
-| `fuel.qty.rOuterKg` | float | light | read | `680` | Fuel in the rOuter tank cell (kg) |
+| `fuel.qty.lInnerKg` | float | light | read | `0` | Fuel in the lInner tank cell (kg) |
+| `fuel.qty.lOuterKg` | float | light | read | `0` | Fuel in the lOuter tank cell (kg) |
+| `fuel.qty.rInnerKg` | float | light | read | `0` | Fuel in the rInner tank cell (kg) |
+| `fuel.qty.rOuterKg` | float | light | read | `0` | Fuel in the rOuter tank cell (kg) |
 | `fuel.refueling` | bool | light | read | `0` | Refuel in progress (REFUELG) |
-| `fuel.temp.centerC` | float | light | read | `15` | Fuel temperature in the center tank cell (°C) |
-| `fuel.temp.lInnerC` | float | light | read | `15` | Fuel temperature in the lInner tank cell (°C) |
-| `fuel.temp.lOuterC` | float | light | read | `15` | Fuel temperature in the lOuter tank cell (°C) |
-| `fuel.temp.rInnerC` | float | light | read | `15` | Fuel temperature in the rInner tank cell (°C) |
-| `fuel.temp.rOuterC` | float | light | read | `15` | Fuel temperature in the rOuter tank cell (°C) |
+| `fuel.temp.centerC` | float | light | read | `0` | Fuel temperature in the center tank cell (°C) |
+| `fuel.temp.lInnerC` | float | light | read | `0` | Fuel temperature in the lInner tank cell (°C) |
+| `fuel.temp.lOuterC` | float | light | read | `0` | Fuel temperature in the lOuter tank cell (°C) |
+| `fuel.temp.rInnerC` | float | light | read | `0` | Fuel temperature in the rInner tank cell (°C) |
+| `fuel.temp.rOuterC` | float | light | read | `0` | Fuel temperature in the rOuter tank cell (°C) |
 | `fuel.used1Kg` | float | light | read | `0` | Fuel used by engine 1 (kg) |
 | `fuel.used2Kg` | float | light | read | `0` | Fuel used by engine 2 (kg) |
 | `fuel.xFeedValve` | float | light | read | `0` | X FEED valve (0 closed .. 1 open) |
@@ -2826,7 +2826,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `fwc.aural.singleChime` | int | output | read | `0` | Single chime requests of level 2 cautions (counter, +1 per chime, wraps at 65536) |
 | `fwc.aural.tripleClick` | int | output | read | `0` | Triple click requests (counter, +1 per triple click, wraps at 65536) |
 | `fwc.aural.voice` | int | output | read | `0` | Synthetic voice: sequence * 128 + AuralVoice id of the last message started (a change: say it now) |
-| `fwc.callouts` | int | service | write | `262137` | Automatic callouts (FWC pin programming, setting saved in systems.json): bit mask 0 TWO THOUSAND FIVE HUNDRED, 1 TWENTY FIVE HUNDRED, 2 2000, 3 1000, 4 500, 5 400, 6 300, 7 200, 8 100, 9 50, 10 40, 11 30, 12 20, 13 10, 14 5, 15 HUNDRED ABOVE, 16 MINIMUM, 17 intermediate callout |
+| `fwc.callouts` | int | service | write | `0` | Automatic callouts (FWC pin programming, setting saved in systems.json): bit mask 0 TWO THOUSAND FIVE HUNDRED, 1 TWENTY FIVE HUNDRED, 2 2000, 3 1000, 4 500, 5 400, 6 300, 7 200, 8 100, 9 50, 10 40, 11 30, 12 20, 13 10, 14 5, 15 HUNDRED ABOVE, 16 MINIMUM, 17 intermediate callout |
 | `fwc.flightPhase` | int | output | read | `0` | FWC flight phase (1-10, 0 = FWCs lost) |
 
 ## Gates
@@ -2840,10 +2840,10 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `gates.gearUpLocked` | bool | gate | read | `0` | Every gear up and locked (LGCIU) |
 | `gates.pitchTrimMotorEnabled` | bool | gate | read | `0` | Electric pitch trim motor owns the THS (1: in flight with autotrim, manual trim ignored; 0: on ground, direct law, mechanical back-up...: manual trim accepted) |
 | `gates.slatsExtended` | bool | gate | read | `0` | Slats extended (SFCC: slats beyond the retracted position) |
-| `gates.weightOnWheels` | bool | gate | read | `1` | Weight on wheels: either main gear strut compressed (aircraft on ground; LGCIU) |
-| `gates.weightOnWheels.leftMain` | bool | gate | read | `1` | Left main gear strut compressed (LGCIU) |
-| `gates.weightOnWheels.nose` | bool | gate | read | `1` | Nose gear strut compressed (LGCIU) |
-| `gates.weightOnWheels.rightMain` | bool | gate | read | `1` | Right main gear strut compressed (LGCIU) |
+| `gates.weightOnWheels` | bool | gate | read | `0` | Weight on wheels: either main gear strut compressed (aircraft on ground; LGCIU) |
+| `gates.weightOnWheels.leftMain` | bool | gate | read | `0` | Left main gear strut compressed (LGCIU) |
+| `gates.weightOnWheels.nose` | bool | gate | read | `0` | Nose gear strut compressed (LGCIU) |
+| `gates.weightOnWheels.rightMain` | bool | gate | read | `0` | Right main gear strut compressed (LGCIU) |
 
 ## Glareshield
 
@@ -2901,7 +2901,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
 | `glare.fcu.displayBrightness` | float | output | read | `0` | FCU displays brightness (0 = dark, FCU not displaying .. 1 = full): the knob while the FCU displays |
-| `glare.fcu.displayBrt` | float | analog | write | `0.8` | FCU displays brightness knob (0 = dimmest .. 1 = BRT) |
+| `glare.fcu.displayBrt` | float | analog | write | `0` | FCU displays brightness knob (0 = dimmest .. 1 = BRT) |
 | `glare.fcu.metricAlt.on` | bool | output | read | `0` | METRIC ALT selected (the ECAM and PFD altitudes also in meters; the pushbutton has no light) |
 | `glare.fcu.trkFpa.on` | bool | output | read | `0` | TRK-FPA selected (HDG-V/S / TRK-FPA pushbutton state, not the legend: no ANN LT TEST) |
 
@@ -2909,7 +2909,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `glare.fcu.altIncrement` | int | rotary | write | `1` | ALT knob outer ring (0 = 100 ft, 1 = 1000 ft) |
+| `glare.fcu.altIncrement` | int | rotary | write | `0` | ALT knob outer ring (0 = 100 ft, 1 = 1000 ft) |
 | `glare.fcu.altKnob` | int | encoder | write | `0` | ALT knob rotation counter (+1 per clockwise click) |
 | `glare.fcu.altLabel` | bool | light | read | `0` | ALT legend of the AFS display |
 | `glare.fcu.altPull` | bool | pushbutton | momentary | `0` | ALT knob pulled (open climb / descent) (momentary: 1 while held) |
@@ -2967,7 +2967,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `glare.efisCapt.baroPull` | bool | pushbutton | momentary | `0` | Captain EFIS BARO knob pulled (STD) (momentary: 1 while held) |
 | `glare.efisCapt.baroPush` | bool | pushbutton | momentary | `0` | Captain EFIS BARO knob pushed (QNH) (momentary: 1 while held) |
 | `glare.efisCapt.baroQnh` | bool | light | read | `0` | Captain EFIS QNH legend of the baro window (lit in QNH) |
-| `glare.efisCapt.baroUnit` | int | rotary | write | `1` | Captain EFIS BARO outer ring (0 = in Hg, 1 = hPa) |
+| `glare.efisCapt.baroUnit` | int | rotary | write | `0` | Captain EFIS BARO outer ring (0 = in Hg, 1 = hPa) |
 | `glare.efisCapt.baroWindow` | string | light | read | `"1013"` | Captain EFIS baro reference window: "1013", "29.92", "Std", "" dark |
 | `glare.efisCapt.cstr.on` | bool | light | read | `0` | Captain EFIS CSTR ON light |
 | `glare.efisCapt.cstr.pressed` | bool | pushbutton | momentary | `0` | Captain EFIS CSTR pushbutton (momentary: 1 while held) |
@@ -2975,10 +2975,10 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `glare.efisCapt.fd.pressed` | bool | pushbutton | momentary | `0` | Captain EFIS FD pushbutton (momentary: 1 while held) |
 | `glare.efisCapt.ls.on` | bool | light | read | `0` | Captain EFIS LS ON light |
 | `glare.efisCapt.ls.pressed` | bool | pushbutton | momentary | `0` | Captain EFIS LS pushbutton (momentary: 1 while held) |
-| `glare.efisCapt.navaid1` | int | switch | write | `1` | Captain EFIS ADF-VOR 1 selector (0 = ADF, 1 = OFF, 2 = VOR) |
-| `glare.efisCapt.navaid2` | int | switch | write | `1` | Captain EFIS ADF-VOR 2 selector (0 = ADF, 1 = OFF, 2 = VOR) |
-| `glare.efisCapt.ndMode` | int | rotary | write | `2` | Captain EFIS ND mode selector (0 = ROSE ILS, 1 = ROSE VOR, 2 = ROSE NAV, 3 = ARC, 4 = PLAN) |
-| `glare.efisCapt.ndRange` | int | rotary | write | `2` | Captain EFIS ND range selector (0..5 = 10, 20, 40, 80, 160, 320 NM) |
+| `glare.efisCapt.navaid1` | int | switch | write | `0` | Captain EFIS ADF-VOR 1 selector (0 = ADF, 1 = OFF, 2 = VOR) |
+| `glare.efisCapt.navaid2` | int | switch | write | `0` | Captain EFIS ADF-VOR 2 selector (0 = ADF, 1 = OFF, 2 = VOR) |
+| `glare.efisCapt.ndMode` | int | rotary | write | `0` | Captain EFIS ND mode selector (0 = ROSE ILS, 1 = ROSE VOR, 2 = ROSE NAV, 3 = ARC, 4 = PLAN) |
+| `glare.efisCapt.ndRange` | int | rotary | write | `0` | Captain EFIS ND range selector (0..5 = 10, 20, 40, 80, 160, 320 NM) |
 | `glare.efisCapt.ndb.on` | bool | light | read | `0` | Captain EFIS NDB ON light |
 | `glare.efisCapt.ndb.pressed` | bool | pushbutton | momentary | `0` | Captain EFIS NDB pushbutton (momentary: 1 while held) |
 | `glare.efisCapt.vorD.on` | bool | light | read | `0` | Captain EFIS VOR.D ON light |
@@ -2991,7 +2991,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `glare.efisFo.baroPull` | bool | pushbutton | momentary | `0` | First officer EFIS BARO knob pulled (STD) (momentary: 1 while held) |
 | `glare.efisFo.baroPush` | bool | pushbutton | momentary | `0` | First officer EFIS BARO knob pushed (QNH) (momentary: 1 while held) |
 | `glare.efisFo.baroQnh` | bool | light | read | `0` | First officer EFIS QNH legend of the baro window (lit in QNH) |
-| `glare.efisFo.baroUnit` | int | rotary | write | `1` | First officer EFIS BARO outer ring (0 = in Hg, 1 = hPa) |
+| `glare.efisFo.baroUnit` | int | rotary | write | `0` | First officer EFIS BARO outer ring (0 = in Hg, 1 = hPa) |
 | `glare.efisFo.baroWindow` | string | light | read | `"1013"` | First officer EFIS baro reference window: "1013", "29.92", "Std", "" dark |
 | `glare.efisFo.cstr.on` | bool | light | read | `0` | First officer EFIS CSTR ON light |
 | `glare.efisFo.cstr.pressed` | bool | pushbutton | momentary | `0` | First officer EFIS CSTR pushbutton (momentary: 1 while held) |
@@ -2999,10 +2999,10 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `glare.efisFo.fd.pressed` | bool | pushbutton | momentary | `0` | First officer EFIS FD pushbutton (momentary: 1 while held) |
 | `glare.efisFo.ls.on` | bool | light | read | `0` | First officer EFIS LS ON light |
 | `glare.efisFo.ls.pressed` | bool | pushbutton | momentary | `0` | First officer EFIS LS pushbutton (momentary: 1 while held) |
-| `glare.efisFo.navaid1` | int | switch | write | `1` | First officer EFIS ADF-VOR 1 selector (0 = ADF, 1 = OFF, 2 = VOR) |
-| `glare.efisFo.navaid2` | int | switch | write | `1` | First officer EFIS ADF-VOR 2 selector (0 = ADF, 1 = OFF, 2 = VOR) |
-| `glare.efisFo.ndMode` | int | rotary | write | `2` | First officer EFIS ND mode selector (0 = ROSE ILS, 1 = ROSE VOR, 2 = ROSE NAV, 3 = ARC, 4 = PLAN) |
-| `glare.efisFo.ndRange` | int | rotary | write | `2` | First officer EFIS ND range selector (0..5 = 10, 20, 40, 80, 160, 320 NM) |
+| `glare.efisFo.navaid1` | int | switch | write | `0` | First officer EFIS ADF-VOR 1 selector (0 = ADF, 1 = OFF, 2 = VOR) |
+| `glare.efisFo.navaid2` | int | switch | write | `0` | First officer EFIS ADF-VOR 2 selector (0 = ADF, 1 = OFF, 2 = VOR) |
+| `glare.efisFo.ndMode` | int | rotary | write | `0` | First officer EFIS ND mode selector (0 = ROSE ILS, 1 = ROSE VOR, 2 = ROSE NAV, 3 = ARC, 4 = PLAN) |
+| `glare.efisFo.ndRange` | int | rotary | write | `0` | First officer EFIS ND range selector (0..5 = 10, 20, 40, 80, 160, 320 NM) |
 | `glare.efisFo.ndb.on` | bool | light | read | `0` | First officer EFIS NDB ON light |
 | `glare.efisFo.ndb.pressed` | bool | pushbutton | momentary | `0` | First officer EFIS NDB pushbutton (momentary: 1 while held) |
 | `glare.efisFo.vorD.on` | bool | light | read | `0` | First officer EFIS VOR.D ON light |
@@ -3014,7 +3014,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `glare.intLt.integLt` | float | analog | write | `1` | Glareshield integral lighting thumbwheel under the FCU (0 = OFF .. 1 = BRT) |
+| `glare.intLt.integLt` | float | analog | write | `0` | Glareshield integral lighting thumbwheel under the FCU (0 = OFF .. 1 = BRT) |
 
 ## Glareshield / SIDE STICK PRIORITY
 
@@ -3031,7 +3031,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `gpws.alert` | bool | output | read | `0` | A GPWS aural alert is active |
 | `gpws.tad` | int | output | read | `0` | Predictive terrain alert: 0 none, 1 caution (TERRAIN AHEAD), 2 warning (PULL UP) |
-| `gpws.terrainDatabase` | string | output | read | `"READY (/home/maduranma/Projects/nvan/a320-professional/a320-professional/Release/Linux/Systems/terrain)"` | Terrain database: folder and state (READY, MISSING: no terrain data installed → TERR FAULT) |
+| `gpws.terrainDatabase` | string | output | read | `""` | Terrain database: folder and state (READY, MISSING: no terrain data installed → TERR FAULT) |
 | `gpws.terrainTiles` | int | output | read | `0` | Terrain database tiles (1°) loaded around the aircraft |
 
 ## GPWS / RAAS
@@ -3040,13 +3040,13 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `gpws.raas.available` | bool | output | read | `0` | RAAS enabled and available (powered, GPS position, a database runway near) |
 | `gpws.raas.distanceStart` | int | service | write | `0` | RAAS distance remaining from: 0 half the runway, 1..5 = 1000..5000 ft (300..1500 m) from its end |
-| `gpws.raas.holdInitialS` | int | service | write | `90` | RAAS extended holding on runway: first advisory after (s): 0 off, 60, 90, 120, 180, 240, 300 |
-| `gpws.raas.holdRepeatS` | int | service | write | `90` | RAAS extended holding on runway: repeated every (s): 0 off, 30, 60, 90, 120, 180, 240, 300 |
-| `gpws.raas.longLandingFt` | int | service | write | `2000` | RAAS long landing monitor: no touchdown this far beyond the threshold (ft) |
+| `gpws.raas.holdInitialS` | int | service | write | `0` | RAAS extended holding on runway: first advisory after (s): 0 off, 60, 90, 120, 180, 240, 300 |
+| `gpws.raas.holdRepeatS` | int | service | write | `0` | RAAS extended holding on runway: repeated every (s): 0 off, 30, 60, 90, 120, 180, 240, 300 |
+| `gpws.raas.longLandingFt` | int | service | write | `0` | RAAS long landing monitor: no touchdown this far beyond the threshold (ft) |
 | `gpws.raas.message` | string | output | read | `""` | The last RAAS phrase requested, in words |
-| `gpws.raas.nominalLandingFt` | int | service | write | `5000` | RAAS nominal landing runway length (ft): short runway below it |
-| `gpws.raas.nominalTakeoffFt` | int | service | write | `6000` | RAAS nominal takeoff runway length (ft): insufficient runway below it |
-| `gpws.raas.options` | int | service | write | `2418175` | RAAS options (EGPWS option, setting saved in systems.json): bit mask 0 enabled, 1 meters, 2 announce units, 3 approaching (ground), 4 on runway, 5 approaching (air), 6 distance remaining landing, 7 runway end, 8 taxiway takeoff, 9 its caution, 10 insufficient runway (ground), 11 short runway caution (ground), 12 always the length (ground), 13 extended holding, 14 distance remaining RTO, 15 short runway (air), 16 short runway caution (air), 17 always the length (air), 18 taxiway landing, 19 takeoff flap monitor, 20 long landing, 21 Airbus suppression zone 450-350 ft |
+| `gpws.raas.nominalLandingFt` | int | service | write | `0` | RAAS nominal landing runway length (ft): short runway below it |
+| `gpws.raas.nominalTakeoffFt` | int | service | write | `0` | RAAS nominal takeoff runway length (ft): insufficient runway below it |
+| `gpws.raas.options` | int | service | write | `0` | RAAS options (EGPWS option, setting saved in systems.json): bit mask 0 enabled, 1 meters, 2 announce units, 3 approaching (ground), 4 on runway, 5 approaching (air), 6 distance remaining landing, 7 runway end, 8 taxiway takeoff, 9 its caution, 10 insufficient runway (ground), 11 short runway caution (ground), 12 always the length (ground), 13 extended holding, 14 distance remaining RTO, 15 short runway (air), 16 short runway caution (air), 17 always the length (air), 18 taxiway landing, 19 takeoff flap monitor, 20 long landing, 21 Airbus suppression zone 450-350 ft |
 
 ## Ground / Calls
 
@@ -3055,7 +3055,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `ground.calls.mechReset` | bool | service | momentary | `0` | External power panel RESET pb (ground mechanic: COCKPIT CALL light off; 1 = pressed) |
 | `ground.calls.mechToCockpit` | bool | service | momentary | `0` | Ground mechanic COCKPIT call pb (external power panel, 1 = held) |
 | `ground.calls.selcal` | int | service | write | `0` | SELCAL call received on a radio: 1..3 VHF n, 4..5 HF n (with ground.calls.selcalCode; Systems writes 0 back once taken) |
-| `ground.calls.selcalCode` | int | service | write | `-1` | Code of the next SELCAL call: -1 = the aircraft's own code (aircraft.selcal), else the packed code (4 letters of ABCDEFGHJKLMPQRS, each 0..15: L1 × 4096 + L2 × 256 + L3 × 16 + L4) |
+| `ground.calls.selcalCode` | int | service | write | `0` | Code of the next SELCAL call: -1 = the aircraft's own code (aircraft.selcal), else the packed code (4 letters of ABCDEFGHJKLMPQRS, each 0..15: L1 × 4096 + L2 × 256 + L3 × 16 + L4) |
 | `ground.extPwrPanel.cockpitCall` | bool | light | read | `0` | External power panel COCKPIT CALL light (blue: the cockpit called the ground mechanic) |
 
 ## Ground / EXTERNAL POWER panel
@@ -3070,7 +3070,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
 | `ground.waste.drain` | bool | service | write | `0` | Waste tank draining and rinsing (on ground only, back to 0 when empty) |
-| `ground.water.panelQuantityPct` | float | output | read | `-1` | Water quantity on the aft service panel indicator (%, -1 = no indication) |
+| `ground.water.panelQuantityPct` | float | output | read | `0` | Water quantity on the aft service panel indicator (%, -1 = no indication) |
 | `ground.water.service` | int | service | write | `0` | Potable water service (0 idle, 1 fill, 2 drain; on ground only, back to 0 when full / empty) |
 
 ## Ground services
@@ -3083,8 +3083,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `ground.gate.autoDoors` | bool | service | write | `0` | Systems option: automatic doors and jetway with the beacon (BEACON OFF while parked: L1, FWD / AFT / BULK cargo doors open, jetway called; BEACON ON: every door closed, jetway retracted). Saved in systems.json |
 | `ground.gate.jetway` | int | output | read | `0` | Automatic doors with the beacon: last jetway request sent to the simulator (0 none, 1 dock, 2 retract) |
 | `ground.gate.status` | int | output | read | `0` | Automatic doors with the beacon: 0 idle, 1 beacon off, waiting for the aircraft to be parked (engines spooled down, PARK BRK set), 2 arrival doors opened, 3 doors closed for departure |
-| `ground.gpu.autoConnect` | bool | output | read | `1` | Systems option: the ground crew connects the GPU when the parking brake is set on ground with the engines stopped, and removes it when the brake is released |
-| `ground.gpu.connected` | bool | service | write | `1` | Ground power unit plugged in |
+| `ground.gpu.autoConnect` | bool | output | read | `0` | Systems option: the ground crew connects the GPU when the parking brake is set on ground with the engines stopped, and removes it when the brake is released |
+| `ground.gpu.connected` | bool | service | write | `0` | Ground power unit plugged in |
 | `ground.gpu.refused` | int | output | read | `0` | Last GPU connection refused by the ground crew while its reason lasts: 0 none, 1 airborne, 2 moving, 3 engines running |
 | `ground.gpu.withEnginesRunning` | bool | service | write | `0` | Systems option: the ground crew connects the GPU even with the engines running (not standard practice; still refused airborne or moving). Saved in systems.json |
 | `ground.hpAir.connected` | bool | service | write | `0` | HP ground air cart connected and supplying (GND HP connection, engine start air) |
@@ -3103,12 +3103,12 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `ground.pushback.debug.headingErrorDeg` | float | service | read | `0` | Pushback tuning: aircraft heading against the path (deg, + = clockwise) |
 | `ground.pushback.debug.lineSegments` | int | service | read | `0` | Pushback tuning: taxi line pieces the simulator gave for the last plan |
 | `ground.pushback.debug.measuredReferenceOffsetM` | float | service | read | `0` | Pushback tuning: the same, measured from the aircraft's motion in the turn (m; 0 until it has turned 12 deg) |
-| `ground.pushback.debug.referenceOffsetM` | float | service | read | `1.36` | Pushback tuning: main gear behind the simulator's position reference, as used (m) |
+| `ground.pushback.debug.referenceOffsetM` | float | service | read | `0` | Pushback tuning: main gear behind the simulator's position reference, as used (m) |
 | `ground.pushback.debug.speedMs` | float | service | read | `0` | Pushback tuning: speed along the path (m/s) |
 | `ground.pushback.debug.steeringDeg` | float | service | read | `0` | Pushback tuning: nose wheel angle sent to the simulator (deg, + = right) |
 | `ground.pushback.debug.targetSpeedMs` | float | service | read | `0` | Pushback tuning: speed ordered along the path (m/s, backwards for the aircraft) |
 | `ground.pushback.lineDistanceM` | float | service | read | `0` | Pushback: from the main gear to the line along the aircraft axis (m, 0 with the generic options) |
-| `ground.pushback.manualDistanceM` | float | service | write | `50` | Pushback: straight travel of the generic options (m, 20..150) |
+| `ground.pushback.manualDistanceM` | float | service | write | `0` | Pushback: straight travel of the generic options (m, 20..150) |
 | `ground.pushback.message` | string | service | read | `""` | Pushback: one line for the crew / instructor |
 | `ground.pushback.option1.available` | bool | service | read | `0` | Pushback option 1: can be started (0: the line is too close for that turn; the label says so) |
 | `ground.pushback.option1.headingDeg` | float | service | read | `0` | Pushback option 1: magnetic heading the nose faces at the end (0..360) |
@@ -3157,13 +3157,13 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `ground.fuel.target.lOuterKg` | float | service | write | `0` | Per-tank target (kg, 0 to 680) |
 | `ground.fuel.target.rInnerKg` | float | service | write | `0` | Per-tank target (kg, 0 to 5567) |
 | `ground.fuel.target.rOuterKg` | float | service | write | `0` | Per-tank target (kg, 0 to 680) |
-| `ground.fuel.targetTotalKg` | float | service | write | `12494` | Preselected total fuel (kg, 0 to 18968), distributed outer cells, inner cells, then center |
+| `ground.fuel.targetTotalKg` | float | service | write | `0` | Preselected total fuel (kg, 0 to 18968), distributed outer cells, inner cells, then center |
 
 ## Ground services / Load
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `ground.load.bagMassKg` | float | service | write | `13` | Checked bags per passenger (kg, 0 to 50), loaded in the forward and aft holds |
+| `ground.load.bagMassKg` | float | service | write | `0` | Checked bags per passenger (kg, 0 to 50), loaded in the forward and aft holds |
 | `ground.load.board` | bool | service | write | `0` | Board / load to the targets at the normal rate (on ground; back to 0 when done) |
 | `ground.load.cargo.target.aftKg` | float | service | write | `0` | Cargo in the aft hold (kg, without the bags; up to 4536 kg with them) |
 | `ground.load.cargo.target.bulkKg` | float | service | write | `0` | Cargo in the bulk hold (kg, without the bags; up to 1497 kg with them) |
@@ -3172,7 +3172,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `ground.load.pax.target.oa` | int | service | write | `0` | Passengers to board in cabin zone OA (0 to 60) |
 | `ground.load.pax.target.ob` | int | service | write | `0` | Passengers to board in cabin zone OB (0 to 60) |
 | `ground.load.pax.target.oc` | int | service | write | `0` | Passengers to board in cabin zone OC (0 to 60) |
-| `ground.load.paxMassKg` | float | service | write | `84` | Standard mass per passenger with hand baggage (kg, 50 to 150) |
+| `ground.load.paxMassKg` | float | service | write | `0` | Standard mass per passenger with hand baggage (kg, 50 to 150) |
 | `ground.load.paxTarget` | int | service | write | `0` | Passengers to board (0 to 180), spread evenly over the cabin zones OA, OB, OC |
 | `ground.load.perZone` | bool | service | write | `0` | Use the per-zone passenger targets instead of the total |
 
@@ -3194,7 +3194,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `instructor.engineQuickStart` | bool | service | write | `0` | IOS: both engines running at once (ENG MASTERs ON), written back to 0 |
 | `instructor.instantAlign` | bool | service | write | `0` | IOS: every IR aligning finishes its alignment now (as adirs.instantAlign), written back to 0 |
 | `instructor.preset` | int | service | write | `0` | IOS state preset, applied once (on ground) and written back to 0: 1 COLD & DARK, 2 APU RUNNING, 3 ENGINES RUNNING |
-| `instructor.simRate` | int | service | write | `1` | IOS sim rate: 1, 2, 4 or 8 (x1 real time; other values are refused and the last valid one kept). Forced to 1 while slewing |
+| `instructor.simRate` | int | service | write | `0` | IOS sim rate, writable by any client (the IOS header's x1 / x2 / x4 / x8): 1, 2, 4 or 8 (x1 real time; any other value is refused and the last valid one kept). Commanded x1 while slewing (the selection is kept); the rate reached is instructor.sim.rateAchieved |
 | `instructor.status` | string | output | read | `""` | Result of the last instructor command |
 | `instructor.statusCounter` | int | output | read | `0` | Incremented with every instructor.status message |
 
@@ -3211,15 +3211,15 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `instructor.sim.latitude` | float | output | read | `0` | Aircraft latitude (degrees, simulator truth) |
 | `instructor.sim.localOffsetMin` | float | output | read | `0` | The simulator's time zone at the aircraft: its local time minus UTC (minutes, simulator truth; valid with instructor.sim.utcSeconds) |
 | `instructor.sim.longitude` | float | output | read | `0` | Aircraft longitude (degrees, simulator truth) |
-| `instructor.sim.onGround` | bool | output | read | `1` | A main gear on the ground (simulator truth) |
-| `instructor.sim.paused` | bool | output | read | `0` | The simulator is paused (simulator truth) |
+| `instructor.sim.onGround` | bool | output | read | `0` | A main gear on the ground (simulator truth) |
+| `instructor.sim.paused` | bool | service | write | `0` | The simulator is paused (simulator truth). Write 1 to pause, 0 to resume: sent to the simulator as the IOS PAUSE / PLAY (instructor.status gives its answer); the value stays the simulator's truth (it changes when the simulator has paused or resumed); refused while no simulator is connected and while the demo period holds it paused |
 | `instructor.sim.pitchDeg` | float | output | read | `0` | Pitch attitude (degrees, nose up +, simulator truth) |
-| `instructor.sim.rateAchieved` | float | output | read | `1` | Rate the simulator really reaches (simulator truth; X-Plane sim_speed_actual; 1 when not reported or no simulator) |
-| `instructor.sim.rateSystems` | float | output | read | `1` | Rate Systems' own time runs at (simulated ticks per real tick: follows the achieved rate; 0 while the simulator is paused: the aircraft systems frozen) |
+| `instructor.sim.rateAchieved` | float | output | read | `0` | Rate the simulator really reaches (simulator truth; X-Plane sim_speed_actual; 1 when not reported or no simulator) |
+| `instructor.sim.rateSystems` | float | output | read | `0` | Rate Systems' own time runs at (simulated ticks per real tick: follows the achieved rate; 0 while the simulator is paused: the aircraft systems frozen) |
 | `instructor.sim.rollDeg` | float | output | read | `0` | Bank angle (degrees, right wing down +, simulator truth) |
-| `instructor.sim.utcDayOfYear` | float | output | read | `-1` | Simulator date (day of the year UTC, 0 = 1 January, simulator truth; -1 = unknown) |
-| `instructor.sim.utcSeconds` | float | output | read | `-1` | Simulator time (seconds since midnight UTC, simulator truth; -1 = unknown) |
-| `instructor.sim.webApi` | int | output | read | `-1` | The simulator's local web API as the bridge probes it (X-Plane: needed for a variant / livery change): 1 reachable, 0 not reachable, -1 not known (no bridge, a bridge without one, not probed yet) |
+| `instructor.sim.utcDayOfYear` | float | output | read | `0` | Simulator date (day of the year UTC, 0 = 1 January, simulator truth; -1 = unknown) |
+| `instructor.sim.utcSeconds` | float | output | read | `0` | Simulator time (seconds since midnight UTC, simulator truth; -1 = unknown) |
+| `instructor.sim.webApi` | int | output | read | `0` | The simulator's local web API as the bridge probes it (X-Plane: needed for a variant / livery change): 1 reachable, 0 not reachable, -1 not known (no bridge, a bridge without one, not probed yet) |
 | `instructor.sim.webApiPort` | int | output | read | `0` | Port of the simulator's local web API the bridge probes (0: none) |
 | `instructor.sim.webApiReason` | int | output | read | `0` | Why the simulator's local web API is not usable: 1 not reachable on the port, 2 refused (403: X-Plane's incoming traffic disabled in Settings > Network), 3 off (X-Plane started with --no_web_server); 0 usable or not known |
 
@@ -3234,7 +3234,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `instructor.slew.level` | bool | service | write | `0` | Slew LEVEL: pitch and bank back to 0 (in the air), written back to 0 |
 | `instructor.slew.pitch` | float | service | write | `0` | Slew pitch: nose up (+) / down (−), −1..1 (in the air) |
 | `instructor.slew.right` | float | service | write | `0` | Slew right (+) / left (−), −1..1 |
-| `instructor.slew.speed` | float | service | write | `0.5` | Slew speed scale 0..1 (full-deflection rates, logarithmic): 0 FINE (~6 kt, 300 ft/min, 2°/s), 1 COARSE (~290 kt, 5000 ft/min, 10°/s) |
+| `instructor.slew.speed` | float | service | write | `0` | Slew speed scale 0..1 (full-deflection rates, logarithmic): 0 FINE (~6 kt, 300 ft/min, 2°/s), 1 COARSE (~290 kt, 5000 ft/min, 10°/s) |
 | `instructor.slew.turn` | float | service | write | `0` | Slew heading: right (+) / left (−), −1..1 |
 | `instructor.slew.up` | float | service | write | `0` | Slew up (+) / down (−), −1..1 |
 
@@ -3243,34 +3243,34 @@ for texts, else what a running Systems reported when the list was made (cold and
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
 | `gear.left.doorPosition` | float | output | read | `0` | left gear hydraulic doors position (0 = closed and locked, 1 = fully open) |
-| `gear.left.position` | float | light | read | `1` | left gear position (0 = up and locked, 1 = down and locked) |
+| `gear.left.position` | float | light | read | `0` | left gear position (0 = up and locked, 1 = down and locked) |
 | `gear.left.transit` | float | output | read | `0` | left gear transit for an exterior model (0 = down with the doors closed, 0.2 = down with the doors open, 0.8 = up with the doors open, 1 = up and locked with the doors closed; gravity extension stays at 0.2) |
 | `gear.nose.doorPosition` | float | output | read | `0` | nose gear hydraulic doors position (0 = closed and locked, 1 = fully open) |
-| `gear.nose.position` | float | light | read | `1` | nose gear position (0 = up and locked, 1 = down and locked) |
+| `gear.nose.position` | float | light | read | `0` | nose gear position (0 = up and locked, 1 = down and locked) |
 | `gear.nose.transit` | float | output | read | `0` | nose gear transit for an exterior model (0 = down with the doors closed, 0.2 = down with the doors open, 0.8 = up with the doors open, 1 = up and locked with the doors closed; gravity extension stays at 0.2) |
 | `gear.right.doorPosition` | float | output | read | `0` | right gear hydraulic doors position (0 = closed and locked, 1 = fully open) |
-| `gear.right.position` | float | light | read | `1` | right gear position (0 = up and locked, 1 = down and locked) |
+| `gear.right.position` | float | light | read | `0` | right gear position (0 = up and locked, 1 = down and locked) |
 | `gear.right.transit` | float | output | read | `0` | right gear transit for an exterior model (0 = down with the doors closed, 0.2 = down with the doors open, 0.8 = up with the doors open, 1 = up and locked with the doors closed; gravity extension stays at 0.2) |
-| `wheel.brakeTemp1` | float | light | read | `15` | Brake 1 temperature (°C, as the BSCU measures it) |
-| `wheel.brakeTemp2` | float | light | read | `15` | Brake 2 temperature (°C, as the BSCU measures it) |
-| `wheel.brakeTemp3` | float | light | read | `15` | Brake 3 temperature (°C, as the BSCU measures it) |
-| `wheel.brakeTemp4` | float | light | read | `15` | Brake 4 temperature (°C, as the BSCU measures it) |
-| `wheel.rimTemp1` | float | light | read | `15` | Main wheel 1 rim temperature (°C; no cockpit indication: its fusible plugs melt at 177 °C) |
-| `wheel.rimTemp2` | float | light | read | `15` | Main wheel 2 rim temperature (°C; no cockpit indication: its fusible plugs melt at 177 °C) |
-| `wheel.rimTemp3` | float | light | read | `15` | Main wheel 3 rim temperature (°C; no cockpit indication: its fusible plugs melt at 177 °C) |
-| `wheel.rimTemp4` | float | light | read | `15` | Main wheel 4 rim temperature (°C; no cockpit indication: its fusible plugs melt at 177 °C) |
-| `wheel.tirePsi1` | float | light | read | `-1` | Tire 1 pressure as the TPIS measures it (psi; -1 without a working TPIS) |
-| `wheel.tirePsi2` | float | light | read | `-1` | Tire 2 pressure as the TPIS measures it (psi; -1 without a working TPIS) |
-| `wheel.tirePsi3` | float | light | read | `-1` | Tire 3 pressure as the TPIS measures it (psi; -1 without a working TPIS) |
-| `wheel.tirePsi4` | float | light | read | `-1` | Tire 4 pressure as the TPIS measures it (psi; -1 without a working TPIS) |
-| `wheel.tirePsiNoseL` | float | light | read | `-1` | Tire NoseL pressure as the TPIS measures it (psi; -1 without a working TPIS) |
-| `wheel.tirePsiNoseR` | float | light | read | `-1` | Tire NoseR pressure as the TPIS measures it (psi; -1 without a working TPIS) |
+| `wheel.brakeTemp1` | float | light | read | `0` | Brake 1 temperature (°C, as the BSCU measures it) |
+| `wheel.brakeTemp2` | float | light | read | `0` | Brake 2 temperature (°C, as the BSCU measures it) |
+| `wheel.brakeTemp3` | float | light | read | `0` | Brake 3 temperature (°C, as the BSCU measures it) |
+| `wheel.brakeTemp4` | float | light | read | `0` | Brake 4 temperature (°C, as the BSCU measures it) |
+| `wheel.rimTemp1` | float | light | read | `0` | Main wheel 1 rim temperature (°C; no cockpit indication: its fusible plugs melt at 177 °C) |
+| `wheel.rimTemp2` | float | light | read | `0` | Main wheel 2 rim temperature (°C; no cockpit indication: its fusible plugs melt at 177 °C) |
+| `wheel.rimTemp3` | float | light | read | `0` | Main wheel 3 rim temperature (°C; no cockpit indication: its fusible plugs melt at 177 °C) |
+| `wheel.rimTemp4` | float | light | read | `0` | Main wheel 4 rim temperature (°C; no cockpit indication: its fusible plugs melt at 177 °C) |
+| `wheel.tirePsi1` | float | light | read | `0` | Tire 1 pressure as the TPIS measures it (psi; -1 without a working TPIS) |
+| `wheel.tirePsi2` | float | light | read | `0` | Tire 2 pressure as the TPIS measures it (psi; -1 without a working TPIS) |
+| `wheel.tirePsi3` | float | light | read | `0` | Tire 3 pressure as the TPIS measures it (psi; -1 without a working TPIS) |
+| `wheel.tirePsi4` | float | light | read | `0` | Tire 4 pressure as the TPIS measures it (psi; -1 without a working TPIS) |
+| `wheel.tirePsiNoseL` | float | light | read | `0` | Tire NoseL pressure as the TPIS measures it (psi; -1 without a working TPIS) |
+| `wheel.tirePsiNoseR` | float | light | read | `0` | Tire NoseR pressure as the TPIS measures it (psi; -1 without a working TPIS) |
 
 ## Lights
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `lights.annunciatorIntensity` | float | light | read | `1` | Intensity of every flight deck annunciator light set by ANN LT (1 = BRT, 0.45 = DIM): clients scale the lit legends by it |
+| `lights.annunciatorIntensity` | float | light | read | `0` | Intensity of every flight deck annunciator light set by ANN LT (1 = BRT, 0.45 = DIM): clients scale the lit legends by it |
 
 ## Lights / avionics compartment
 
@@ -3282,7 +3282,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `lights.cockpit.ambient` | float | output | read | `1` | Daylight in the cockpit from the sun elevation (0 night .. 1 day; 1 without simulator time) |
+| `lights.cockpit.ambient` | float | output | read | `0` | Daylight in the cockpit from the sun elevation (0 night .. 1 day; 1 without simulator time) |
 | `lights.cockpit.chartCapt` | float | output | read | `0` | Captain chart light brightness (0 .. 1: the knob when lit, 0 off or unpowered) |
 | `lights.cockpit.chartCaptLit` | bool | output | read | `0` | Captain chart light lit (switch ON, supply powered) |
 | `lights.cockpit.chartFo` | float | output | read | `0` | First officer chart light brightness (0 .. 1: the knob when lit, 0 off or unpowered) |
@@ -3361,9 +3361,9 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `load.boarding` | bool | output | read | `0` | Boarding / loading in progress |
 | `load.cgOutOfLimits` | bool | output | read | `0` | ZFW or GW CG outside 17–40 % MAC (flat envelope, ESTIMATED) |
-| `load.fuelKg` | float | output | read | `12494` | Fuel on board (kg, the fuel system's tanks) |
-| `load.gwCgMac` | float | output | read | `25.954` | Gross weight CG (% MAC, with the fuel) |
-| `load.gwKg` | float | output | read | `54994` | Gross weight (kg: ZFW + fuel) |
+| `load.fuelKg` | float | output | read | `0` | Fuel on board (kg, the fuel system's tanks) |
+| `load.gwCgMac` | float | output | read | `0` | Gross weight CG (% MAC, with the fuel) |
+| `load.gwKg` | float | output | read | `0` | Gross weight (kg: ZFW + fuel) |
 | `load.hold.aftKg` | float | output | read | `0` | Load in the aft hold (kg, cargo + bags) |
 | `load.hold.bulkKg` | float | output | read | `0` | Load in the bulk hold (kg, cargo + bags) |
 | `load.hold.fwdKg` | float | output | read | `0` | Load in the fwd hold (kg, cargo + bags) |
@@ -3374,8 +3374,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `load.pax.oc` | int | output | read | `0` | Passengers on board in cabin zone OC |
 | `load.paxTotal` | int | output | read | `0` | Passengers on board |
 | `load.payloadKg` | float | output | read | `0` | Total traffic load (kg: passengers, bags and cargo) |
-| `load.zfwCgMac` | float | output | read | `27.0` | Zero fuel weight CG (% MAC) |
-| `load.zfwKg` | float | output | read | `42500` | Zero fuel weight (kg: OEW 42500 CFM / 42700 IAE + traffic load) |
+| `load.zfwCgMac` | float | output | read | `0` | Zero fuel weight CG (% MAC) |
+| `load.zfwKg` | float | output | read | `0` | Zero fuel weight (kg: OEW 42500 CFM / 42700 IAE + traffic load) |
 
 ## Main instrument panel / DCDU 1
 
@@ -3393,33 +3393,33 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `mip.dcdu1.key.pgeMinus` | bool | pushbutton | momentary | `0` | DCDU 1 key PGEMINUS (momentary: 1 while held) |
 | `mip.dcdu1.key.pgePlus` | bool | pushbutton | momentary | `0` | DCDU 1 key PGEPLUS (momentary: 1 while held) |
 | `mip.dcdu1.key.print` | bool | pushbutton | momentary | `0` | DCDU 1 key PRINT (momentary: 1 while held) |
-| `mip.dcdu1.line01.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"` | DCDU 1 screen line 1: one color letter per character (W C G A M Y R), upper case large, lower case small |
-| `mip.dcdu1.line01.reverse` | string | output | read | `"                              "` | DCDU 1 screen line 1: 'R' under the characters shown in reverse video (filled box of their color, black text) |
-| `mip.dcdu1.line01.text` | string | output | read | `"                              "` | DCDU 1 screen line 1: its 30 monospace characters (blank while dark), for hardware that shows text |
-| `mip.dcdu1.line02.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"` | DCDU 1 screen line 2: one color letter per character (W C G A M Y R), upper case large, lower case small |
-| `mip.dcdu1.line02.reverse` | string | output | read | `"                              "` | DCDU 1 screen line 2: 'R' under the characters shown in reverse video (filled box of their color, black text) |
-| `mip.dcdu1.line02.text` | string | output | read | `"                              "` | DCDU 1 screen line 2: its 30 monospace characters (blank while dark), for hardware that shows text |
-| `mip.dcdu1.line03.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"` | DCDU 1 screen line 3: one color letter per character (W C G A M Y R), upper case large, lower case small |
-| `mip.dcdu1.line03.reverse` | string | output | read | `"                              "` | DCDU 1 screen line 3: 'R' under the characters shown in reverse video (filled box of their color, black text) |
-| `mip.dcdu1.line03.text` | string | output | read | `"                              "` | DCDU 1 screen line 3: its 30 monospace characters (blank while dark), for hardware that shows text |
-| `mip.dcdu1.line04.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"` | DCDU 1 screen line 4: one color letter per character (W C G A M Y R), upper case large, lower case small |
-| `mip.dcdu1.line04.reverse` | string | output | read | `"                              "` | DCDU 1 screen line 4: 'R' under the characters shown in reverse video (filled box of their color, black text) |
-| `mip.dcdu1.line04.text` | string | output | read | `"                              "` | DCDU 1 screen line 4: its 30 monospace characters (blank while dark), for hardware that shows text |
-| `mip.dcdu1.line05.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"` | DCDU 1 screen line 5: one color letter per character (W C G A M Y R), upper case large, lower case small |
-| `mip.dcdu1.line05.reverse` | string | output | read | `"                              "` | DCDU 1 screen line 5: 'R' under the characters shown in reverse video (filled box of their color, black text) |
-| `mip.dcdu1.line05.text` | string | output | read | `"                              "` | DCDU 1 screen line 5: its 30 monospace characters (blank while dark), for hardware that shows text |
-| `mip.dcdu1.line06.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"` | DCDU 1 screen line 6: one color letter per character (W C G A M Y R), upper case large, lower case small |
-| `mip.dcdu1.line06.reverse` | string | output | read | `"                              "` | DCDU 1 screen line 6: 'R' under the characters shown in reverse video (filled box of their color, black text) |
-| `mip.dcdu1.line06.text` | string | output | read | `"                              "` | DCDU 1 screen line 6: its 30 monospace characters (blank while dark), for hardware that shows text |
-| `mip.dcdu1.line07.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"` | DCDU 1 screen line 7: one color letter per character (W C G A M Y R), upper case large, lower case small |
-| `mip.dcdu1.line07.reverse` | string | output | read | `"                              "` | DCDU 1 screen line 7: 'R' under the characters shown in reverse video (filled box of their color, black text) |
-| `mip.dcdu1.line07.text` | string | output | read | `"                              "` | DCDU 1 screen line 7: its 30 monospace characters (blank while dark), for hardware that shows text |
-| `mip.dcdu1.line08.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"` | DCDU 1 screen line 8: one color letter per character (W C G A M Y R), upper case large, lower case small |
-| `mip.dcdu1.line08.reverse` | string | output | read | `"                              "` | DCDU 1 screen line 8: 'R' under the characters shown in reverse video (filled box of their color, black text) |
-| `mip.dcdu1.line08.text` | string | output | read | `"                              "` | DCDU 1 screen line 8: its 30 monospace characters (blank while dark), for hardware that shows text |
-| `mip.dcdu1.line09.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"` | DCDU 1 screen line 9: one color letter per character (W C G A M Y R), upper case large, lower case small |
-| `mip.dcdu1.line09.reverse` | string | output | read | `"                              "` | DCDU 1 screen line 9: 'R' under the characters shown in reverse video (filled box of their color, black text) |
-| `mip.dcdu1.line09.text` | string | output | read | `"                              "` | DCDU 1 screen line 9: its 30 monospace characters (blank while dark), for hardware that shows text |
+| `mip.dcdu1.line01.color` | string | output | read | `""` | DCDU 1 screen line 1: one color letter per character (W C G A M Y R), upper case large, lower case small |
+| `mip.dcdu1.line01.reverse` | string | output | read | `""` | DCDU 1 screen line 1: 'R' under the characters shown in reverse video (filled box of their color, black text) |
+| `mip.dcdu1.line01.text` | string | output | read | `""` | DCDU 1 screen line 1: its 30 monospace characters (blank while dark), for hardware that shows text |
+| `mip.dcdu1.line02.color` | string | output | read | `""` | DCDU 1 screen line 2: one color letter per character (W C G A M Y R), upper case large, lower case small |
+| `mip.dcdu1.line02.reverse` | string | output | read | `""` | DCDU 1 screen line 2: 'R' under the characters shown in reverse video (filled box of their color, black text) |
+| `mip.dcdu1.line02.text` | string | output | read | `""` | DCDU 1 screen line 2: its 30 monospace characters (blank while dark), for hardware that shows text |
+| `mip.dcdu1.line03.color` | string | output | read | `""` | DCDU 1 screen line 3: one color letter per character (W C G A M Y R), upper case large, lower case small |
+| `mip.dcdu1.line03.reverse` | string | output | read | `""` | DCDU 1 screen line 3: 'R' under the characters shown in reverse video (filled box of their color, black text) |
+| `mip.dcdu1.line03.text` | string | output | read | `""` | DCDU 1 screen line 3: its 30 monospace characters (blank while dark), for hardware that shows text |
+| `mip.dcdu1.line04.color` | string | output | read | `""` | DCDU 1 screen line 4: one color letter per character (W C G A M Y R), upper case large, lower case small |
+| `mip.dcdu1.line04.reverse` | string | output | read | `""` | DCDU 1 screen line 4: 'R' under the characters shown in reverse video (filled box of their color, black text) |
+| `mip.dcdu1.line04.text` | string | output | read | `""` | DCDU 1 screen line 4: its 30 monospace characters (blank while dark), for hardware that shows text |
+| `mip.dcdu1.line05.color` | string | output | read | `""` | DCDU 1 screen line 5: one color letter per character (W C G A M Y R), upper case large, lower case small |
+| `mip.dcdu1.line05.reverse` | string | output | read | `""` | DCDU 1 screen line 5: 'R' under the characters shown in reverse video (filled box of their color, black text) |
+| `mip.dcdu1.line05.text` | string | output | read | `""` | DCDU 1 screen line 5: its 30 monospace characters (blank while dark), for hardware that shows text |
+| `mip.dcdu1.line06.color` | string | output | read | `""` | DCDU 1 screen line 6: one color letter per character (W C G A M Y R), upper case large, lower case small |
+| `mip.dcdu1.line06.reverse` | string | output | read | `""` | DCDU 1 screen line 6: 'R' under the characters shown in reverse video (filled box of their color, black text) |
+| `mip.dcdu1.line06.text` | string | output | read | `""` | DCDU 1 screen line 6: its 30 monospace characters (blank while dark), for hardware that shows text |
+| `mip.dcdu1.line07.color` | string | output | read | `""` | DCDU 1 screen line 7: one color letter per character (W C G A M Y R), upper case large, lower case small |
+| `mip.dcdu1.line07.reverse` | string | output | read | `""` | DCDU 1 screen line 7: 'R' under the characters shown in reverse video (filled box of their color, black text) |
+| `mip.dcdu1.line07.text` | string | output | read | `""` | DCDU 1 screen line 7: its 30 monospace characters (blank while dark), for hardware that shows text |
+| `mip.dcdu1.line08.color` | string | output | read | `""` | DCDU 1 screen line 8: one color letter per character (W C G A M Y R), upper case large, lower case small |
+| `mip.dcdu1.line08.reverse` | string | output | read | `""` | DCDU 1 screen line 8: 'R' under the characters shown in reverse video (filled box of their color, black text) |
+| `mip.dcdu1.line08.text` | string | output | read | `""` | DCDU 1 screen line 8: its 30 monospace characters (blank while dark), for hardware that shows text |
+| `mip.dcdu1.line09.color` | string | output | read | `""` | DCDU 1 screen line 9: one color letter per character (W C G A M Y R), upper case large, lower case small |
+| `mip.dcdu1.line09.reverse` | string | output | read | `""` | DCDU 1 screen line 9: 'R' under the characters shown in reverse video (filled box of their color, black text) |
+| `mip.dcdu1.line09.text` | string | output | read | `""` | DCDU 1 screen line 9: its 30 monospace characters (blank while dark), for hardware that shows text |
 
 ## Main instrument panel / DCDU 2
 
@@ -3437,33 +3437,33 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `mip.dcdu2.key.pgeMinus` | bool | pushbutton | momentary | `0` | DCDU 2 key PGEMINUS (momentary: 1 while held) |
 | `mip.dcdu2.key.pgePlus` | bool | pushbutton | momentary | `0` | DCDU 2 key PGEPLUS (momentary: 1 while held) |
 | `mip.dcdu2.key.print` | bool | pushbutton | momentary | `0` | DCDU 2 key PRINT (momentary: 1 while held) |
-| `mip.dcdu2.line01.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"` | DCDU 2 screen line 1: one color letter per character (W C G A M Y R), upper case large, lower case small |
-| `mip.dcdu2.line01.reverse` | string | output | read | `"                              "` | DCDU 2 screen line 1: 'R' under the characters shown in reverse video (filled box of their color, black text) |
-| `mip.dcdu2.line01.text` | string | output | read | `"                              "` | DCDU 2 screen line 1: its 30 monospace characters (blank while dark), for hardware that shows text |
-| `mip.dcdu2.line02.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"` | DCDU 2 screen line 2: one color letter per character (W C G A M Y R), upper case large, lower case small |
-| `mip.dcdu2.line02.reverse` | string | output | read | `"                              "` | DCDU 2 screen line 2: 'R' under the characters shown in reverse video (filled box of their color, black text) |
-| `mip.dcdu2.line02.text` | string | output | read | `"                              "` | DCDU 2 screen line 2: its 30 monospace characters (blank while dark), for hardware that shows text |
-| `mip.dcdu2.line03.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"` | DCDU 2 screen line 3: one color letter per character (W C G A M Y R), upper case large, lower case small |
-| `mip.dcdu2.line03.reverse` | string | output | read | `"                              "` | DCDU 2 screen line 3: 'R' under the characters shown in reverse video (filled box of their color, black text) |
-| `mip.dcdu2.line03.text` | string | output | read | `"                              "` | DCDU 2 screen line 3: its 30 monospace characters (blank while dark), for hardware that shows text |
-| `mip.dcdu2.line04.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"` | DCDU 2 screen line 4: one color letter per character (W C G A M Y R), upper case large, lower case small |
-| `mip.dcdu2.line04.reverse` | string | output | read | `"                              "` | DCDU 2 screen line 4: 'R' under the characters shown in reverse video (filled box of their color, black text) |
-| `mip.dcdu2.line04.text` | string | output | read | `"                              "` | DCDU 2 screen line 4: its 30 monospace characters (blank while dark), for hardware that shows text |
-| `mip.dcdu2.line05.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"` | DCDU 2 screen line 5: one color letter per character (W C G A M Y R), upper case large, lower case small |
-| `mip.dcdu2.line05.reverse` | string | output | read | `"                              "` | DCDU 2 screen line 5: 'R' under the characters shown in reverse video (filled box of their color, black text) |
-| `mip.dcdu2.line05.text` | string | output | read | `"                              "` | DCDU 2 screen line 5: its 30 monospace characters (blank while dark), for hardware that shows text |
-| `mip.dcdu2.line06.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"` | DCDU 2 screen line 6: one color letter per character (W C G A M Y R), upper case large, lower case small |
-| `mip.dcdu2.line06.reverse` | string | output | read | `"                              "` | DCDU 2 screen line 6: 'R' under the characters shown in reverse video (filled box of their color, black text) |
-| `mip.dcdu2.line06.text` | string | output | read | `"                              "` | DCDU 2 screen line 6: its 30 monospace characters (blank while dark), for hardware that shows text |
-| `mip.dcdu2.line07.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"` | DCDU 2 screen line 7: one color letter per character (W C G A M Y R), upper case large, lower case small |
-| `mip.dcdu2.line07.reverse` | string | output | read | `"                              "` | DCDU 2 screen line 7: 'R' under the characters shown in reverse video (filled box of their color, black text) |
-| `mip.dcdu2.line07.text` | string | output | read | `"                              "` | DCDU 2 screen line 7: its 30 monospace characters (blank while dark), for hardware that shows text |
-| `mip.dcdu2.line08.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"` | DCDU 2 screen line 8: one color letter per character (W C G A M Y R), upper case large, lower case small |
-| `mip.dcdu2.line08.reverse` | string | output | read | `"                              "` | DCDU 2 screen line 8: 'R' under the characters shown in reverse video (filled box of their color, black text) |
-| `mip.dcdu2.line08.text` | string | output | read | `"                              "` | DCDU 2 screen line 8: its 30 monospace characters (blank while dark), for hardware that shows text |
-| `mip.dcdu2.line09.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"` | DCDU 2 screen line 9: one color letter per character (W C G A M Y R), upper case large, lower case small |
-| `mip.dcdu2.line09.reverse` | string | output | read | `"                              "` | DCDU 2 screen line 9: 'R' under the characters shown in reverse video (filled box of their color, black text) |
-| `mip.dcdu2.line09.text` | string | output | read | `"                              "` | DCDU 2 screen line 9: its 30 monospace characters (blank while dark), for hardware that shows text |
+| `mip.dcdu2.line01.color` | string | output | read | `""` | DCDU 2 screen line 1: one color letter per character (W C G A M Y R), upper case large, lower case small |
+| `mip.dcdu2.line01.reverse` | string | output | read | `""` | DCDU 2 screen line 1: 'R' under the characters shown in reverse video (filled box of their color, black text) |
+| `mip.dcdu2.line01.text` | string | output | read | `""` | DCDU 2 screen line 1: its 30 monospace characters (blank while dark), for hardware that shows text |
+| `mip.dcdu2.line02.color` | string | output | read | `""` | DCDU 2 screen line 2: one color letter per character (W C G A M Y R), upper case large, lower case small |
+| `mip.dcdu2.line02.reverse` | string | output | read | `""` | DCDU 2 screen line 2: 'R' under the characters shown in reverse video (filled box of their color, black text) |
+| `mip.dcdu2.line02.text` | string | output | read | `""` | DCDU 2 screen line 2: its 30 monospace characters (blank while dark), for hardware that shows text |
+| `mip.dcdu2.line03.color` | string | output | read | `""` | DCDU 2 screen line 3: one color letter per character (W C G A M Y R), upper case large, lower case small |
+| `mip.dcdu2.line03.reverse` | string | output | read | `""` | DCDU 2 screen line 3: 'R' under the characters shown in reverse video (filled box of their color, black text) |
+| `mip.dcdu2.line03.text` | string | output | read | `""` | DCDU 2 screen line 3: its 30 monospace characters (blank while dark), for hardware that shows text |
+| `mip.dcdu2.line04.color` | string | output | read | `""` | DCDU 2 screen line 4: one color letter per character (W C G A M Y R), upper case large, lower case small |
+| `mip.dcdu2.line04.reverse` | string | output | read | `""` | DCDU 2 screen line 4: 'R' under the characters shown in reverse video (filled box of their color, black text) |
+| `mip.dcdu2.line04.text` | string | output | read | `""` | DCDU 2 screen line 4: its 30 monospace characters (blank while dark), for hardware that shows text |
+| `mip.dcdu2.line05.color` | string | output | read | `""` | DCDU 2 screen line 5: one color letter per character (W C G A M Y R), upper case large, lower case small |
+| `mip.dcdu2.line05.reverse` | string | output | read | `""` | DCDU 2 screen line 5: 'R' under the characters shown in reverse video (filled box of their color, black text) |
+| `mip.dcdu2.line05.text` | string | output | read | `""` | DCDU 2 screen line 5: its 30 monospace characters (blank while dark), for hardware that shows text |
+| `mip.dcdu2.line06.color` | string | output | read | `""` | DCDU 2 screen line 6: one color letter per character (W C G A M Y R), upper case large, lower case small |
+| `mip.dcdu2.line06.reverse` | string | output | read | `""` | DCDU 2 screen line 6: 'R' under the characters shown in reverse video (filled box of their color, black text) |
+| `mip.dcdu2.line06.text` | string | output | read | `""` | DCDU 2 screen line 6: its 30 monospace characters (blank while dark), for hardware that shows text |
+| `mip.dcdu2.line07.color` | string | output | read | `""` | DCDU 2 screen line 7: one color letter per character (W C G A M Y R), upper case large, lower case small |
+| `mip.dcdu2.line07.reverse` | string | output | read | `""` | DCDU 2 screen line 7: 'R' under the characters shown in reverse video (filled box of their color, black text) |
+| `mip.dcdu2.line07.text` | string | output | read | `""` | DCDU 2 screen line 7: its 30 monospace characters (blank while dark), for hardware that shows text |
+| `mip.dcdu2.line08.color` | string | output | read | `""` | DCDU 2 screen line 8: one color letter per character (W C G A M Y R), upper case large, lower case small |
+| `mip.dcdu2.line08.reverse` | string | output | read | `""` | DCDU 2 screen line 8: 'R' under the characters shown in reverse video (filled box of their color, black text) |
+| `mip.dcdu2.line08.text` | string | output | read | `""` | DCDU 2 screen line 8: its 30 monospace characters (blank while dark), for hardware that shows text |
+| `mip.dcdu2.line09.color` | string | output | read | `""` | DCDU 2 screen line 9: one color letter per character (W C G A M Y R), upper case large, lower case small |
+| `mip.dcdu2.line09.reverse` | string | output | read | `""` | DCDU 2 screen line 9: 'R' under the characters shown in reverse video (filled box of their color, black text) |
+| `mip.dcdu2.line09.text` | string | output | read | `""` | DCDU 2 screen line 9: its 30 monospace characters (blank while dark), for hardware that shows text |
 
 ## MIP / CAPT
 
@@ -3473,9 +3473,9 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `mip.capt.gpws.gpws` | bool | light | read | `0` | Captain GPWS GPWS light |
 | `mip.capt.gpws.pressed` | bool | pushbutton | momentary | `0` | Captain GPWS pushbutton (momentary: 1 while held) |
 | `mip.capt.gpws.pullUp` | bool | light | read | `0` | Captain GPWS PULLUP light |
-| `mip.capt.ndBrt` | float | analog | write | `0.8` | Captain ND OFF/BRT knob (0 = OFF, 1 = full bright) |
-| `mip.capt.ndImageBrt` | float | analog | write | `0.8` | Captain ND knob outer ring: WX / terrain image brightness (0 = image dark, 1 = full bright) |
-| `mip.capt.pfdBrt` | float | analog | write | `0.8` | Captain PFD OFF/BRT knob (0 = OFF, 1 = full bright) |
+| `mip.capt.ndBrt` | float | analog | write | `0` | Captain ND OFF/BRT knob (0 = OFF, 1 = full bright) |
+| `mip.capt.ndImageBrt` | float | analog | write | `0` | Captain ND knob outer ring: WX / terrain image brightness (0 = image dark, 1 = full bright) |
+| `mip.capt.pfdBrt` | float | analog | write | `0` | Captain PFD OFF/BRT knob (0 = OFF, 1 = full bright) |
 | `mip.capt.pfdNdXfr.pressed` | bool | pushbutton | momentary | `0` | Captain PFD/ND XFR pushbutton (momentary: 1 while held) |
 
 ## MIP / CAPT TERR ON ND 403VU
@@ -3493,11 +3493,11 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `mip.clock.chrono` | string | light | read | `"05:21"` | CHR counter minutes:seconds "05:21" ("" reset) |
 | `mip.clock.dateSet.pressed` | bool | pushbutton | momentary | `0` | DATE/SET (push) pushbutton (momentary: 1 while held) |
 | `mip.clock.et` | string | light | read | `"01:12"` | ET counter hours:minutes "01:12" ("" blank) |
-| `mip.clock.etSelector` | int | rotary | write | `1` | ET selector (0 = RUN, 1 = STP, 2 = RST spring-loaded: write 1 again on release) |
+| `mip.clock.etSelector` | int | rotary | write | `0` | ET selector (0 = RUN, 1 = STP, 2 = RST spring-loaded: write 1 again on release) |
 | `mip.clock.rst.pressed` | bool | pushbutton | momentary | `0` | RST pushbutton (momentary: 1 while held) |
 | `mip.clock.setKnob` | int | encoder | write | `0` | DATE/SET knob rotation counter (+1 per clockwise detent) |
-| `mip.clock.utc` | string | light | read | `"--:--"` | UTC counter hours and minutes: "14:32", date "1105" (month, day), "--:--" without GPS, "" dark; a blank field flashes in SET |
-| `mip.clock.utcSeconds` | string | light | read | `"--"` | UTC counter seconds "07", or the year "26" in date mode |
+| `mip.clock.utc` | string | light | read | `"14:32"` | UTC counter hours and minutes: "14:32", date "1105" (month, day), "--:--" without GPS, "" dark; a blank field flashes in SET |
+| `mip.clock.utcSeconds` | string | light | read | `"07"` | UTC counter seconds "07", or the year "26" in date mode |
 | `mip.clock.utcSelector` | int | rotary | write | `0` | UTC selector (0 = GPS, 1 = INT, 2 = SET) |
 
 ## MIP / DDRMI
@@ -3515,9 +3515,9 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `mip.fo.gpws.gpws` | bool | light | read | `0` | First officer GPWS GPWS light |
 | `mip.fo.gpws.pressed` | bool | pushbutton | momentary | `0` | First officer GPWS pushbutton (momentary: 1 while held) |
 | `mip.fo.gpws.pullUp` | bool | light | read | `0` | First officer GPWS PULLUP light |
-| `mip.fo.ndBrt` | float | analog | write | `0.8` | First officer ND OFF/BRT knob (0 = OFF, 1 = full bright) |
-| `mip.fo.ndImageBrt` | float | analog | write | `0.8` | First officer ND knob outer ring: WX / terrain image brightness (0 = image dark, 1 = full bright) |
-| `mip.fo.pfdBrt` | float | analog | write | `0.8` | First officer PFD OFF/BRT knob (0 = OFF, 1 = full bright) |
+| `mip.fo.ndBrt` | float | analog | write | `0` | First officer ND OFF/BRT knob (0 = OFF, 1 = full bright) |
+| `mip.fo.ndImageBrt` | float | analog | write | `0` | First officer ND knob outer ring: WX / terrain image brightness (0 = image dark, 1 = full bright) |
+| `mip.fo.pfdBrt` | float | analog | write | `0` | First officer PFD OFF/BRT knob (0 = OFF, 1 = full bright) |
 | `mip.fo.pfdNdXfr.pressed` | bool | pushbutton | momentary | `0` | First officer PFD/ND XFR pushbutton (momentary: 1 while held) |
 
 ## MIP / ISIS
@@ -3539,8 +3539,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `mip.brakes.accuPress` | float | light | read | `0` | Triple indicator ACCU PRESS needle (psi) |
 | `mip.brakes.leftPress` | float | light | read | `0` | Triple indicator BRAKES left needle (psi) |
 | `mip.brakes.rightPress` | float | light | read | `0` | Triple indicator BRAKES right needle (psi) |
-| `mip.gear.lever` | bool | switch | write | `1` | L/G lever (0 = UP, 1 = DOWN; locked DOWN on ground) |
-| `mip.gear.leverSolenoid` | bool | output | read | `1` | L/G lever lock solenoid engaged: lever locked DOWN (either main gear compressed, DSC-32-10-40 B) |
+| `mip.gear.lever` | bool | switch | write | `0` | L/G lever (0 = UP, 1 = DOWN; locked DOWN on ground) |
+| `mip.gear.leverSolenoid` | bool | output | read | `0` | L/G lever lock solenoid engaged: lever locked DOWN (either main gear compressed, DSC-32-10-40 B) |
 | `mip.gear.redArrow` | bool | light | read | `0` | L/G lever red arrow (gear not down in landing configuration) |
 
 ## MIP / LDG GEAR, AUTO BRK 402VU
@@ -3556,7 +3556,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `mip.autoBrk.med.decel` | bool | light | read | `0` | AUTO/BRK MED DECEL light |
 | `mip.autoBrk.med.on` | bool | light | read | `0` | AUTO/BRK MED ON light |
 | `mip.autoBrk.med.pressed` | bool | pushbutton | momentary | `0` | AUTO/BRK MED pushbutton (momentary: 1 while held) |
-| `mip.brakes.antiSkidNwStrg` | bool | switch | write | `1` | A/SKID & N/W STRG switch (1 = ON) |
+| `mip.brakes.antiSkidNwStrg` | bool | switch | write | `0` | A/SKID & N/W STRG switch (1 = ON) |
 | `mip.brkFan.hot` | bool | light | read | `0` | BRK FAN HOT light |
 | `mip.brkFan.on` | bool | light | read | `0` | BRK FAN ON light |
 | `mip.brkFan.pressed` | bool | pushbutton | write | `0` | BRK FAN pushbutton (1 = in) |
@@ -3573,8 +3573,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `mip.loudspeaker.capt` | float | analog | write | `0.5` | Captain LOUDSPEAKER volume knob (0 = OFF .. 1 = full); the selected receptions (radio, navaids, INT), never the aural alerts |
-| `mip.loudspeaker.fo` | float | analog | write | `0.5` | F/O LOUDSPEAKER volume knob (0 = OFF .. 1 = full); the selected receptions (radio, navaids, INT), never the aural alerts |
+| `mip.loudspeaker.capt` | float | analog | write | `0` | Captain LOUDSPEAKER volume knob (0 = OFF .. 1 = full); the selected receptions (radio, navaids, INT), never the aural alerts |
+| `mip.loudspeaker.fo` | float | analog | write | `0` | F/O LOUDSPEAKER volume knob (0 = OFF .. 1 = full); the selected receptions (radio, navaids, INT), never the aural alerts |
 
 ## Overhead / 21VU
 
@@ -3621,31 +3621,31 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `overhead.airCond.aftCabinTemp` | float | analog | write | `24` | AFT CABIN zone temperature selector (°C, 18 to 30) |
+| `overhead.airCond.aftCabinTemp` | float | analog | write | `0` | AFT CABIN zone temperature selector (°C, 18 to 30) |
 | `overhead.airCond.apuBleed.fault` | bool | light | read | `0` | APU BLEED FAULT light |
 | `overhead.airCond.apuBleed.on` | bool | light | read | `0` | APU BLEED ON light |
 | `overhead.airCond.apuBleed.pressed` | bool | pushbutton | write | `0` | APU BLEED pushbutton (1 = in) |
-| `overhead.airCond.cockpitTemp` | float | analog | write | `24` | COCKPIT zone temperature selector (°C, 18 COLD to 30 HOT, 24 at 12 o'clock) |
+| `overhead.airCond.cockpitTemp` | float | analog | write | `0` | COCKPIT zone temperature selector (°C, 18 COLD to 30 HOT, 24 at 12 o'clock) |
 | `overhead.airCond.eng1Bleed.fault` | bool | light | read | `0` | ENG 1 BLEED FAULT light |
 | `overhead.airCond.eng1Bleed.off` | bool | light | read | `0` | ENG 1 BLEED OFF light |
-| `overhead.airCond.eng1Bleed.pressed` | bool | pushbutton | write | `1` | ENG 1 BLEED pushbutton (1 = in) |
+| `overhead.airCond.eng1Bleed.pressed` | bool | pushbutton | write | `0` | ENG 1 BLEED pushbutton (1 = in) |
 | `overhead.airCond.eng2Bleed.fault` | bool | light | read | `0` | ENG 2 BLEED FAULT light |
 | `overhead.airCond.eng2Bleed.off` | bool | light | read | `0` | ENG 2 BLEED OFF light |
-| `overhead.airCond.eng2Bleed.pressed` | bool | pushbutton | write | `1` | ENG 2 BLEED pushbutton (1 = in) |
-| `overhead.airCond.fwdCabinTemp` | float | analog | write | `24` | FWD CABIN zone temperature selector (°C, 18 to 30) |
+| `overhead.airCond.eng2Bleed.pressed` | bool | pushbutton | write | `0` | ENG 2 BLEED pushbutton (1 = in) |
+| `overhead.airCond.fwdCabinTemp` | float | analog | write | `0` | FWD CABIN zone temperature selector (°C, 18 to 30) |
 | `overhead.airCond.hotAir.fault` | bool | light | read | `0` | HOT AIR FAULT light |
 | `overhead.airCond.hotAir.off` | bool | light | read | `0` | HOT AIR OFF light |
-| `overhead.airCond.hotAir.pressed` | bool | pushbutton | write | `1` | HOT AIR pushbutton (1 = in) |
+| `overhead.airCond.hotAir.pressed` | bool | pushbutton | write | `0` | HOT AIR pushbutton (1 = in) |
 | `overhead.airCond.pack1.fault` | bool | light | read | `0` | PACK 1 FAULT light |
 | `overhead.airCond.pack1.off` | bool | light | read | `0` | PACK 1 OFF light |
-| `overhead.airCond.pack1.pressed` | bool | pushbutton | write | `1` | PACK 1 pushbutton (1 = in) |
+| `overhead.airCond.pack1.pressed` | bool | pushbutton | write | `0` | PACK 1 pushbutton (1 = in) |
 | `overhead.airCond.pack2.fault` | bool | light | read | `0` | PACK 2 FAULT light |
 | `overhead.airCond.pack2.off` | bool | light | read | `0` | PACK 2 OFF light |
-| `overhead.airCond.pack2.pressed` | bool | pushbutton | write | `1` | PACK 2 pushbutton (1 = in) |
-| `overhead.airCond.packFlow` | int | rotary | write | `1` | PACK FLOW selector (0 = LO, 1 = NORM, 2 = HI) |
+| `overhead.airCond.pack2.pressed` | bool | pushbutton | write | `0` | PACK 2 pushbutton (1 = in) |
+| `overhead.airCond.packFlow` | int | rotary | write | `0` | PACK FLOW selector (0 = LO, 1 = NORM, 2 = HI) |
 | `overhead.airCond.ramAir.on` | bool | light | read | `0` | RAM AIR ON light |
 | `overhead.airCond.ramAir.pressed` | bool | pushbutton | write | `0` | RAM AIR pushbutton (1 = in) |
-| `overhead.airCond.xBleed` | int | rotary | write | `1` | X BLEED selector (0 = SHUT, 1 = AUTO, 2 = OPEN) |
+| `overhead.airCond.xBleed` | int | rotary | write | `0` | X BLEED selector (0 = SHUT, 1 = AUTO, 2 = OPEN) |
 
 ## Overhead / ANTI ICE 25VU
 
@@ -3680,11 +3680,11 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `overhead.press.ditching.on` | bool | light | read | `0` | DITCHING ON light |
 | `overhead.press.ditching.pressed` | bool | pushbutton | write | `0` | DITCHING pushbutton (1 = in) |
-| `overhead.press.ldgElev` | float | rotary | write | `-3000` | LDG ELEV selector (ft, -2000 to 14000; -3000 = AUTO detent) |
-| `overhead.press.manVsCtl` | int | switch | write | `1` | MAN V/S CTL toggle (0 = DN, 1 = neutral, 2 = UP; spring-loaded: write 1 again on release) |
+| `overhead.press.ldgElev` | float | rotary | write | `0` | LDG ELEV selector (ft, -2000 to 14000; -3000 = AUTO detent) |
+| `overhead.press.manVsCtl` | int | switch | write | `0` | MAN V/S CTL toggle (0 = DN, 1 = neutral, 2 = UP; spring-loaded: write 1 again on release) |
 | `overhead.press.modeSel.fault` | bool | light | read | `0` | MODE SEL FAULT light |
 | `overhead.press.modeSel.man` | bool | light | read | `0` | MODE SEL MAN light |
-| `overhead.press.modeSel.pressed` | bool | pushbutton | write | `1` | MODE SEL pushbutton (1 = in) |
+| `overhead.press.modeSel.pressed` | bool | pushbutton | write | `0` | MODE SEL pushbutton (1 = in) |
 
 ## Overhead / CALLS 21VU
 
@@ -3704,15 +3704,15 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `overhead.cargo.aftIsolValve.fault` | bool | light | read | `0` | AFT ISOL VALVE FAULT light |
 | `overhead.cargo.aftIsolValve.off` | bool | light | read | `0` | AFT ISOL VALVE OFF light |
-| `overhead.cargo.aftIsolValve.pressed` | bool | pushbutton | write | `1` | AFT ISOL VALVE pushbutton (1 = in) |
-| `overhead.cargo.aftTemp` | float | analog | write | `15` | AFT cargo temperature selector (°C, 5 COLD to 26 HOT) |
+| `overhead.cargo.aftIsolValve.pressed` | bool | pushbutton | write | `0` | AFT ISOL VALVE pushbutton (1 = in) |
+| `overhead.cargo.aftTemp` | float | analog | write | `0` | AFT cargo temperature selector (°C, 5 COLD to 26 HOT) |
 | `overhead.cargo.fwdIsolValve.fault` | bool | light | read | `0` | FWD ISOL VALVE FAULT light |
 | `overhead.cargo.fwdIsolValve.off` | bool | light | read | `0` | FWD ISOL VALVE OFF light |
-| `overhead.cargo.fwdIsolValve.pressed` | bool | pushbutton | write | `1` | FWD ISOL VALVE pushbutton (1 = in) |
-| `overhead.cargo.fwdTemp` | float | analog | write | `15` | FWD cargo temperature selector (°C, 5 COLD to 26 HOT) |
+| `overhead.cargo.fwdIsolValve.pressed` | bool | pushbutton | write | `0` | FWD ISOL VALVE pushbutton (1 = in) |
+| `overhead.cargo.fwdTemp` | float | analog | write | `0` | FWD cargo temperature selector (°C, 5 COLD to 26 HOT) |
 | `overhead.cargo.hotAir.fault` | bool | light | read | `0` | CARGO HOT AIR FAULT light |
 | `overhead.cargo.hotAir.off` | bool | light | read | `0` | CARGO HOT AIR OFF light |
-| `overhead.cargo.hotAir.pressed` | bool | pushbutton | write | `1` | CARGO HOT AIR pushbutton (1 = in) |
+| `overhead.cargo.hotAir.pressed` | bool | pushbutton | write | `0` | CARGO HOT AIR pushbutton (1 = in) |
 
 ## Overhead / CARGO SMOKE 22VU
 
@@ -3741,7 +3741,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
 | `overhead.ckptDoorVideo.off` | bool | light | read | `0` | COCKPIT DOOR VIDEO OFF light |
-| `overhead.ckptDoorVideo.pressed` | bool | pushbutton | write | `1` | COCKPIT DOOR VIDEO pushbutton (1 = in) |
+| `overhead.ckptDoorVideo.pressed` | bool | pushbutton | write | `0` | COCKPIT DOOR VIDEO pushbutton (1 = in) |
 
 ## Overhead / ELEC 35VU
 
@@ -3749,34 +3749,34 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `overhead.elec.acEssFeed.altn` | bool | light | read | `0` | AC ESS FEED ALTN light |
 | `overhead.elec.acEssFeed.fault` | bool | light | read | `0` | AC ESS FEED FAULT light |
-| `overhead.elec.acEssFeed.pressed` | bool | pushbutton | write | `1` | AC ESS FEED pushbutton (1 = in) |
+| `overhead.elec.acEssFeed.pressed` | bool | pushbutton | write | `0` | AC ESS FEED pushbutton (1 = in) |
 | `overhead.elec.apuGen.fault` | bool | light | read | `0` | APU GEN FAULT light |
 | `overhead.elec.apuGen.off` | bool | light | read | `0` | APU GEN OFF light |
-| `overhead.elec.apuGen.pressed` | bool | pushbutton | write | `1` | APU GEN pushbutton (1 = in) |
+| `overhead.elec.apuGen.pressed` | bool | pushbutton | write | `0` | APU GEN pushbutton (1 = in) |
 | `overhead.elec.bat1.fault` | bool | light | read | `0` | BAT 1 FAULT light |
 | `overhead.elec.bat1.off` | bool | light | read | `0` | BAT 1 OFF light |
 | `overhead.elec.bat1.pressed` | bool | pushbutton | write | `0` | BAT 1 pushbutton (1 = in) |
-| `overhead.elec.bat1Voltmeter` | float | light | read | `26.2` | BAT 1 voltmeter (V, 0.1 resolution) |
+| `overhead.elec.bat1Voltmeter` | float | light | read | `0` | BAT 1 voltmeter (V, 0.1 resolution) |
 | `overhead.elec.bat2.fault` | bool | light | read | `0` | BAT 2 FAULT light |
 | `overhead.elec.bat2.off` | bool | light | read | `0` | BAT 2 OFF light |
 | `overhead.elec.bat2.pressed` | bool | pushbutton | write | `0` | BAT 2 pushbutton (1 = in) |
-| `overhead.elec.bat2Voltmeter` | float | light | read | `26.2` | BAT 2 voltmeter (V, 0.1 resolution) |
+| `overhead.elec.bat2Voltmeter` | float | light | read | `0` | BAT 2 voltmeter (V, 0.1 resolution) |
 | `overhead.elec.busTie.off` | bool | light | read | `0` | BUS TIE OFF light |
-| `overhead.elec.busTie.pressed` | bool | pushbutton | write | `1` | BUS TIE pushbutton (1 = in) |
+| `overhead.elec.busTie.pressed` | bool | pushbutton | write | `0` | BUS TIE pushbutton (1 = in) |
 | `overhead.elec.commercial.off` | bool | light | read | `0` | COMMERCIAL OFF light |
-| `overhead.elec.commercial.pressed` | bool | pushbutton | write | `1` | COMMERCIAL pushbutton (1 = in) |
-| `overhead.elec.extPwr.avail` | bool | light | read | `1` | EXT PWR AVAIL light |
+| `overhead.elec.commercial.pressed` | bool | pushbutton | write | `0` | COMMERCIAL pushbutton (1 = in) |
+| `overhead.elec.extPwr.avail` | bool | light | read | `0` | EXT PWR AVAIL light |
 | `overhead.elec.extPwr.on` | bool | light | read | `0` | EXT PWR ON light |
 | `overhead.elec.extPwr.pressed` | bool | pushbutton | momentary | `0` | EXT PWR pushbutton (momentary: 1 while held) |
 | `overhead.elec.galyCab.fault` | bool | light | read | `0` | GALY & CAB FAULT light |
 | `overhead.elec.galyCab.off` | bool | light | read | `0` | GALY & CAB OFF light |
-| `overhead.elec.galyCab.pressed` | bool | pushbutton | write | `1` | GALY & CAB pushbutton (1 = in) |
+| `overhead.elec.galyCab.pressed` | bool | pushbutton | write | `0` | GALY & CAB pushbutton (1 = in) |
 | `overhead.elec.gen1.fault` | bool | light | read | `0` | GEN 1 FAULT light |
 | `overhead.elec.gen1.off` | bool | light | read | `0` | GEN 1 OFF light |
-| `overhead.elec.gen1.pressed` | bool | pushbutton | write | `1` | GEN 1 pushbutton (1 = in) |
+| `overhead.elec.gen1.pressed` | bool | pushbutton | write | `0` | GEN 1 pushbutton (1 = in) |
 | `overhead.elec.gen2.fault` | bool | light | read | `0` | GEN 2 FAULT light |
 | `overhead.elec.gen2.off` | bool | light | read | `0` | GEN 2 OFF light |
-| `overhead.elec.gen2.pressed` | bool | pushbutton | write | `1` | GEN 2 pushbutton (1 = in) |
+| `overhead.elec.gen2.pressed` | bool | pushbutton | write | `0` | GEN 2 pushbutton (1 = in) |
 | `overhead.elec.idg1.fault` | bool | light | read | `0` | IDG 1 FAULT light |
 | `overhead.elec.idg1.pressed` | bool | pushbutton | momentary | `0` | IDG 1 pushbutton (momentary: 1 while held) |
 | `overhead.elec.idg2.fault` | bool | light | read | `0` | IDG 2 FAULT light |
@@ -3788,7 +3788,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `overhead.emerElecPwr.emerGenTest.pressed` | bool | pushbutton | momentary | `0` | EMER GEN TEST pushbutton (momentary: 1 while held) |
 | `overhead.emerElecPwr.gen1Line.off` | bool | light | read | `0` | GEN 1 LINE OFF light |
-| `overhead.emerElecPwr.gen1Line.pressed` | bool | pushbutton | write | `1` | GEN 1 LINE pushbutton (1 = in) |
+| `overhead.emerElecPwr.gen1Line.pressed` | bool | pushbutton | write | `0` | GEN 1 LINE pushbutton (1 = in) |
 | `overhead.emerElecPwr.gen1Line.smoke` | bool | light | read | `0` | GEN 1 LINE SMOKE light |
 | `overhead.emerElecPwr.manOn.pressed` | bool | pushbutton | momentary | `0` | MAN ON pushbutton (momentary: 1 while held) |
 | `overhead.emerElecPwr.ratAndEmerGen.fault` | bool | light | read | `0` | RAT & EMER GEN FAULT light |
@@ -3810,7 +3810,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `overhead.evac.captPurs` | int | switch | write | `1` | EVAC CAPT & PURS / CAPT selector (0 CAPT: cockpit only, 1 CAPT & PURS: cockpit or cabin) |
+| `overhead.evac.captPurs` | int | switch | write | `0` | EVAC CAPT & PURS / CAPT selector (0 CAPT: cockpit only, 1 CAPT & PURS: cockpit or cabin) |
 | `overhead.evac.command.evac` | bool | light | read | `0` | EVAC COMMAND EVAC light |
 | `overhead.evac.command.on` | bool | light | read | `0` | EVAC COMMAND ON light |
 | `overhead.evac.command.pressed` | bool | pushbutton | write | `0` | EVAC COMMAND pushbutton (1 = in) |
@@ -3834,13 +3834,13 @@ for texts, else what a running Systems reported when the list was made (cold and
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
 | `overhead.fire.apu.fire` | bool | light | read | `0` | APU FIRE FIRE light |
-| `overhead.fire.apu.pressed` | bool | pushbutton | write | `1` | APU FIRE pushbutton (1 = in) |
+| `overhead.fire.apu.pressed` | bool | pushbutton | write | `0` | APU FIRE pushbutton (1 = in) |
 | `overhead.fire.apuAgent.disch` | bool | light | read | `0` | APU AGENT DISCH light |
 | `overhead.fire.apuAgent.pressed` | bool | pushbutton | momentary | `0` | APU AGENT pushbutton (momentary: 1 while held) |
 | `overhead.fire.apuAgent.squib` | bool | light | read | `0` | APU AGENT SQUIB light |
 | `overhead.fire.apuTest.pressed` | bool | pushbutton | momentary | `0` | APU FIRE TEST pushbutton (momentary: 1 while held) |
 | `overhead.fire.eng1.fire` | bool | light | read | `0` | ENG 1 FIRE FIRE light |
-| `overhead.fire.eng1.pressed` | bool | pushbutton | write | `1` | ENG 1 FIRE pushbutton (1 = in) |
+| `overhead.fire.eng1.pressed` | bool | pushbutton | write | `0` | ENG 1 FIRE pushbutton (1 = in) |
 | `overhead.fire.eng1Agent1.disch` | bool | light | read | `0` | ENG 1 AGENT 1 DISCH light |
 | `overhead.fire.eng1Agent1.pressed` | bool | pushbutton | momentary | `0` | ENG 1 AGENT 1 pushbutton (momentary: 1 while held) |
 | `overhead.fire.eng1Agent1.squib` | bool | light | read | `0` | ENG 1 AGENT 1 SQUIB light |
@@ -3849,7 +3849,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `overhead.fire.eng1Agent2.squib` | bool | light | read | `0` | ENG 1 AGENT 2 SQUIB light |
 | `overhead.fire.eng1Test.pressed` | bool | pushbutton | momentary | `0` | ENG 1 FIRE TEST pushbutton (momentary: 1 while held) |
 | `overhead.fire.eng2.fire` | bool | light | read | `0` | ENG 2 FIRE FIRE light |
-| `overhead.fire.eng2.pressed` | bool | pushbutton | write | `1` | ENG 2 FIRE pushbutton (1 = in) |
+| `overhead.fire.eng2.pressed` | bool | pushbutton | write | `0` | ENG 2 FIRE pushbutton (1 = in) |
 | `overhead.fire.eng2Agent1.disch` | bool | light | read | `0` | ENG 2 AGENT 1 DISCH light |
 | `overhead.fire.eng2Agent1.pressed` | bool | pushbutton | momentary | `0` | ENG 2 AGENT 1 pushbutton (momentary: 1 while held) |
 | `overhead.fire.eng2Agent1.squib` | bool | light | read | `0` | ENG 2 AGENT 1 SQUIB light |
@@ -3864,13 +3864,13 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `overhead.fltCtl.elac1.fault` | bool | light | read | `0` | ELAC 1 FAULT light |
 | `overhead.fltCtl.elac1.off` | bool | light | read | `0` | ELAC 1 OFF light |
-| `overhead.fltCtl.elac1.pressed` | bool | pushbutton | write | `1` | ELAC 1 pushbutton (1 = in) |
+| `overhead.fltCtl.elac1.pressed` | bool | pushbutton | write | `0` | ELAC 1 pushbutton (1 = in) |
 | `overhead.fltCtl.fac1.fault` | bool | light | read | `0` | FAC 1 FAULT light |
 | `overhead.fltCtl.fac1.off` | bool | light | read | `0` | FAC 1 OFF light |
-| `overhead.fltCtl.fac1.pressed` | bool | pushbutton | write | `1` | FAC 1 pushbutton (1 = in) |
+| `overhead.fltCtl.fac1.pressed` | bool | pushbutton | write | `0` | FAC 1 pushbutton (1 = in) |
 | `overhead.fltCtl.sec1.fault` | bool | light | read | `0` | SEC 1 FAULT light |
 | `overhead.fltCtl.sec1.off` | bool | light | read | `0` | SEC 1 OFF light |
-| `overhead.fltCtl.sec1.pressed` | bool | pushbutton | write | `1` | SEC 1 pushbutton (1 = in) |
+| `overhead.fltCtl.sec1.pressed` | bool | pushbutton | write | `0` | SEC 1 pushbutton (1 = in) |
 
 ## Overhead / FLT CTL 24VU
 
@@ -3878,16 +3878,16 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `overhead.fltCtl.elac2.fault` | bool | light | read | `0` | ELAC 2 FAULT light |
 | `overhead.fltCtl.elac2.off` | bool | light | read | `0` | ELAC 2 OFF light |
-| `overhead.fltCtl.elac2.pressed` | bool | pushbutton | write | `1` | ELAC 2 pushbutton (1 = in) |
+| `overhead.fltCtl.elac2.pressed` | bool | pushbutton | write | `0` | ELAC 2 pushbutton (1 = in) |
 | `overhead.fltCtl.fac2.fault` | bool | light | read | `0` | FAC 2 FAULT light |
 | `overhead.fltCtl.fac2.off` | bool | light | read | `0` | FAC 2 OFF light |
-| `overhead.fltCtl.fac2.pressed` | bool | pushbutton | write | `1` | FAC 2 pushbutton (1 = in) |
+| `overhead.fltCtl.fac2.pressed` | bool | pushbutton | write | `0` | FAC 2 pushbutton (1 = in) |
 | `overhead.fltCtl.sec2.fault` | bool | light | read | `0` | SEC 2 FAULT light |
 | `overhead.fltCtl.sec2.off` | bool | light | read | `0` | SEC 2 OFF light |
-| `overhead.fltCtl.sec2.pressed` | bool | pushbutton | write | `1` | SEC 2 pushbutton (1 = in) |
+| `overhead.fltCtl.sec2.pressed` | bool | pushbutton | write | `0` | SEC 2 pushbutton (1 = in) |
 | `overhead.fltCtl.sec3.fault` | bool | light | read | `0` | SEC 3 FAULT light |
 | `overhead.fltCtl.sec3.off` | bool | light | read | `0` | SEC 3 OFF light |
-| `overhead.fltCtl.sec3.pressed` | bool | pushbutton | write | `1` | SEC 3 pushbutton (1 = in) |
+| `overhead.fltCtl.sec3.pressed` | bool | pushbutton | write | `0` | SEC 3 pushbutton (1 = in) |
 
 ## Overhead / FUEL 40VU
 
@@ -3895,25 +3895,25 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `overhead.fuel.ctrTkPump1.fault` | bool | light | read | `0` | CTR TK PUMP 1 FAULT light |
 | `overhead.fuel.ctrTkPump1.off` | bool | light | read | `0` | CTR TK PUMP 1 OFF light |
-| `overhead.fuel.ctrTkPump1.pressed` | bool | pushbutton | write | `1` | CTR TK PUMP 1 pushbutton (1 = in) |
+| `overhead.fuel.ctrTkPump1.pressed` | bool | pushbutton | write | `0` | CTR TK PUMP 1 pushbutton (1 = in) |
 | `overhead.fuel.ctrTkPump2.fault` | bool | light | read | `0` | CTR TK PUMP 2 FAULT light |
 | `overhead.fuel.ctrTkPump2.off` | bool | light | read | `0` | CTR TK PUMP 2 OFF light |
-| `overhead.fuel.ctrTkPump2.pressed` | bool | pushbutton | write | `1` | CTR TK PUMP 2 pushbutton (1 = in) |
+| `overhead.fuel.ctrTkPump2.pressed` | bool | pushbutton | write | `0` | CTR TK PUMP 2 pushbutton (1 = in) |
 | `overhead.fuel.lTkPump1.fault` | bool | light | read | `0` | L TK PUMP 1 FAULT light |
 | `overhead.fuel.lTkPump1.off` | bool | light | read | `0` | L TK PUMP 1 OFF light |
-| `overhead.fuel.lTkPump1.pressed` | bool | pushbutton | write | `1` | L TK PUMP 1 pushbutton (1 = in) |
+| `overhead.fuel.lTkPump1.pressed` | bool | pushbutton | write | `0` | L TK PUMP 1 pushbutton (1 = in) |
 | `overhead.fuel.lTkPump2.fault` | bool | light | read | `0` | L TK PUMP 2 FAULT light |
 | `overhead.fuel.lTkPump2.off` | bool | light | read | `0` | L TK PUMP 2 OFF light |
-| `overhead.fuel.lTkPump2.pressed` | bool | pushbutton | write | `1` | L TK PUMP 2 pushbutton (1 = in) |
+| `overhead.fuel.lTkPump2.pressed` | bool | pushbutton | write | `0` | L TK PUMP 2 pushbutton (1 = in) |
 | `overhead.fuel.modeSel.fault` | bool | light | read | `0` | FUEL MODE SEL FAULT light |
 | `overhead.fuel.modeSel.man` | bool | light | read | `0` | FUEL MODE SEL MAN light |
-| `overhead.fuel.modeSel.pressed` | bool | pushbutton | write | `1` | FUEL MODE SEL pushbutton (1 = in) |
+| `overhead.fuel.modeSel.pressed` | bool | pushbutton | write | `0` | FUEL MODE SEL pushbutton (1 = in) |
 | `overhead.fuel.rTkPump1.fault` | bool | light | read | `0` | R TK PUMP 1 FAULT light |
 | `overhead.fuel.rTkPump1.off` | bool | light | read | `0` | R TK PUMP 1 OFF light |
-| `overhead.fuel.rTkPump1.pressed` | bool | pushbutton | write | `1` | R TK PUMP 1 pushbutton (1 = in) |
+| `overhead.fuel.rTkPump1.pressed` | bool | pushbutton | write | `0` | R TK PUMP 1 pushbutton (1 = in) |
 | `overhead.fuel.rTkPump2.fault` | bool | light | read | `0` | R TK PUMP 2 FAULT light |
 | `overhead.fuel.rTkPump2.off` | bool | light | read | `0` | R TK PUMP 2 OFF light |
-| `overhead.fuel.rTkPump2.pressed` | bool | pushbutton | write | `1` | R TK PUMP 2 pushbutton (1 = in) |
+| `overhead.fuel.rTkPump2.pressed` | bool | pushbutton | write | `0` | R TK PUMP 2 pushbutton (1 = in) |
 | `overhead.fuel.xFeed.on` | bool | light | read | `0` | FUEL X FEED ON light |
 | `overhead.fuel.xFeed.open` | bool | light | read | `0` | FUEL X FEED OPEN light |
 | `overhead.fuel.xFeed.pressed` | bool | pushbutton | write | `0` | FUEL X FEED pushbutton (1 = in) |
@@ -3923,17 +3923,17 @@ for texts, else what a running Systems reported when the list was made (cold and
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
 | `overhead.gpws.flapMode.off` | bool | light | read | `0` | GPWS FLAP MODE OFF light |
-| `overhead.gpws.flapMode.pressed` | bool | pushbutton | write | `1` | GPWS FLAP MODE pushbutton (1 = in) |
+| `overhead.gpws.flapMode.pressed` | bool | pushbutton | write | `0` | GPWS FLAP MODE pushbutton (1 = in) |
 | `overhead.gpws.gsMode.off` | bool | light | read | `0` | GPWS G/S MODE OFF light |
-| `overhead.gpws.gsMode.pressed` | bool | pushbutton | write | `1` | GPWS G/S MODE pushbutton (1 = in) |
+| `overhead.gpws.gsMode.pressed` | bool | pushbutton | write | `0` | GPWS G/S MODE pushbutton (1 = in) |
 | `overhead.gpws.ldgFlap3.on` | bool | light | read | `0` | GPWS LDG FLAP 3 ON light |
 | `overhead.gpws.ldgFlap3.pressed` | bool | pushbutton | write | `0` | GPWS LDG FLAP 3 pushbutton (1 = in) |
 | `overhead.gpws.sys.fault` | bool | light | read | `0` | GPWS SYS FAULT light |
 | `overhead.gpws.sys.off` | bool | light | read | `0` | GPWS SYS OFF light |
-| `overhead.gpws.sys.pressed` | bool | pushbutton | write | `1` | GPWS SYS pushbutton (1 = in) |
+| `overhead.gpws.sys.pressed` | bool | pushbutton | write | `0` | GPWS SYS pushbutton (1 = in) |
 | `overhead.gpws.terr.fault` | bool | light | read | `0` | GPWS TERR FAULT light |
 | `overhead.gpws.terr.off` | bool | light | read | `0` | GPWS TERR OFF light |
-| `overhead.gpws.terr.pressed` | bool | pushbutton | write | `1` | GPWS TERR pushbutton (1 = in) |
+| `overhead.gpws.terr.pressed` | bool | pushbutton | write | `0` | GPWS TERR pushbutton (1 = in) |
 
 ## Overhead / HYD 40VU
 
@@ -3941,16 +3941,16 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `overhead.hyd.blueElecPump.fault` | bool | light | read | `0` | BLUE ELEC PUMP FAULT light |
 | `overhead.hyd.blueElecPump.off` | bool | light | read | `0` | BLUE ELEC PUMP OFF light |
-| `overhead.hyd.blueElecPump.pressed` | bool | pushbutton | write | `1` | BLUE ELEC PUMP pushbutton (1 = in) |
+| `overhead.hyd.blueElecPump.pressed` | bool | pushbutton | write | `0` | BLUE ELEC PUMP pushbutton (1 = in) |
 | `overhead.hyd.eng1Pump.fault` | bool | light | read | `0` | ENG 1 PUMP FAULT light |
 | `overhead.hyd.eng1Pump.off` | bool | light | read | `0` | ENG 1 PUMP OFF light |
-| `overhead.hyd.eng1Pump.pressed` | bool | pushbutton | write | `1` | ENG 1 PUMP pushbutton (1 = in) |
+| `overhead.hyd.eng1Pump.pressed` | bool | pushbutton | write | `0` | ENG 1 PUMP pushbutton (1 = in) |
 | `overhead.hyd.eng2Pump.fault` | bool | light | read | `0` | ENG 2 PUMP FAULT light |
 | `overhead.hyd.eng2Pump.off` | bool | light | read | `0` | ENG 2 PUMP OFF light |
-| `overhead.hyd.eng2Pump.pressed` | bool | pushbutton | write | `1` | ENG 2 PUMP pushbutton (1 = in) |
+| `overhead.hyd.eng2Pump.pressed` | bool | pushbutton | write | `0` | ENG 2 PUMP pushbutton (1 = in) |
 | `overhead.hyd.ptu.fault` | bool | light | read | `0` | PTU FAULT light |
 | `overhead.hyd.ptu.off` | bool | light | read | `0` | PTU OFF light |
-| `overhead.hyd.ptu.pressed` | bool | pushbutton | write | `1` | PTU pushbutton (1 = in) |
+| `overhead.hyd.ptu.pressed` | bool | pushbutton | write | `0` | PTU pushbutton (1 = in) |
 | `overhead.hyd.ratManOn.pressed` | bool | pushbutton | momentary | `0` | RAT MAN ON pushbutton (momentary: 1 while held) |
 | `overhead.hyd.yellowElecPump.fault` | bool | light | read | `0` | YELLOW ELEC PUMP FAULT light |
 | `overhead.hyd.yellowElecPump.on` | bool | light | read | `0` | YELLOW ELEC PUMP ON light |
@@ -3960,10 +3960,10 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `overhead.intLt.annLt` | int | switch | write | `1` | ANN LT switch (0 = DIM, 1 = BRT, 2 = TEST) |
+| `overhead.intLt.annLt` | int | switch | write | `0` | ANN LT switch (0 = DIM, 1 = BRT, 2 = TEST) |
 | `overhead.intLt.dome` | int | switch | write | `0` | DOME switch (0 = OFF, 1 = DIM, 2 = BRT) |
 | `overhead.intLt.iceIndStbyCompass` | bool | switch | write | `0` | ICE IND & STBY COMPASS switch (1 = ON) |
-| `overhead.intLt.ovhdIntegLt` | float | analog | write | `1` | OVHD INTEG LT knob (0 = OFF .. 1 = BRT) |
+| `overhead.intLt.ovhdIntegLt` | float | analog | write | `0` | OVHD INTEG LT knob (0 = OFF .. 1 = BRT) |
 
 ## Overhead / MAINT 50VU
 
@@ -3982,11 +3982,11 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `overhead.maint.fadecGndPwr2.on` | bool | light | read | `0` | ENG 2 FADEC GND PWR ON light |
 | `overhead.maint.fadecGndPwr2.pressed` | bool | pushbutton | write | `0` | ENG 2 FADEC GND PWR pushbutton (1 = in) |
 | `overhead.maint.leakMeasurementB.off` | bool | light | read | `0` | LEAK MEAS B OFF light |
-| `overhead.maint.leakMeasurementB.pressed` | bool | pushbutton | write | `1` | LEAK MEAS B pushbutton (1 = in) |
+| `overhead.maint.leakMeasurementB.pressed` | bool | pushbutton | write | `0` | LEAK MEAS B pushbutton (1 = in) |
 | `overhead.maint.leakMeasurementG.off` | bool | light | read | `0` | LEAK MEAS G OFF light |
-| `overhead.maint.leakMeasurementG.pressed` | bool | pushbutton | write | `1` | LEAK MEAS G pushbutton (1 = in) |
+| `overhead.maint.leakMeasurementG.pressed` | bool | pushbutton | write | `0` | LEAK MEAS G pushbutton (1 = in) |
 | `overhead.maint.leakMeasurementY.off` | bool | light | read | `0` | LEAK MEAS Y OFF light |
-| `overhead.maint.leakMeasurementY.pressed` | bool | pushbutton | write | `1` | LEAK MEAS Y pushbutton (1 = in) |
+| `overhead.maint.leakMeasurementY.pressed` | bool | pushbutton | write | `0` | LEAK MEAS Y pushbutton (1 = in) |
 | `overhead.maint.oxyTmrReset.fault` | bool | light | read | `0` | OXYGEN TMR RESET FAULT light |
 | `overhead.maint.oxyTmrReset.on` | bool | light | read | `0` | OXYGEN TMR RESET ON light |
 | `overhead.maint.oxyTmrReset.pressed` | bool | pushbutton | momentary | `0` | OXYGEN TMR RESET pushbutton (momentary: 1 while held) |
@@ -4043,7 +4043,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `pedestal.rmp3.nav.on` | bool | light | read | `0` | RMP 3 NAV (guarded) green light |
 | `pedestal.rmp3.nav.pressed` | bool | pushbutton | momentary | `0` | RMP 3 NAV (guarded) key (momentary) |
 | `pedestal.rmp3.outerKnob` | int | encoder | write | `0` | RMP 3 outer tuning knob counter (+1 per clockwise detent) |
-| `pedestal.rmp3.power` | bool | switch | write | `1` | RMP 3 ON/OFF switch (1 = ON) |
+| `pedestal.rmp3.power` | bool | switch | write | `0` | RMP 3 ON/OFF switch (1 = ON) |
 | `pedestal.rmp3.sel` | bool | light | read | `0` | RMP 3 SEL amber light |
 | `pedestal.rmp3.standby` | string | light | read | `"121.500"` | RMP 3 STBY/CRS window ("121.500", "C-123", "" dark) |
 | `pedestal.rmp3.transfer.on` | bool | light | read | `0` | RMP 3 transfer green light |
@@ -4072,18 +4072,18 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `overhead.ventilation.blower.fault` | bool | light | read | `0` | BLOWER FAULT light |
 | `overhead.ventilation.blower.ovrd` | bool | light | read | `0` | BLOWER OVRD light |
-| `overhead.ventilation.blower.pressed` | bool | pushbutton | write | `1` | BLOWER pushbutton (1 = in) |
+| `overhead.ventilation.blower.pressed` | bool | pushbutton | write | `0` | BLOWER pushbutton (1 = in) |
 | `overhead.ventilation.cabFans.off` | bool | light | read | `0` | CAB FANS OFF light |
-| `overhead.ventilation.cabFans.pressed` | bool | pushbutton | write | `1` | CAB FANS pushbutton (1 = in) |
+| `overhead.ventilation.cabFans.pressed` | bool | pushbutton | write | `0` | CAB FANS pushbutton (1 = in) |
 | `overhead.ventilation.extract.fault` | bool | light | read | `0` | EXTRACT FAULT light |
 | `overhead.ventilation.extract.ovrd` | bool | light | read | `0` | EXTRACT OVRD light |
-| `overhead.ventilation.extract.pressed` | bool | pushbutton | write | `1` | EXTRACT pushbutton (1 = in) |
+| `overhead.ventilation.extract.pressed` | bool | pushbutton | write | `0` | EXTRACT pushbutton (1 = in) |
 
 ## Oxygen
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `oxygen.crewBottlePsi` | float | service | write | `1850` | Crew oxygen cylinder pressure (psi, 0 to 1850: serviced on ground) |
+| `oxygen.crewBottlePsi` | float | service | write | `0` | Crew oxygen cylinder pressure (psi, 0 to 1850: serviced on ground) |
 | `oxygen.pax.generatorsUsed` | float | light | read | `0` | Passenger oxygen chemical generators fired (fraction 0..1, burning or exhausted) |
 | `oxygen.pax.masksReleased` | float | light | read | `0` | Passenger oxygen mask containers open (fraction 0..1) |
 | `oxygen.pax.oxygenMinutesLeft` | float | light | read | `0` | Passenger oxygen: minutes left of the generators burning (0: none) |
@@ -4120,7 +4120,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
 | `pedestal.intLt.floodLtMainPnl` | float | analog | write | `0` | FLOOD LT MAIN PNL knob (0 = OFF .. 1 = BRT) |
-| `pedestal.intLt.integLtMainPnlPed` | float | analog | write | `1` | INTEG LT MAIN PNL & PED knob (0 = OFF .. 1 = BRT) |
+| `pedestal.intLt.integLtMainPnlPed` | float | analog | write | `0` | INTEG LT MAIN PNL & PED knob (0 = OFF .. 1 = BRT) |
 
 ## Pedestal / 112VU
 
@@ -4151,50 +4151,50 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `pedestal.acp1.reset` | bool | pushbutton | momentary | `0` | ACP 1 SELCAL/CALL RESET key |
 | `pedestal.acp1.rx.adf1.light` | bool | light | read | `0` | ACP 1 ADF 1 reception knob integral white light (knob out) |
 | `pedestal.acp1.rx.adf1.on` | bool | switch | write | `0` | ACP 1 ADF 1 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp1.rx.adf1.volume` | float | analog | write | `0.6` | ACP 1 ADF 1 reception knob volume (0..1) |
+| `pedestal.acp1.rx.adf1.volume` | float | analog | write | `0` | ACP 1 ADF 1 reception knob volume (0..1) |
 | `pedestal.acp1.rx.adf2.light` | bool | light | read | `0` | ACP 1 ADF 2 reception knob integral white light (knob out) |
 | `pedestal.acp1.rx.adf2.on` | bool | switch | write | `0` | ACP 1 ADF 2 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp1.rx.adf2.volume` | float | analog | write | `0.6` | ACP 1 ADF 2 reception knob volume (0..1) |
+| `pedestal.acp1.rx.adf2.volume` | float | analog | write | `0` | ACP 1 ADF 2 reception knob volume (0..1) |
 | `pedestal.acp1.rx.cab.light` | bool | light | read | `0` | ACP 1 CAB reception knob integral white light (knob out) |
 | `pedestal.acp1.rx.cab.on` | bool | switch | write | `0` | ACP 1 CAB reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp1.rx.cab.volume` | float | analog | write | `0.6` | ACP 1 CAB reception knob volume (0..1) |
+| `pedestal.acp1.rx.cab.volume` | float | analog | write | `0` | ACP 1 CAB reception knob volume (0..1) |
 | `pedestal.acp1.rx.hf1.light` | bool | light | read | `0` | ACP 1 HF 1 reception knob integral white light (knob out) |
 | `pedestal.acp1.rx.hf1.on` | bool | switch | write | `0` | ACP 1 HF 1 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp1.rx.hf1.volume` | float | analog | write | `0.6` | ACP 1 HF 1 reception knob volume (0..1) |
+| `pedestal.acp1.rx.hf1.volume` | float | analog | write | `0` | ACP 1 HF 1 reception knob volume (0..1) |
 | `pedestal.acp1.rx.hf2.light` | bool | light | read | `0` | ACP 1 HF 2 reception knob integral white light (knob out) |
 | `pedestal.acp1.rx.hf2.on` | bool | switch | write | `0` | ACP 1 HF 2 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp1.rx.hf2.volume` | float | analog | write | `0.6` | ACP 1 HF 2 reception knob volume (0..1) |
+| `pedestal.acp1.rx.hf2.volume` | float | analog | write | `0` | ACP 1 HF 2 reception knob volume (0..1) |
 | `pedestal.acp1.rx.int.light` | bool | light | read | `0` | ACP 1 INT reception knob integral white light (knob out) |
-| `pedestal.acp1.rx.int.on` | bool | switch | write | `1` | ACP 1 INT reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp1.rx.int.volume` | float | analog | write | `0.6` | ACP 1 INT reception knob volume (0..1) |
+| `pedestal.acp1.rx.int.on` | bool | switch | write | `0` | ACP 1 INT reception knob (1 = out: channel selected, 0 = pushed in) |
+| `pedestal.acp1.rx.int.volume` | float | analog | write | `0` | ACP 1 INT reception knob volume (0..1) |
 | `pedestal.acp1.rx.ls.light` | bool | light | read | `0` | ACP 1 LS reception knob integral white light (knob out) |
 | `pedestal.acp1.rx.ls.on` | bool | switch | write | `0` | ACP 1 LS reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp1.rx.ls.volume` | float | analog | write | `0.6` | ACP 1 LS reception knob volume (0..1) |
+| `pedestal.acp1.rx.ls.volume` | float | analog | write | `0` | ACP 1 LS reception knob volume (0..1) |
 | `pedestal.acp1.rx.mkr.light` | bool | light | read | `0` | ACP 1 MKR reception knob integral white light (knob out) |
 | `pedestal.acp1.rx.mkr.on` | bool | switch | write | `0` | ACP 1 MKR reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp1.rx.mkr.volume` | float | analog | write | `0.6` | ACP 1 MKR reception knob volume (0..1) |
+| `pedestal.acp1.rx.mkr.volume` | float | analog | write | `0` | ACP 1 MKR reception knob volume (0..1) |
 | `pedestal.acp1.rx.mls.light` | bool | light | read | `0` | ACP 1 MLS reception knob integral white light (knob out) |
 | `pedestal.acp1.rx.mls.on` | bool | switch | write | `0` | ACP 1 MLS reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp1.rx.mls.volume` | float | analog | write | `0.6` | ACP 1 MLS reception knob volume (0..1) |
+| `pedestal.acp1.rx.mls.volume` | float | analog | write | `0` | ACP 1 MLS reception knob volume (0..1) |
 | `pedestal.acp1.rx.pa.light` | bool | light | read | `0` | ACP 1 PA reception knob integral white light (knob out) |
 | `pedestal.acp1.rx.pa.on` | bool | switch | write | `0` | ACP 1 PA reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp1.rx.pa.volume` | float | analog | write | `0.6` | ACP 1 PA reception knob volume (0..1) |
+| `pedestal.acp1.rx.pa.volume` | float | analog | write | `0` | ACP 1 PA reception knob volume (0..1) |
 | `pedestal.acp1.rx.vhf1.light` | bool | light | read | `0` | ACP 1 VHF 1 reception knob integral white light (knob out) |
-| `pedestal.acp1.rx.vhf1.on` | bool | switch | write | `1` | ACP 1 VHF 1 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp1.rx.vhf1.volume` | float | analog | write | `0.6` | ACP 1 VHF 1 reception knob volume (0..1) |
+| `pedestal.acp1.rx.vhf1.on` | bool | switch | write | `0` | ACP 1 VHF 1 reception knob (1 = out: channel selected, 0 = pushed in) |
+| `pedestal.acp1.rx.vhf1.volume` | float | analog | write | `0` | ACP 1 VHF 1 reception knob volume (0..1) |
 | `pedestal.acp1.rx.vhf2.light` | bool | light | read | `0` | ACP 1 VHF 2 reception knob integral white light (knob out) |
 | `pedestal.acp1.rx.vhf2.on` | bool | switch | write | `0` | ACP 1 VHF 2 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp1.rx.vhf2.volume` | float | analog | write | `0.6` | ACP 1 VHF 2 reception knob volume (0..1) |
+| `pedestal.acp1.rx.vhf2.volume` | float | analog | write | `0` | ACP 1 VHF 2 reception knob volume (0..1) |
 | `pedestal.acp1.rx.vhf3.light` | bool | light | read | `0` | ACP 1 VHF 3 reception knob integral white light (knob out) |
 | `pedestal.acp1.rx.vhf3.on` | bool | switch | write | `0` | ACP 1 VHF 3 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp1.rx.vhf3.volume` | float | analog | write | `0.6` | ACP 1 VHF 3 reception knob volume (0..1) |
+| `pedestal.acp1.rx.vhf3.volume` | float | analog | write | `0` | ACP 1 VHF 3 reception knob volume (0..1) |
 | `pedestal.acp1.rx.vor1.light` | bool | light | read | `0` | ACP 1 VOR 1 reception knob integral white light (knob out) |
 | `pedestal.acp1.rx.vor1.on` | bool | switch | write | `0` | ACP 1 VOR 1 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp1.rx.vor1.volume` | float | analog | write | `0.6` | ACP 1 VOR 1 reception knob volume (0..1) |
+| `pedestal.acp1.rx.vor1.volume` | float | analog | write | `0` | ACP 1 VOR 1 reception knob volume (0..1) |
 | `pedestal.acp1.rx.vor2.light` | bool | light | read | `0` | ACP 1 VOR 2 reception knob integral white light (knob out) |
 | `pedestal.acp1.rx.vor2.on` | bool | switch | write | `0` | ACP 1 VOR 2 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp1.rx.vor2.volume` | float | analog | write | `0.6` | ACP 1 VOR 2 reception knob volume (0..1) |
-| `pedestal.acp1.tx` | int | rotary | write | `1` | ACP 1 transmission key selected (0 none, 1..3 VHF 1..3, 4..5 HF 1..2 (not fitted), 6 INT, 7 CAB) |
+| `pedestal.acp1.rx.vor2.volume` | float | analog | write | `0` | ACP 1 VOR 2 reception knob volume (0..1) |
+| `pedestal.acp1.tx` | int | rotary | write | `0` | ACP 1 transmission key selected (0 none, 1..3 VHF 1..3, 4..5 HF 1..2 (not fitted), 6 INT, 7 CAB) |
 | `pedestal.acp1.vhf1.call` | bool | light | read | `0` | ACP 1 VHF1 key CALL legend (amber, flashing: SELCAL) |
 | `pedestal.acp1.vhf1.on` | bool | light | read | `0` | ACP 1 VHF1 key three green lines |
 | `pedestal.acp1.vhf1.pressed` | bool | pushbutton | momentary | `0` | ACP 1 VHF1 transmission key (momentary) |
@@ -4224,50 +4224,50 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `pedestal.acp2.reset` | bool | pushbutton | momentary | `0` | ACP 2 SELCAL/CALL RESET key |
 | `pedestal.acp2.rx.adf1.light` | bool | light | read | `0` | ACP 2 ADF 1 reception knob integral white light (knob out) |
 | `pedestal.acp2.rx.adf1.on` | bool | switch | write | `0` | ACP 2 ADF 1 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp2.rx.adf1.volume` | float | analog | write | `0.6` | ACP 2 ADF 1 reception knob volume (0..1) |
+| `pedestal.acp2.rx.adf1.volume` | float | analog | write | `0` | ACP 2 ADF 1 reception knob volume (0..1) |
 | `pedestal.acp2.rx.adf2.light` | bool | light | read | `0` | ACP 2 ADF 2 reception knob integral white light (knob out) |
 | `pedestal.acp2.rx.adf2.on` | bool | switch | write | `0` | ACP 2 ADF 2 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp2.rx.adf2.volume` | float | analog | write | `0.6` | ACP 2 ADF 2 reception knob volume (0..1) |
+| `pedestal.acp2.rx.adf2.volume` | float | analog | write | `0` | ACP 2 ADF 2 reception knob volume (0..1) |
 | `pedestal.acp2.rx.cab.light` | bool | light | read | `0` | ACP 2 CAB reception knob integral white light (knob out) |
 | `pedestal.acp2.rx.cab.on` | bool | switch | write | `0` | ACP 2 CAB reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp2.rx.cab.volume` | float | analog | write | `0.6` | ACP 2 CAB reception knob volume (0..1) |
+| `pedestal.acp2.rx.cab.volume` | float | analog | write | `0` | ACP 2 CAB reception knob volume (0..1) |
 | `pedestal.acp2.rx.hf1.light` | bool | light | read | `0` | ACP 2 HF 1 reception knob integral white light (knob out) |
 | `pedestal.acp2.rx.hf1.on` | bool | switch | write | `0` | ACP 2 HF 1 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp2.rx.hf1.volume` | float | analog | write | `0.6` | ACP 2 HF 1 reception knob volume (0..1) |
+| `pedestal.acp2.rx.hf1.volume` | float | analog | write | `0` | ACP 2 HF 1 reception knob volume (0..1) |
 | `pedestal.acp2.rx.hf2.light` | bool | light | read | `0` | ACP 2 HF 2 reception knob integral white light (knob out) |
 | `pedestal.acp2.rx.hf2.on` | bool | switch | write | `0` | ACP 2 HF 2 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp2.rx.hf2.volume` | float | analog | write | `0.6` | ACP 2 HF 2 reception knob volume (0..1) |
+| `pedestal.acp2.rx.hf2.volume` | float | analog | write | `0` | ACP 2 HF 2 reception knob volume (0..1) |
 | `pedestal.acp2.rx.int.light` | bool | light | read | `0` | ACP 2 INT reception knob integral white light (knob out) |
-| `pedestal.acp2.rx.int.on` | bool | switch | write | `1` | ACP 2 INT reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp2.rx.int.volume` | float | analog | write | `0.6` | ACP 2 INT reception knob volume (0..1) |
+| `pedestal.acp2.rx.int.on` | bool | switch | write | `0` | ACP 2 INT reception knob (1 = out: channel selected, 0 = pushed in) |
+| `pedestal.acp2.rx.int.volume` | float | analog | write | `0` | ACP 2 INT reception knob volume (0..1) |
 | `pedestal.acp2.rx.ls.light` | bool | light | read | `0` | ACP 2 LS reception knob integral white light (knob out) |
 | `pedestal.acp2.rx.ls.on` | bool | switch | write | `0` | ACP 2 LS reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp2.rx.ls.volume` | float | analog | write | `0.6` | ACP 2 LS reception knob volume (0..1) |
+| `pedestal.acp2.rx.ls.volume` | float | analog | write | `0` | ACP 2 LS reception knob volume (0..1) |
 | `pedestal.acp2.rx.mkr.light` | bool | light | read | `0` | ACP 2 MKR reception knob integral white light (knob out) |
 | `pedestal.acp2.rx.mkr.on` | bool | switch | write | `0` | ACP 2 MKR reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp2.rx.mkr.volume` | float | analog | write | `0.6` | ACP 2 MKR reception knob volume (0..1) |
+| `pedestal.acp2.rx.mkr.volume` | float | analog | write | `0` | ACP 2 MKR reception knob volume (0..1) |
 | `pedestal.acp2.rx.mls.light` | bool | light | read | `0` | ACP 2 MLS reception knob integral white light (knob out) |
 | `pedestal.acp2.rx.mls.on` | bool | switch | write | `0` | ACP 2 MLS reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp2.rx.mls.volume` | float | analog | write | `0.6` | ACP 2 MLS reception knob volume (0..1) |
+| `pedestal.acp2.rx.mls.volume` | float | analog | write | `0` | ACP 2 MLS reception knob volume (0..1) |
 | `pedestal.acp2.rx.pa.light` | bool | light | read | `0` | ACP 2 PA reception knob integral white light (knob out) |
 | `pedestal.acp2.rx.pa.on` | bool | switch | write | `0` | ACP 2 PA reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp2.rx.pa.volume` | float | analog | write | `0.6` | ACP 2 PA reception knob volume (0..1) |
+| `pedestal.acp2.rx.pa.volume` | float | analog | write | `0` | ACP 2 PA reception knob volume (0..1) |
 | `pedestal.acp2.rx.vhf1.light` | bool | light | read | `0` | ACP 2 VHF 1 reception knob integral white light (knob out) |
 | `pedestal.acp2.rx.vhf1.on` | bool | switch | write | `0` | ACP 2 VHF 1 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp2.rx.vhf1.volume` | float | analog | write | `0.6` | ACP 2 VHF 1 reception knob volume (0..1) |
+| `pedestal.acp2.rx.vhf1.volume` | float | analog | write | `0` | ACP 2 VHF 1 reception knob volume (0..1) |
 | `pedestal.acp2.rx.vhf2.light` | bool | light | read | `0` | ACP 2 VHF 2 reception knob integral white light (knob out) |
-| `pedestal.acp2.rx.vhf2.on` | bool | switch | write | `1` | ACP 2 VHF 2 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp2.rx.vhf2.volume` | float | analog | write | `0.6` | ACP 2 VHF 2 reception knob volume (0..1) |
+| `pedestal.acp2.rx.vhf2.on` | bool | switch | write | `0` | ACP 2 VHF 2 reception knob (1 = out: channel selected, 0 = pushed in) |
+| `pedestal.acp2.rx.vhf2.volume` | float | analog | write | `0` | ACP 2 VHF 2 reception knob volume (0..1) |
 | `pedestal.acp2.rx.vhf3.light` | bool | light | read | `0` | ACP 2 VHF 3 reception knob integral white light (knob out) |
 | `pedestal.acp2.rx.vhf3.on` | bool | switch | write | `0` | ACP 2 VHF 3 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp2.rx.vhf3.volume` | float | analog | write | `0.6` | ACP 2 VHF 3 reception knob volume (0..1) |
+| `pedestal.acp2.rx.vhf3.volume` | float | analog | write | `0` | ACP 2 VHF 3 reception knob volume (0..1) |
 | `pedestal.acp2.rx.vor1.light` | bool | light | read | `0` | ACP 2 VOR 1 reception knob integral white light (knob out) |
 | `pedestal.acp2.rx.vor1.on` | bool | switch | write | `0` | ACP 2 VOR 1 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp2.rx.vor1.volume` | float | analog | write | `0.6` | ACP 2 VOR 1 reception knob volume (0..1) |
+| `pedestal.acp2.rx.vor1.volume` | float | analog | write | `0` | ACP 2 VOR 1 reception knob volume (0..1) |
 | `pedestal.acp2.rx.vor2.light` | bool | light | read | `0` | ACP 2 VOR 2 reception knob integral white light (knob out) |
 | `pedestal.acp2.rx.vor2.on` | bool | switch | write | `0` | ACP 2 VOR 2 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp2.rx.vor2.volume` | float | analog | write | `0.6` | ACP 2 VOR 2 reception knob volume (0..1) |
-| `pedestal.acp2.tx` | int | rotary | write | `2` | ACP 2 transmission key selected (0 none, 1..3 VHF 1..3, 4..5 HF 1..2 (not fitted), 6 INT, 7 CAB) |
+| `pedestal.acp2.rx.vor2.volume` | float | analog | write | `0` | ACP 2 VOR 2 reception knob volume (0..1) |
+| `pedestal.acp2.tx` | int | rotary | write | `0` | ACP 2 transmission key selected (0 none, 1..3 VHF 1..3, 4..5 HF 1..2 (not fitted), 6 INT, 7 CAB) |
 | `pedestal.acp2.vhf1.call` | bool | light | read | `0` | ACP 2 VHF1 key CALL legend (amber, flashing: SELCAL) |
 | `pedestal.acp2.vhf1.on` | bool | light | read | `0` | ACP 2 VHF1 key three green lines |
 | `pedestal.acp2.vhf1.pressed` | bool | pushbutton | momentary | `0` | ACP 2 VHF1 transmission key (momentary) |
@@ -4297,49 +4297,49 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `pedestal.acp3.reset` | bool | pushbutton | momentary | `0` | ACP 3 SELCAL/CALL RESET key |
 | `pedestal.acp3.rx.adf1.light` | bool | light | read | `0` | ACP 3 ADF 1 reception knob integral white light (knob out) |
 | `pedestal.acp3.rx.adf1.on` | bool | switch | write | `0` | ACP 3 ADF 1 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp3.rx.adf1.volume` | float | analog | write | `0.6` | ACP 3 ADF 1 reception knob volume (0..1) |
+| `pedestal.acp3.rx.adf1.volume` | float | analog | write | `0` | ACP 3 ADF 1 reception knob volume (0..1) |
 | `pedestal.acp3.rx.adf2.light` | bool | light | read | `0` | ACP 3 ADF 2 reception knob integral white light (knob out) |
 | `pedestal.acp3.rx.adf2.on` | bool | switch | write | `0` | ACP 3 ADF 2 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp3.rx.adf2.volume` | float | analog | write | `0.6` | ACP 3 ADF 2 reception knob volume (0..1) |
+| `pedestal.acp3.rx.adf2.volume` | float | analog | write | `0` | ACP 3 ADF 2 reception knob volume (0..1) |
 | `pedestal.acp3.rx.cab.light` | bool | light | read | `0` | ACP 3 CAB reception knob integral white light (knob out) |
 | `pedestal.acp3.rx.cab.on` | bool | switch | write | `0` | ACP 3 CAB reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp3.rx.cab.volume` | float | analog | write | `0.6` | ACP 3 CAB reception knob volume (0..1) |
+| `pedestal.acp3.rx.cab.volume` | float | analog | write | `0` | ACP 3 CAB reception knob volume (0..1) |
 | `pedestal.acp3.rx.hf1.light` | bool | light | read | `0` | ACP 3 HF 1 reception knob integral white light (knob out) |
 | `pedestal.acp3.rx.hf1.on` | bool | switch | write | `0` | ACP 3 HF 1 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp3.rx.hf1.volume` | float | analog | write | `0.6` | ACP 3 HF 1 reception knob volume (0..1) |
+| `pedestal.acp3.rx.hf1.volume` | float | analog | write | `0` | ACP 3 HF 1 reception knob volume (0..1) |
 | `pedestal.acp3.rx.hf2.light` | bool | light | read | `0` | ACP 3 HF 2 reception knob integral white light (knob out) |
 | `pedestal.acp3.rx.hf2.on` | bool | switch | write | `0` | ACP 3 HF 2 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp3.rx.hf2.volume` | float | analog | write | `0.6` | ACP 3 HF 2 reception knob volume (0..1) |
+| `pedestal.acp3.rx.hf2.volume` | float | analog | write | `0` | ACP 3 HF 2 reception knob volume (0..1) |
 | `pedestal.acp3.rx.int.light` | bool | light | read | `0` | ACP 3 INT reception knob integral white light (knob out) |
-| `pedestal.acp3.rx.int.on` | bool | switch | write | `1` | ACP 3 INT reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp3.rx.int.volume` | float | analog | write | `0.6` | ACP 3 INT reception knob volume (0..1) |
+| `pedestal.acp3.rx.int.on` | bool | switch | write | `0` | ACP 3 INT reception knob (1 = out: channel selected, 0 = pushed in) |
+| `pedestal.acp3.rx.int.volume` | float | analog | write | `0` | ACP 3 INT reception knob volume (0..1) |
 | `pedestal.acp3.rx.ls.light` | bool | light | read | `0` | ACP 3 LS reception knob integral white light (knob out) |
 | `pedestal.acp3.rx.ls.on` | bool | switch | write | `0` | ACP 3 LS reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp3.rx.ls.volume` | float | analog | write | `0.6` | ACP 3 LS reception knob volume (0..1) |
+| `pedestal.acp3.rx.ls.volume` | float | analog | write | `0` | ACP 3 LS reception knob volume (0..1) |
 | `pedestal.acp3.rx.mkr.light` | bool | light | read | `0` | ACP 3 MKR reception knob integral white light (knob out) |
 | `pedestal.acp3.rx.mkr.on` | bool | switch | write | `0` | ACP 3 MKR reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp3.rx.mkr.volume` | float | analog | write | `0.6` | ACP 3 MKR reception knob volume (0..1) |
+| `pedestal.acp3.rx.mkr.volume` | float | analog | write | `0` | ACP 3 MKR reception knob volume (0..1) |
 | `pedestal.acp3.rx.mls.light` | bool | light | read | `0` | ACP 3 MLS reception knob integral white light (knob out) |
 | `pedestal.acp3.rx.mls.on` | bool | switch | write | `0` | ACP 3 MLS reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp3.rx.mls.volume` | float | analog | write | `0.6` | ACP 3 MLS reception knob volume (0..1) |
+| `pedestal.acp3.rx.mls.volume` | float | analog | write | `0` | ACP 3 MLS reception knob volume (0..1) |
 | `pedestal.acp3.rx.pa.light` | bool | light | read | `0` | ACP 3 PA reception knob integral white light (knob out) |
 | `pedestal.acp3.rx.pa.on` | bool | switch | write | `0` | ACP 3 PA reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp3.rx.pa.volume` | float | analog | write | `0.6` | ACP 3 PA reception knob volume (0..1) |
+| `pedestal.acp3.rx.pa.volume` | float | analog | write | `0` | ACP 3 PA reception knob volume (0..1) |
 | `pedestal.acp3.rx.vhf1.light` | bool | light | read | `0` | ACP 3 VHF 1 reception knob integral white light (knob out) |
 | `pedestal.acp3.rx.vhf1.on` | bool | switch | write | `0` | ACP 3 VHF 1 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp3.rx.vhf1.volume` | float | analog | write | `0.6` | ACP 3 VHF 1 reception knob volume (0..1) |
+| `pedestal.acp3.rx.vhf1.volume` | float | analog | write | `0` | ACP 3 VHF 1 reception knob volume (0..1) |
 | `pedestal.acp3.rx.vhf2.light` | bool | light | read | `0` | ACP 3 VHF 2 reception knob integral white light (knob out) |
 | `pedestal.acp3.rx.vhf2.on` | bool | switch | write | `0` | ACP 3 VHF 2 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp3.rx.vhf2.volume` | float | analog | write | `0.6` | ACP 3 VHF 2 reception knob volume (0..1) |
+| `pedestal.acp3.rx.vhf2.volume` | float | analog | write | `0` | ACP 3 VHF 2 reception knob volume (0..1) |
 | `pedestal.acp3.rx.vhf3.light` | bool | light | read | `0` | ACP 3 VHF 3 reception knob integral white light (knob out) |
 | `pedestal.acp3.rx.vhf3.on` | bool | switch | write | `0` | ACP 3 VHF 3 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp3.rx.vhf3.volume` | float | analog | write | `0.6` | ACP 3 VHF 3 reception knob volume (0..1) |
+| `pedestal.acp3.rx.vhf3.volume` | float | analog | write | `0` | ACP 3 VHF 3 reception knob volume (0..1) |
 | `pedestal.acp3.rx.vor1.light` | bool | light | read | `0` | ACP 3 VOR 1 reception knob integral white light (knob out) |
 | `pedestal.acp3.rx.vor1.on` | bool | switch | write | `0` | ACP 3 VOR 1 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp3.rx.vor1.volume` | float | analog | write | `0.6` | ACP 3 VOR 1 reception knob volume (0..1) |
+| `pedestal.acp3.rx.vor1.volume` | float | analog | write | `0` | ACP 3 VOR 1 reception knob volume (0..1) |
 | `pedestal.acp3.rx.vor2.light` | bool | light | read | `0` | ACP 3 VOR 2 reception knob integral white light (knob out) |
 | `pedestal.acp3.rx.vor2.on` | bool | switch | write | `0` | ACP 3 VOR 2 reception knob (1 = out: channel selected, 0 = pushed in) |
-| `pedestal.acp3.rx.vor2.volume` | float | analog | write | `0.6` | ACP 3 VOR 2 reception knob volume (0..1) |
+| `pedestal.acp3.rx.vor2.volume` | float | analog | write | `0` | ACP 3 VOR 2 reception knob volume (0..1) |
 | `pedestal.acp3.tx` | int | rotary | write | `0` | ACP 3 transmission key selected (0 none, 1..3 VHF 1..3, 4..5 HF 1..2 (not fitted), 6 INT, 7 CAB) |
 | `pedestal.acp3.vhf1.call` | bool | light | read | `0` | ACP 3 VHF1 key CALL legend (amber, flashing: SELCAL) |
 | `pedestal.acp3.vhf1.on` | bool | light | read | `0` | ACP 3 VHF1 key three green lines |
@@ -4357,7 +4357,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `pedestal.atc.altRptg` | int | switch | write | `1` | ALT RPTG switch: 0 = OFF, 1 = ON |
+| `pedestal.atc.altRptg` | int | switch | write | `0` | ALT RPTG switch: 0 = OFF, 1 = ON |
 | `pedestal.atc.clr` | bool | pushbutton | momentary | `0` | CLR key |
 | `pedestal.atc.display` | string | light | read | `""` | Code window as shown (4 characters, a partial entry padded with spaces; blank without power) |
 | `pedestal.atc.fail` | bool | light | read | `0` | ATC FAIL light (selected transponder failed) |
@@ -4371,10 +4371,10 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `pedestal.atc.key6` | bool | pushbutton | momentary | `0` | Code key 6 |
 | `pedestal.atc.key7` | bool | pushbutton | momentary | `0` | Code key 7 |
 | `pedestal.atc.mode` | int | rotary | write | `0` | ATC mode selector: 0 = STBY, 1 = AUTO, 2 = ON |
-| `pedestal.atc.xpdr` | int | rotary | write | `1` | XPDR selector: 1 = XPDR 1, 2 = XPDR 2 |
+| `pedestal.atc.xpdr` | int | rotary | write | `0` | XPDR selector: 1 = XPDR 1, 2 = XPDR 2 |
 | `pedestal.tcas.mode` | int | rotary | write | `0` | TCAS mode selector: 0 = STBY, 1 = TA, 2 = TA/RA |
 | `pedestal.tcas.test` | bool | pushbutton | momentary | `0` | TCAS TEST pushbutton (CMM 34-52-14 variant B; momentary) |
-| `pedestal.tcas.traffic` | int | rotary | write | `1` | TCAS TRAFFIC selector: 0 = THRT, 1 = ALL, 2 = ABV, 3 = BLW |
+| `pedestal.tcas.traffic` | int | rotary | write | `0` | TCAS TRAFFIC selector: 0 = THRT, 1 = ALL, 2 = ABV, 3 = BLW |
 
 ## Pedestal / AUDIO SWITCHING
 
@@ -4388,14 +4388,14 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `pedestal.cockpitDoor.fault` | bool | light | read | `0` | COCKPIT DOOR FAULT light (strike, pressure sensor or control unit failure) |
 | `pedestal.cockpitDoor.open` | bool | light | read | `0` | COCKPIT DOOR OPEN light (steady: door not closed; flashing: emergency access request pending) |
-| `pedestal.cockpitDoor.toggle` | int | switch | write | `1` | COCKPIT DOOR toggle switch (0 = UNLOCK: pulled and held, 1 = NORM, 2 = LOCK) |
+| `pedestal.cockpitDoor.toggle` | int | switch | write | `0` | COCKPIT DOOR toggle switch (0 = UNLOCK: pulled and held, 1 = NORM, 2 = LOCK) |
 | `pedestal.cockpitDoor.video.pressed` | bool | pushbutton | momentary | `0` | COCKPIT DOOR VIDEO pushbutton (momentary: 1 while held) |
 
 ## Pedestal / DRAIMS (dummy)
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `ped.draims1.brt` | float | analog | write | `0.8` | DRAIMS 1 screen BRT knob (0 = OFF .. 1; dummy: no function) |
+| `ped.draims1.brt` | float | analog | write | `0` | DRAIMS 1 screen BRT knob (0 = OFF .. 1; dummy: no function) |
 | `ped.draims1.intRad` | int | switch | write | `0` | DRAIMS 1 INT/RAD switch (-1 INT, 0 neutral, 1 RAD: press and hold; dummy: no function) |
 | `ped.draims1.key.0` | bool | pushbutton | momentary | `0` | DRAIMS 1 0 key (dummy: no function) |
 | `ped.draims1.key.1` | bool | pushbutton | momentary | `0` | DRAIMS 1 1 key (dummy: no function) |
@@ -4439,28 +4439,28 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `ped.draims1.key.vhf2` | bool | pushbutton | momentary | `0` | DRAIMS 1 VHF2 key (dummy: no function) |
 | `ped.draims1.key.vhf3` | bool | pushbutton | momentary | `0` | DRAIMS 1 VHF3 key (dummy: no function) |
 | `ped.draims1.rx.cab.on` | bool | switch | write | `0` | DRAIMS 1 CAB reception knob out (dummy: no function) |
-| `ped.draims1.rx.cab.volume` | float | analog | write | `0.6` | DRAIMS 1 CAB reception volume 0..1 (dummy: no function) |
+| `ped.draims1.rx.cab.volume` | float | analog | write | `0` | DRAIMS 1 CAB reception volume 0..1 (dummy: no function) |
 | `ped.draims1.rx.hf1.on` | bool | switch | write | `0` | DRAIMS 1 HF1 reception knob out (dummy: no function) |
-| `ped.draims1.rx.hf1.volume` | float | analog | write | `0.6` | DRAIMS 1 HF1 reception volume 0..1 (dummy: no function) |
+| `ped.draims1.rx.hf1.volume` | float | analog | write | `0` | DRAIMS 1 HF1 reception volume 0..1 (dummy: no function) |
 | `ped.draims1.rx.hf2.on` | bool | switch | write | `0` | DRAIMS 1 HF2 reception knob out (dummy: no function) |
-| `ped.draims1.rx.hf2.volume` | float | analog | write | `0.6` | DRAIMS 1 HF2 reception volume 0..1 (dummy: no function) |
-| `ped.draims1.rx.int.on` | bool | switch | write | `1` | DRAIMS 1 INT reception knob out (dummy: no function) |
-| `ped.draims1.rx.int.volume` | float | analog | write | `0.6` | DRAIMS 1 INT reception volume 0..1 (dummy: no function) |
+| `ped.draims1.rx.hf2.volume` | float | analog | write | `0` | DRAIMS 1 HF2 reception volume 0..1 (dummy: no function) |
+| `ped.draims1.rx.int.on` | bool | switch | write | `0` | DRAIMS 1 INT reception knob out (dummy: no function) |
+| `ped.draims1.rx.int.volume` | float | analog | write | `0` | DRAIMS 1 INT reception volume 0..1 (dummy: no function) |
 | `ped.draims1.rx.nav.on` | bool | switch | write | `0` | DRAIMS 1 NAV reception knob out (dummy: no function) |
-| `ped.draims1.rx.nav.volume` | float | analog | write | `0.6` | DRAIMS 1 NAV reception volume 0..1 (dummy: no function) |
+| `ped.draims1.rx.nav.volume` | float | analog | write | `0` | DRAIMS 1 NAV reception volume 0..1 (dummy: no function) |
 | `ped.draims1.rx.pa.on` | bool | switch | write | `0` | DRAIMS 1 PA reception knob out (dummy: no function) |
-| `ped.draims1.rx.pa.volume` | float | analog | write | `0.6` | DRAIMS 1 PA reception volume 0..1 (dummy: no function) |
+| `ped.draims1.rx.pa.volume` | float | analog | write | `0` | DRAIMS 1 PA reception volume 0..1 (dummy: no function) |
 | `ped.draims1.rx.tel1.on` | bool | switch | write | `0` | DRAIMS 1 TEL1 reception knob out (dummy: no function) |
-| `ped.draims1.rx.tel1.volume` | float | analog | write | `0.6` | DRAIMS 1 TEL1 reception volume 0..1 (dummy: no function) |
+| `ped.draims1.rx.tel1.volume` | float | analog | write | `0` | DRAIMS 1 TEL1 reception volume 0..1 (dummy: no function) |
 | `ped.draims1.rx.tel2.on` | bool | switch | write | `0` | DRAIMS 1 TEL2 reception knob out (dummy: no function) |
-| `ped.draims1.rx.tel2.volume` | float | analog | write | `0.6` | DRAIMS 1 TEL2 reception volume 0..1 (dummy: no function) |
-| `ped.draims1.rx.vhf1.on` | bool | switch | write | `1` | DRAIMS 1 VHF1 reception knob out (dummy: no function) |
-| `ped.draims1.rx.vhf1.volume` | float | analog | write | `0.6` | DRAIMS 1 VHF1 reception volume 0..1 (dummy: no function) |
+| `ped.draims1.rx.tel2.volume` | float | analog | write | `0` | DRAIMS 1 TEL2 reception volume 0..1 (dummy: no function) |
+| `ped.draims1.rx.vhf1.on` | bool | switch | write | `0` | DRAIMS 1 VHF1 reception knob out (dummy: no function) |
+| `ped.draims1.rx.vhf1.volume` | float | analog | write | `0` | DRAIMS 1 VHF1 reception volume 0..1 (dummy: no function) |
 | `ped.draims1.rx.vhf2.on` | bool | switch | write | `0` | DRAIMS 1 VHF2 reception knob out (dummy: no function) |
-| `ped.draims1.rx.vhf2.volume` | float | analog | write | `0.6` | DRAIMS 1 VHF2 reception volume 0..1 (dummy: no function) |
+| `ped.draims1.rx.vhf2.volume` | float | analog | write | `0` | DRAIMS 1 VHF2 reception volume 0..1 (dummy: no function) |
 | `ped.draims1.rx.vhf3.on` | bool | switch | write | `0` | DRAIMS 1 VHF3 reception knob out (dummy: no function) |
-| `ped.draims1.rx.vhf3.volume` | float | analog | write | `0.6` | DRAIMS 1 VHF3 reception volume 0..1 (dummy: no function) |
-| `ped.draims2.brt` | float | analog | write | `0.8` | DRAIMS 2 screen BRT knob (0 = OFF .. 1; dummy: no function) |
+| `ped.draims1.rx.vhf3.volume` | float | analog | write | `0` | DRAIMS 1 VHF3 reception volume 0..1 (dummy: no function) |
+| `ped.draims2.brt` | float | analog | write | `0` | DRAIMS 2 screen BRT knob (0 = OFF .. 1; dummy: no function) |
 | `ped.draims2.intRad` | int | switch | write | `0` | DRAIMS 2 INT/RAD switch (-1 INT, 0 neutral, 1 RAD: press and hold; dummy: no function) |
 | `ped.draims2.key.0` | bool | pushbutton | momentary | `0` | DRAIMS 2 0 key (dummy: no function) |
 | `ped.draims2.key.1` | bool | pushbutton | momentary | `0` | DRAIMS 2 1 key (dummy: no function) |
@@ -4504,27 +4504,27 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `ped.draims2.key.vhf2` | bool | pushbutton | momentary | `0` | DRAIMS 2 VHF2 key (dummy: no function) |
 | `ped.draims2.key.vhf3` | bool | pushbutton | momentary | `0` | DRAIMS 2 VHF3 key (dummy: no function) |
 | `ped.draims2.rx.cab.on` | bool | switch | write | `0` | DRAIMS 2 CAB reception knob out (dummy: no function) |
-| `ped.draims2.rx.cab.volume` | float | analog | write | `0.6` | DRAIMS 2 CAB reception volume 0..1 (dummy: no function) |
+| `ped.draims2.rx.cab.volume` | float | analog | write | `0` | DRAIMS 2 CAB reception volume 0..1 (dummy: no function) |
 | `ped.draims2.rx.hf1.on` | bool | switch | write | `0` | DRAIMS 2 HF1 reception knob out (dummy: no function) |
-| `ped.draims2.rx.hf1.volume` | float | analog | write | `0.6` | DRAIMS 2 HF1 reception volume 0..1 (dummy: no function) |
+| `ped.draims2.rx.hf1.volume` | float | analog | write | `0` | DRAIMS 2 HF1 reception volume 0..1 (dummy: no function) |
 | `ped.draims2.rx.hf2.on` | bool | switch | write | `0` | DRAIMS 2 HF2 reception knob out (dummy: no function) |
-| `ped.draims2.rx.hf2.volume` | float | analog | write | `0.6` | DRAIMS 2 HF2 reception volume 0..1 (dummy: no function) |
-| `ped.draims2.rx.int.on` | bool | switch | write | `1` | DRAIMS 2 INT reception knob out (dummy: no function) |
-| `ped.draims2.rx.int.volume` | float | analog | write | `0.6` | DRAIMS 2 INT reception volume 0..1 (dummy: no function) |
+| `ped.draims2.rx.hf2.volume` | float | analog | write | `0` | DRAIMS 2 HF2 reception volume 0..1 (dummy: no function) |
+| `ped.draims2.rx.int.on` | bool | switch | write | `0` | DRAIMS 2 INT reception knob out (dummy: no function) |
+| `ped.draims2.rx.int.volume` | float | analog | write | `0` | DRAIMS 2 INT reception volume 0..1 (dummy: no function) |
 | `ped.draims2.rx.nav.on` | bool | switch | write | `0` | DRAIMS 2 NAV reception knob out (dummy: no function) |
-| `ped.draims2.rx.nav.volume` | float | analog | write | `0.6` | DRAIMS 2 NAV reception volume 0..1 (dummy: no function) |
+| `ped.draims2.rx.nav.volume` | float | analog | write | `0` | DRAIMS 2 NAV reception volume 0..1 (dummy: no function) |
 | `ped.draims2.rx.pa.on` | bool | switch | write | `0` | DRAIMS 2 PA reception knob out (dummy: no function) |
-| `ped.draims2.rx.pa.volume` | float | analog | write | `0.6` | DRAIMS 2 PA reception volume 0..1 (dummy: no function) |
+| `ped.draims2.rx.pa.volume` | float | analog | write | `0` | DRAIMS 2 PA reception volume 0..1 (dummy: no function) |
 | `ped.draims2.rx.tel1.on` | bool | switch | write | `0` | DRAIMS 2 TEL1 reception knob out (dummy: no function) |
-| `ped.draims2.rx.tel1.volume` | float | analog | write | `0.6` | DRAIMS 2 TEL1 reception volume 0..1 (dummy: no function) |
+| `ped.draims2.rx.tel1.volume` | float | analog | write | `0` | DRAIMS 2 TEL1 reception volume 0..1 (dummy: no function) |
 | `ped.draims2.rx.tel2.on` | bool | switch | write | `0` | DRAIMS 2 TEL2 reception knob out (dummy: no function) |
-| `ped.draims2.rx.tel2.volume` | float | analog | write | `0.6` | DRAIMS 2 TEL2 reception volume 0..1 (dummy: no function) |
+| `ped.draims2.rx.tel2.volume` | float | analog | write | `0` | DRAIMS 2 TEL2 reception volume 0..1 (dummy: no function) |
 | `ped.draims2.rx.vhf1.on` | bool | switch | write | `0` | DRAIMS 2 VHF1 reception knob out (dummy: no function) |
-| `ped.draims2.rx.vhf1.volume` | float | analog | write | `0.6` | DRAIMS 2 VHF1 reception volume 0..1 (dummy: no function) |
-| `ped.draims2.rx.vhf2.on` | bool | switch | write | `1` | DRAIMS 2 VHF2 reception knob out (dummy: no function) |
-| `ped.draims2.rx.vhf2.volume` | float | analog | write | `0.6` | DRAIMS 2 VHF2 reception volume 0..1 (dummy: no function) |
+| `ped.draims2.rx.vhf1.volume` | float | analog | write | `0` | DRAIMS 2 VHF1 reception volume 0..1 (dummy: no function) |
+| `ped.draims2.rx.vhf2.on` | bool | switch | write | `0` | DRAIMS 2 VHF2 reception knob out (dummy: no function) |
+| `ped.draims2.rx.vhf2.volume` | float | analog | write | `0` | DRAIMS 2 VHF2 reception volume 0..1 (dummy: no function) |
 | `ped.draims2.rx.vhf3.on` | bool | switch | write | `0` | DRAIMS 2 VHF3 reception knob out (dummy: no function) |
-| `ped.draims2.rx.vhf3.volume` | float | analog | write | `0.6` | DRAIMS 2 VHF3 reception volume 0..1 (dummy: no function) |
+| `ped.draims2.rx.vhf3.volume` | float | analog | write | `0` | DRAIMS 2 VHF3 reception volume 0..1 (dummy: no function) |
 
 ## Pedestal / ECAM CONTROL PANEL
 
@@ -4554,14 +4554,14 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `pedestal.ecam.fuel.pressed` | bool | pushbutton | momentary | `0` | FUEL pushbutton (momentary: 1 while held) |
 | `pedestal.ecam.hyd.lit` | bool | light | read | `0` | HYD LIT light |
 | `pedestal.ecam.hyd.pressed` | bool | pushbutton | momentary | `0` | HYD pushbutton (momentary: 1 while held) |
-| `pedestal.ecam.lowerDisplayBrt` | float | analog | write | `0.8` | ECAM LOWER DISPLAY OFF/BRT knob (0 = OFF, 1 = full bright) |
+| `pedestal.ecam.lowerDisplayBrt` | float | analog | write | `0` | ECAM LOWER DISPLAY OFF/BRT knob (0 = OFF, 1 = full bright) |
 | `pedestal.ecam.press.lit` | bool | light | read | `0` | PRESS LIT light |
 | `pedestal.ecam.press.pressed` | bool | pushbutton | momentary | `0` | PRESS pushbutton (momentary: 1 while held) |
 | `pedestal.ecam.rcl.pressed` | bool | pushbutton | momentary | `0` | RCL pushbutton (momentary: 1 while held) |
 | `pedestal.ecam.sts.lit` | bool | light | read | `0` | STS LIT light |
 | `pedestal.ecam.sts.pressed` | bool | pushbutton | momentary | `0` | STS pushbutton (momentary: 1 while held) |
 | `pedestal.ecam.toConfig.pressed` | bool | pushbutton | momentary | `0` | T.O CONFIG pushbutton (momentary: 1 while held) |
-| `pedestal.ecam.upperDisplayBrt` | float | analog | write | `0.8` | ECAM UPPER DISPLAY OFF/BRT knob (0 = OFF, 1 = full bright) |
+| `pedestal.ecam.upperDisplayBrt` | float | analog | write | `0` | ECAM UPPER DISPLAY OFF/BRT knob (0 = OFF, 1 = full bright) |
 | `pedestal.ecam.wheel.lit` | bool | light | read | `0` | WHEEL LIT light |
 | `pedestal.ecam.wheel.pressed` | bool | pushbutton | momentary | `0` | WHEEL pushbutton (momentary: 1 while held) |
 
@@ -4575,7 +4575,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `pedestal.engine.fire2` | bool | light | read | `0` | ENG 2 FIRE light (red) |
 | `pedestal.engine.master1` | bool | switch | write | `0` | ENG MASTER 1 lever (1 = ON) |
 | `pedestal.engine.master2` | bool | switch | write | `0` | ENG MASTER 2 lever (1 = ON) |
-| `pedestal.engine.mode` | int | rotary | write | `1` | ENG MODE selector (0 = CRANK, 1 = NORM, 2 = IGN/START) |
+| `pedestal.engine.mode` | int | rotary | write | `0` | ENG MODE selector (0 = CRANK, 1 = NORM, 2 = IGN/START) |
 
 ## Pedestal / Flight controls
 
@@ -4681,34 +4681,34 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `ped.mcdu1.light.ind` | bool | light | read | `0` | MCDU 1 IND annunciator |
 | `ped.mcdu1.light.menu` | bool | light | read | `0` | MCDU 1 MENU annunciator |
 | `ped.mcdu1.light.rdy` | bool | light | read | `0` | MCDU 1 RDY annunciator |
-| `ped.mcdu1.line01.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 1 screen line 1: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu1.line01.text` | string | output | read | `"                        "` | MCDU 1 screen line 1: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu1.line02.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 1 screen line 2: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu1.line02.text` | string | output | read | `"                        "` | MCDU 1 screen line 2: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu1.line03.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 1 screen line 3: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu1.line03.text` | string | output | read | `"                        "` | MCDU 1 screen line 3: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu1.line04.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 1 screen line 4: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu1.line04.text` | string | output | read | `"                        "` | MCDU 1 screen line 4: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu1.line05.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 1 screen line 5: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu1.line05.text` | string | output | read | `"                        "` | MCDU 1 screen line 5: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu1.line06.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 1 screen line 6: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu1.line06.text` | string | output | read | `"                        "` | MCDU 1 screen line 6: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu1.line07.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 1 screen line 7: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu1.line07.text` | string | output | read | `"                        "` | MCDU 1 screen line 7: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu1.line08.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 1 screen line 8: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu1.line08.text` | string | output | read | `"                        "` | MCDU 1 screen line 8: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu1.line09.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 1 screen line 9: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu1.line09.text` | string | output | read | `"                        "` | MCDU 1 screen line 9: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu1.line10.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 1 screen line 10: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu1.line10.text` | string | output | read | `"                        "` | MCDU 1 screen line 10: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu1.line11.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 1 screen line 11: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu1.line11.text` | string | output | read | `"                        "` | MCDU 1 screen line 11: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu1.line12.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 1 screen line 12: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu1.line12.text` | string | output | read | `"                        "` | MCDU 1 screen line 12: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu1.line13.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 1 screen line 13: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu1.line13.text` | string | output | read | `"                        "` | MCDU 1 screen line 13: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu1.line14.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 1 screen line 14: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu1.line14.text` | string | output | read | `"                        "` | MCDU 1 screen line 14: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu1.line01.color` | string | output | read | `""` | MCDU 1 screen line 1: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu1.line01.text` | string | output | read | `""` | MCDU 1 screen line 1: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu1.line02.color` | string | output | read | `""` | MCDU 1 screen line 2: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu1.line02.text` | string | output | read | `""` | MCDU 1 screen line 2: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu1.line03.color` | string | output | read | `""` | MCDU 1 screen line 3: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu1.line03.text` | string | output | read | `""` | MCDU 1 screen line 3: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu1.line04.color` | string | output | read | `""` | MCDU 1 screen line 4: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu1.line04.text` | string | output | read | `""` | MCDU 1 screen line 4: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu1.line05.color` | string | output | read | `""` | MCDU 1 screen line 5: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu1.line05.text` | string | output | read | `""` | MCDU 1 screen line 5: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu1.line06.color` | string | output | read | `""` | MCDU 1 screen line 6: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu1.line06.text` | string | output | read | `""` | MCDU 1 screen line 6: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu1.line07.color` | string | output | read | `""` | MCDU 1 screen line 7: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu1.line07.text` | string | output | read | `""` | MCDU 1 screen line 7: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu1.line08.color` | string | output | read | `""` | MCDU 1 screen line 8: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu1.line08.text` | string | output | read | `""` | MCDU 1 screen line 8: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu1.line09.color` | string | output | read | `""` | MCDU 1 screen line 9: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu1.line09.text` | string | output | read | `""` | MCDU 1 screen line 9: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu1.line10.color` | string | output | read | `""` | MCDU 1 screen line 10: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu1.line10.text` | string | output | read | `""` | MCDU 1 screen line 10: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu1.line11.color` | string | output | read | `""` | MCDU 1 screen line 11: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu1.line11.text` | string | output | read | `""` | MCDU 1 screen line 11: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu1.line12.color` | string | output | read | `""` | MCDU 1 screen line 12: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu1.line12.text` | string | output | read | `""` | MCDU 1 screen line 12: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu1.line13.color` | string | output | read | `""` | MCDU 1 screen line 13: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu1.line13.text` | string | output | read | `""` | MCDU 1 screen line 13: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu1.line14.color` | string | output | read | `""` | MCDU 1 screen line 14: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu1.line14.text` | string | output | read | `""` | MCDU 1 screen line 14: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
 
 ## Pedestal / MCDU 2
 
@@ -4795,40 +4795,40 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `ped.mcdu2.light.ind` | bool | light | read | `0` | MCDU 2 IND annunciator |
 | `ped.mcdu2.light.menu` | bool | light | read | `0` | MCDU 2 MENU annunciator |
 | `ped.mcdu2.light.rdy` | bool | light | read | `0` | MCDU 2 RDY annunciator |
-| `ped.mcdu2.line01.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 2 screen line 1: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu2.line01.text` | string | output | read | `"                        "` | MCDU 2 screen line 1: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu2.line02.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 2 screen line 2: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu2.line02.text` | string | output | read | `"                        "` | MCDU 2 screen line 2: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu2.line03.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 2 screen line 3: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu2.line03.text` | string | output | read | `"                        "` | MCDU 2 screen line 3: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu2.line04.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 2 screen line 4: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu2.line04.text` | string | output | read | `"                        "` | MCDU 2 screen line 4: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu2.line05.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 2 screen line 5: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu2.line05.text` | string | output | read | `"                        "` | MCDU 2 screen line 5: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu2.line06.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 2 screen line 6: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu2.line06.text` | string | output | read | `"                        "` | MCDU 2 screen line 6: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu2.line07.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 2 screen line 7: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu2.line07.text` | string | output | read | `"                        "` | MCDU 2 screen line 7: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu2.line08.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 2 screen line 8: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu2.line08.text` | string | output | read | `"                        "` | MCDU 2 screen line 8: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu2.line09.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 2 screen line 9: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu2.line09.text` | string | output | read | `"                        "` | MCDU 2 screen line 9: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu2.line10.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 2 screen line 10: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu2.line10.text` | string | output | read | `"                        "` | MCDU 2 screen line 10: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu2.line11.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 2 screen line 11: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu2.line11.text` | string | output | read | `"                        "` | MCDU 2 screen line 11: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu2.line12.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 2 screen line 12: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu2.line12.text` | string | output | read | `"                        "` | MCDU 2 screen line 12: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu2.line13.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 2 screen line 13: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu2.line13.text` | string | output | read | `"                        "` | MCDU 2 screen line 13: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
-| `ped.mcdu2.line14.color` | string | output | read | `"WWWWWWWWWWWWWWWWWWWWWWWW"` | MCDU 2 screen line 14: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
-| `ped.mcdu2.line14.text` | string | output | read | `"                        "` | MCDU 2 screen line 14: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu2.line01.color` | string | output | read | `""` | MCDU 2 screen line 1: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu2.line01.text` | string | output | read | `""` | MCDU 2 screen line 1: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu2.line02.color` | string | output | read | `""` | MCDU 2 screen line 2: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu2.line02.text` | string | output | read | `""` | MCDU 2 screen line 2: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu2.line03.color` | string | output | read | `""` | MCDU 2 screen line 3: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu2.line03.text` | string | output | read | `""` | MCDU 2 screen line 3: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu2.line04.color` | string | output | read | `""` | MCDU 2 screen line 4: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu2.line04.text` | string | output | read | `""` | MCDU 2 screen line 4: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu2.line05.color` | string | output | read | `""` | MCDU 2 screen line 5: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu2.line05.text` | string | output | read | `""` | MCDU 2 screen line 5: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu2.line06.color` | string | output | read | `""` | MCDU 2 screen line 6: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu2.line06.text` | string | output | read | `""` | MCDU 2 screen line 6: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu2.line07.color` | string | output | read | `""` | MCDU 2 screen line 7: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu2.line07.text` | string | output | read | `""` | MCDU 2 screen line 7: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu2.line08.color` | string | output | read | `""` | MCDU 2 screen line 8: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu2.line08.text` | string | output | read | `""` | MCDU 2 screen line 8: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu2.line09.color` | string | output | read | `""` | MCDU 2 screen line 9: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu2.line09.text` | string | output | read | `""` | MCDU 2 screen line 9: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu2.line10.color` | string | output | read | `""` | MCDU 2 screen line 10: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu2.line10.text` | string | output | read | `""` | MCDU 2 screen line 10: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu2.line11.color` | string | output | read | `""` | MCDU 2 screen line 11: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu2.line11.text` | string | output | read | `""` | MCDU 2 screen line 11: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu2.line12.color` | string | output | read | `""` | MCDU 2 screen line 12: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu2.line12.text` | string | output | read | `""` | MCDU 2 screen line 12: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu2.line13.color` | string | output | read | `""` | MCDU 2 screen line 13: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu2.line13.text` | string | output | read | `""` | MCDU 2 screen line 13: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu2.line14.color` | string | output | read | `""` | MCDU 2 screen line 14: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
+| `ped.mcdu2.line14.text` | string | output | read | `""` | MCDU 2 screen line 14: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
 
 ## Pedestal / PARKING BRK
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `pedestal.parkingBrake.set` | bool | switch | write | `1` | PARK BRK handle (1 = ON) |
+| `pedestal.parkingBrake.set` | bool | switch | write | `0` | PARK BRK handle (1 = ON) |
 
 ## Pedestal / RMP 1
 
@@ -4853,7 +4853,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `pedestal.rmp1.nav.on` | bool | light | read | `0` | RMP 1 NAV (guarded) green light |
 | `pedestal.rmp1.nav.pressed` | bool | pushbutton | momentary | `0` | RMP 1 NAV (guarded) key (momentary) |
 | `pedestal.rmp1.outerKnob` | int | encoder | write | `0` | RMP 1 outer tuning knob counter (+1 per clockwise detent) |
-| `pedestal.rmp1.power` | bool | switch | write | `1` | RMP 1 ON/OFF switch (1 = ON) |
+| `pedestal.rmp1.power` | bool | switch | write | `0` | RMP 1 ON/OFF switch (1 = ON) |
 | `pedestal.rmp1.sel` | bool | light | read | `0` | RMP 1 SEL amber light |
 | `pedestal.rmp1.standby` | string | light | read | `"121.500"` | RMP 1 STBY/CRS window ("121.500", "C-123", "" dark) |
 | `pedestal.rmp1.transfer.on` | bool | light | read | `0` | RMP 1 transfer green light |
@@ -4890,7 +4890,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `pedestal.rmp2.nav.on` | bool | light | read | `0` | RMP 2 NAV (guarded) green light |
 | `pedestal.rmp2.nav.pressed` | bool | pushbutton | momentary | `0` | RMP 2 NAV (guarded) key (momentary) |
 | `pedestal.rmp2.outerKnob` | int | encoder | write | `0` | RMP 2 outer tuning knob counter (+1 per clockwise detent) |
-| `pedestal.rmp2.power` | bool | switch | write | `1` | RMP 2 ON/OFF switch (1 = ON) |
+| `pedestal.rmp2.power` | bool | switch | write | `0` | RMP 2 ON/OFF switch (1 = ON) |
 | `pedestal.rmp2.sel` | bool | light | read | `0` | RMP 2 SEL amber light |
 | `pedestal.rmp2.standby` | string | light | read | `"121.500"` | RMP 2 STBY/CRS window ("121.500", "C-123", "" dark) |
 | `pedestal.rmp2.transfer.on` | bool | light | read | `0` | RMP 2 transfer green light |
@@ -4908,10 +4908,10 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `pedestal.switching.airData` | int | rotary | write | `1` | AIR DATA selector (0 = CAPT 3, 1 = NORM, 2 = F/O 3) |
-| `pedestal.switching.attHdg` | int | rotary | write | `1` | ATT HDG selector (0 = CAPT 3, 1 = NORM, 2 = F/O 3) |
-| `pedestal.switching.ecamNdXfr` | int | rotary | write | `1` | ECAM/ND XFR selector (0 = CAPT, 1 = NORM, 2 = F/O) |
-| `pedestal.switching.eisDmc` | int | rotary | write | `1` | EIS DMC selector (0 = CAPT 3, 1 = NORM, 2 = F/O 3) |
+| `pedestal.switching.airData` | int | rotary | write | `0` | AIR DATA selector (0 = CAPT 3, 1 = NORM, 2 = F/O 3) |
+| `pedestal.switching.attHdg` | int | rotary | write | `0` | ATT HDG selector (0 = CAPT 3, 1 = NORM, 2 = F/O 3) |
+| `pedestal.switching.ecamNdXfr` | int | rotary | write | `0` | ECAM/ND XFR selector (0 = CAPT, 1 = NORM, 2 = F/O) |
+| `pedestal.switching.eisDmc` | int | rotary | write | `0` | EIS DMC selector (0 = CAPT 3, 1 = NORM, 2 = F/O 3) |
 
 ## Pedestal / THRUST LEVERS
 
@@ -4926,10 +4926,10 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `pedestal.wxr.gain` | int | rotary | write | `5` | GAIN knob: 0 = MIN, 1 = -12, 2 = -9, 3 = -6, 4 = -3, 5 = CAL, 6 = +4, 7 = +8, 8 = +12, 9 = MAX |
-| `pedestal.wxr.gcs` | int | switch | write | `1` | GCS switch (spring-loaded to AUTO): 0 = OFF (held), 1 = AUTO |
+| `pedestal.wxr.gain` | int | rotary | write | `0` | GAIN knob: 0 = MIN, 1 = -12, 2 = -9, 3 = -6, 4 = -3, 5 = CAL, 6 = +4, 7 = +8, 8 = +12, 9 = MAX |
+| `pedestal.wxr.gcs` | int | switch | write | `0` | GCS switch (spring-loaded to AUTO): 0 = OFF (held), 1 = AUTO |
 | `pedestal.wxr.mode` | int | rotary | write | `0` | MODE selector: 0 = WX, 1 = WX+T, 2 = TURB, 3 = MAP |
-| `pedestal.wxr.multiscan` | int | switch | write | `1` | MULTISCAN switch: 0 = MAN, 1 = AUTO |
+| `pedestal.wxr.multiscan` | int | switch | write | `0` | MULTISCAN switch: 0 = MAN, 1 = AUTO |
 | `pedestal.wxr.pws` | int | switch | write | `0` | PWS switch: 0 = OFF, 1 = AUTO |
 | `pedestal.wxr.sys` | int | switch | write | `0` | Radar SYS switch: 1 = SYS 1 on, 0 = OFF, 2 = SYS 2 on |
 | `pedestal.wxr.tilt` | float | analog | write | `0` | TILT knob (degrees, -15 DN .. +15 UP, quarter degree steps; MULTISCAN MAN) |
@@ -4949,7 +4949,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `perf.mcdu.zfwZfwCg` | string | output | read | `"62.4/27.5"` | INIT B ZFW/ZFWCG entry of the applied load ("62.4/27.5") |
 | `perf.to.airport` | string | output | read | `""` | Airport of the applied takeoff performance |
 | `perf.to.conf` | int | output | read | `0` | Takeoff CONF (1 = 1+F, 2, 3) |
-| `perf.to.flexTempC` | int | output | read | `-99` | Calculated FLEX temperature (°C, -99 = TOGA) |
+| `perf.to.flexTempC` | int | output | read | `0` | Calculated FLEX temperature (°C, -99 = TOGA) |
 | `perf.to.runway` | string | output | read | `""` | Runway of the applied takeoff performance |
 | `perf.to.shiftM` | float | output | read | `0` | Takeoff shift of the calculation (m, 0 = none) |
 | `perf.to.status` | string | output | read | `" none asked, "` | Why a takeoff performance is (not) kept: "" none asked, "kept", "noRunway" (load applied without a runway), "errors" |
@@ -4971,13 +4971,13 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `radio.adf1.frequencyKhz` | int | output | read | `0` | ADF 1 tuned frequency (kHz) |
 | `radio.adf1.ident` | string | output | read | `""` | ADF 1 received station ident ("" = no station received): the Morse ident Audio plays |
-| `radio.adf1.relativeBearingDeg` | float | output | read | `-1` | ADF 1 relative bearing (-1 without signal) |
+| `radio.adf1.relativeBearingDeg` | float | output | read | `0` | ADF 1 relative bearing (-1 without signal) |
 | `radio.adf2.frequencyKhz` | int | output | read | `0` | ADF 2 tuned frequency (kHz) |
 | `radio.adf2.ident` | string | output | read | `""` | ADF 2 received station ident ("" = no station received): the Morse ident Audio plays |
-| `radio.adf2.relativeBearingDeg` | float | output | read | `-1` | ADF 2 relative bearing (-1 without signal) |
-| `radio.dme1.distanceNm` | float | output | read | `-1` | DME 1 distance (NM, -1 without signal) |
+| `radio.adf2.relativeBearingDeg` | float | output | read | `0` | ADF 2 relative bearing (-1 without signal) |
+| `radio.dme1.distanceNm` | float | output | read | `0` | DME 1 distance (NM, -1 without signal) |
 | `radio.dme1.ident` | string | output | read | `""` | DME 1 received station ident ("" = no station received): the Morse ident Audio plays |
-| `radio.dme2.distanceNm` | float | output | read | `-1` | DME 2 distance (NM, -1 without signal) |
+| `radio.dme2.distanceNm` | float | output | read | `0` | DME 2 distance (NM, -1 without signal) |
 | `radio.dme2.ident` | string | output | read | `""` | DME 2 received station ident ("" = no station received): the Morse ident Audio plays |
 | `radio.marker` | int | output | read | `0` | Marker beacon received (0 none, 1 outer, 2 middle, 3 inner) |
 | `radio.mmr1.frequencyKhz` | int | output | read | `0` | MMR 1 ILS tuned frequency (kHz) |
@@ -4988,25 +4988,25 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `radio.mmr2.gsDeviationDots` | float | output | read | `0` | MMR 2 G/S deviation (dots, + = fly up) |
 | `radio.mmr2.ident` | string | output | read | `""` | MMR 2 received station ident ("" = no station received): the Morse ident Audio plays |
 | `radio.mmr2.locDeviationDots` | float | output | read | `0` | MMR 2 LOC deviation (dots, + = fly right; NaN-free, 0 without signal) |
-| `radio.ra1.heightFt` | float | output | read | `-1` | Radio altimeter 1 height (ft, -1 invalid or above its 5000 ft range) |
-| `radio.ra2.heightFt` | float | output | read | `-1` | Radio altimeter 2 height (ft, -1 invalid or above its 5000 ft range) |
-| `radio.vhf1.active` | string | output | read | `"118.000"` | VHF 1 active frequency ("122.800") |
-| `radio.vhf1.standby` | string | output | read | `"121.500"` | VHF 1 standby frequency |
+| `radio.ra1.heightFt` | float | output | read | `0` | Radio altimeter 1 height (ft, -1 invalid or above its 5000 ft range) |
+| `radio.ra2.heightFt` | float | output | read | `0` | Radio altimeter 2 height (ft, -1 invalid or above its 5000 ft range) |
+| `radio.vhf1.active` | string | output | read | `"122.800"` | VHF 1 active frequency ("122.800") |
+| `radio.vhf1.standby` | string | output | read | `""` | VHF 1 standby frequency |
 | `radio.vhf1.tuneActiveKhz` | float | analog | write | `0` | VHF 1 tuned by an external RMP (its ARINC 429 output): a new value (kHz, 118000..136990; MHz accepted) becomes the active frequency; 0 = none |
 | `radio.vhf1.tuneStandbyKhz` | float | analog | write | `0` | VHF 1 standby frequency from an external RMP: a new value (kHz; MHz accepted) becomes the standby frequency; 0 = none |
-| `radio.vhf2.active` | string | output | read | `"118.000"` | VHF 2 active frequency ("122.800") |
-| `radio.vhf2.standby` | string | output | read | `"121.500"` | VHF 2 standby frequency |
+| `radio.vhf2.active` | string | output | read | `"122.800"` | VHF 2 active frequency ("122.800") |
+| `radio.vhf2.standby` | string | output | read | `""` | VHF 2 standby frequency |
 | `radio.vhf2.tuneActiveKhz` | float | analog | write | `0` | VHF 2 tuned by an external RMP (its ARINC 429 output): a new value (kHz, 118000..136990; MHz accepted) becomes the active frequency; 0 = none |
 | `radio.vhf2.tuneStandbyKhz` | float | analog | write | `0` | VHF 2 standby frequency from an external RMP: a new value (kHz; MHz accepted) becomes the standby frequency; 0 = none |
-| `radio.vhf3.active` | string | output | read | `"DATA"` | VHF 3 active frequency ("122.800") |
-| `radio.vhf3.dataMode` | bool | switch | write | `1` | VHF 3 data / voice for external panels: write 1 = DATA (DATA active, the voice frequency to STBY), 0 = voice (the STBY frequency, else the last voice one, else 118.000, active; DATA to STBY); reads the current mode |
-| `radio.vhf3.standby` | string | output | read | `"121.500"` | VHF 3 standby frequency |
+| `radio.vhf3.active` | string | output | read | `"122.800"` | VHF 3 active frequency ("122.800") |
+| `radio.vhf3.dataMode` | bool | switch | write | `0` | VHF 3 data / voice for external panels: write 1 = DATA (DATA active, the voice frequency to STBY), 0 = voice (the STBY frequency, else the last voice one, else 118.000, active; DATA to STBY); reads the current mode |
+| `radio.vhf3.standby` | string | output | read | `""` | VHF 3 standby frequency |
 | `radio.vhf3.tuneActiveKhz` | float | analog | write | `0` | VHF 3 tuned by an external RMP (its ARINC 429 output): a new value (kHz, 118000..136990; MHz accepted) becomes the active frequency; 0 = none |
 | `radio.vhf3.tuneStandbyKhz` | float | analog | write | `0` | VHF 3 standby frequency from an external RMP: a new value (kHz; MHz accepted) becomes the standby frequency; 0 = none |
-| `radio.vor1.bearingDeg` | float | output | read | `-1` | VOR 1 bearing to the station (magnetic, -1 without signal) |
+| `radio.vor1.bearingDeg` | float | output | read | `0` | VOR 1 bearing to the station (magnetic, -1 without signal) |
 | `radio.vor1.frequencyKhz` | int | output | read | `0` | VOR 1 tuned frequency (kHz, 0 = none) |
 | `radio.vor1.ident` | string | output | read | `""` | VOR 1 received station ident ("" = no station received): the Morse ident Audio plays |
-| `radio.vor2.bearingDeg` | float | output | read | `-1` | VOR 2 bearing to the station (magnetic, -1 without signal) |
+| `radio.vor2.bearingDeg` | float | output | read | `0` | VOR 2 bearing to the station (magnetic, -1 without signal) |
 | `radio.vor2.frequencyKhz` | int | output | read | `0` | VOR 2 tuned frequency (kHz, 0 = none) |
 | `radio.vor2.ident` | string | output | read | `""` | VOR 2 received station ident ("" = no station received): the Morse ident Audio plays |
 
@@ -5014,8 +5014,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `radio.sim.com1Vhf` | int | output | read | `1` | VHF carried by the simulator's COM 1 (1..3; network clients such as xPilot see it) |
-| `radio.sim.com2Vhf` | int | output | read | `2` | VHF carried by the simulator's COM 2 (1..3; VHF 3 when the captain's ACP needs it more than VHF 2 / VHF 1) |
+| `radio.sim.com1Vhf` | int | output | read | `0` | VHF carried by the simulator's COM 1 (1..3; network clients such as xPilot see it) |
+| `radio.sim.com2Vhf` | int | output | read | `0` | VHF carried by the simulator's COM 2 (1..3; VHF 3 when the captain's ACP needs it more than VHF 2 / VHF 1) |
 | `radio.sim.transmitCom` | int | output | read | `0` | Simulator COM selected to transmit (0 none / unchanged, 1 COM 1, 2 COM 2): the captain's ACP transmission key |
 | `radio.sim.voiceThroughAmu` | bool | service | write | `0` | The radio client's voice (xPilot, SayIntentions...) is captured by the Audio program into the AMU VHF channels: the simulator's COM 1 / 2 always receive at full volume and the AMU applies each crew station's ACP knobs (Audio writes it) |
 
@@ -5076,11 +5076,11 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `elec.bus.dcEss.powered` | bool | output | read | `0` | DC ESS BUS powered |
 | `elec.bus.dcEssShed.powered` | bool | output | read | `0` | DC ESS SHED BUS powered |
 | `elec.bus.dcGndFlt.powered` | bool | output | read | `0` | DC GND/FLT BUS powered |
-| `elec.bus.hotBus1.powered` | bool | output | read | `1` | HOT BUS 1 powered |
-| `elec.bus.hotBus2.powered` | bool | output | read | `1` | HOT BUS 2 powered |
+| `elec.bus.hotBus1.powered` | bool | output | read | `0` | HOT BUS 1 powered |
+| `elec.bus.hotBus2.powered` | bool | output | read | `0` | HOT BUS 2 powered |
 | `fg.ap.anyEngaged` | bool | output | read | `0` | An autopilot (AP 1 or AP 2) engaged |
-| `fg.ap.noneEngaged` | bool | output | read | `1` | No autopilot engaged (inverse of fg.ap.anyEngaged) |
-| `mip.clock.powered` | bool | output | read | `1` | Cockpit clock powered (its displays lit) |
+| `fg.ap.noneEngaged` | bool | output | read | `0` | No autopilot engaged (inverse of fg.ap.anyEngaged) |
+| `mip.clock.powered` | bool | output | read | `0` | Cockpit clock powered (its displays lit) |
 | `mip.isis.powered` | bool | output | read | `0` | ISIS powered (its screen on) |
 
 ## Sidesticks
@@ -5104,7 +5104,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `atc.code` | int | output | read | `2000` | Transponder code (octal digits as a number, e.g. 7700) |
+| `atc.code` | int | output | read | `0` | Transponder code (octal digits as a number, e.g. 7700) |
 | `atc.replying` | bool | output | read | `0` | The selected transponder replies (not STBY, working) |
 | `tcas.mode` | int | output | read | `0` | TCAS operating mode: 0 = off / failed, 1 = STBY, 2 = TA ONLY, 3 = TA/RA |
 | `tcas.ra` | bool | output | read | `0` | A resolution advisory is active |
@@ -5117,8 +5117,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `waste.levelL` | float | output | read | `0` | Toilet waste in the waste tank (l, 0..170 usable) |
 | `waste.vacuumAvailable` | bool | output | read | `0` | Toilets can flush (VSC working, vacuum generator or differential pressure) |
-| `water.pressurized` | bool | output | read | `1` | Potable water system pressurized (ground air or bleed air) |
-| `water.quantityL` | float | output | read | `200` | Potable water in the tank (l, 0..200) |
+| `water.pressurized` | bool | output | read | `0` | Potable water system pressurized (ground air or bleed air) |
+| `water.quantityL` | float | output | read | `0` | Potable water in the tank (l, 0..200) |
 
 ## Weather radar
 
@@ -5127,7 +5127,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `wxr.debug.pattern` | int | service | write | `0` | Debug: 1 = synthetic echo picture in place of the simulator's (development only) |
 | `wxr.pwsActive` | bool | output | read | `0` | Predictive windshear detection active |
 | `wxr.pwsAlert` | int | output | read | `0` | Predictive windshear area: 0 = none, 1 = advisory (ND only), 2 = caution, 3 = warning |
-| `wxr.pwsOff` | bool | output | read | `1` | PWS switch OFF (PRED W/S OFF memo, for the FWC) |
-| `wxr.status` | string | output | read | `"INOP"` | Picture source: SIMULATOR, TEST PATTERN, or INOP (no picture from the simulator) |
-| `wxr.tiltDeg` | float | output | read | `1.5` | Antenna tilt (degrees, positive up) |
+| `wxr.pwsOff` | bool | output | read | `0` | PWS switch OFF (PRED W/S OFF memo, for the FWC) |
+| `wxr.status` | string | output | read | `""` | Picture source: SIMULATOR, TEST PATTERN, or INOP (no picture from the simulator) |
+| `wxr.tiltDeg` | float | output | read | `0` | Antenna tilt (degrees, positive up) |
 | `wxr.transmitting` | bool | output | read | `0` | The selected radar is on and transmitting |
