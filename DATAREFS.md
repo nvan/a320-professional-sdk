@@ -1,6 +1,6 @@
 # Datarefs
 
-Every dataref of NVAN A320 Professional (4012), grouped by panel or system. Generated from Systems' catalog;
+Every dataref of NVAN A320 Professional (4020), grouped by panel or system. Generated from Systems' catalog;
 a running Systems lists the same at `http://<address>:8080/api` and over the WebSocket (`{"op":"catalog"}`).
 
 Access: **read** (only Systems writes it), **write** (a plugin or client may write it), **momentary** (a
@@ -107,11 +107,11 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Ground services](#ground-services) (67)
 - [Ground services / Fuel](#ground-services--fuel) (9)
 - [Ground services / Load](#ground-services--load) (12)
-- [Hydraulic (parameters)](#hydraulic-parameters) (3)
+- [Hydraulic (parameters)](#hydraulic-parameters) (5)
 - [Instructor](#instructor) (7)
 - [Instructor / Simulator](#instructor--simulator) (20)
 - [Instructor / Slew](#instructor--slew) (10)
-- [Landing gear / State (read-only)](#landing-gear--state-read-only) (17)
+- [Landing gear / State (read-only)](#landing-gear--state-read-only) (23)
 - [Lights](#lights) (1)
 - [Lights / avionics compartment](#lights--avionics-compartment) (1)
 - [Lights / cockpit](#lights--cockpit) (19)
@@ -1183,9 +1183,9 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `elec.apuGen.loadPercent` | float | output | read | `0` | APU GEN load (%, ELEC page) |
 | `elec.apuGen.volts` | float | output | read | `0` | APU GEN voltage (V, ELEC page) |
 | `elec.bat1.amps` | float | output | read | `0` | BAT 1 current (A, ELEC page; + discharging, − charging, 0 with its contactor open) |
-| `elec.bat1.volts` | float | output | read | `25.268` | BAT 1 voltage (V, ELEC page) |
+| `elec.bat1.volts` | float | output | read | `26.19` | BAT 1 voltage (V, ELEC page) |
 | `elec.bat2.amps` | float | output | read | `0` | BAT 2 current (A, ELEC page; + discharging, − charging, 0 with its contactor open) |
-| `elec.bat2.volts` | float | output | read | `25.268` | BAT 2 voltage (V, ELEC page) |
+| `elec.bat2.volts` | float | output | read | `26.19` | BAT 2 voltage (V, ELEC page) |
 | `elec.emerGen.hz` | float | output | read | `0` | EMER GEN frequency (Hz, ELEC page) |
 | `elec.emerGen.volts` | float | output | read | `0` | EMER GEN voltage (V, ELEC page) |
 | `elec.essTr.amps` | float | output | read | `0` | ESS TR current (A, ELEC page) |
@@ -3182,6 +3182,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `hyd.blue.pressurePsi` | float | output | read | `0` | Blue hydraulic system pressure (psi) |
 | `hyd.green.pressurePsi` | float | output | read | `0` | Green hydraulic system pressure (psi) |
+| `hyd.rat.turbineAngleDeg` | float | output | read | `0` | RAT turbine angle (degrees 0..360, turning with its speed; for an exterior model) |
+| `hyd.rat.turbineRpm` | float | output | read | `0` | RAT turbine speed (rpm; 0 stowed or without airflow; ESTIMATED governed 6000 rpm from 140 kt) |
 | `hyd.yellow.pressurePsi` | float | output | read | `0` | Yellow hydraulic system pressure (psi) |
 
 ## Instructor
@@ -3240,9 +3242,15 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
+| `gear.left.doorPosition` | float | output | read | `0` | left gear hydraulic doors position (0 = closed and locked, 1 = fully open) |
 | `gear.left.position` | float | light | read | `1` | left gear position (0 = up and locked, 1 = down and locked) |
+| `gear.left.transit` | float | output | read | `0` | left gear transit for an exterior model (0 = down with the doors closed, 0.2 = down with the doors open, 0.8 = up with the doors open, 1 = up and locked with the doors closed; gravity extension stays at 0.2) |
+| `gear.nose.doorPosition` | float | output | read | `0` | nose gear hydraulic doors position (0 = closed and locked, 1 = fully open) |
 | `gear.nose.position` | float | light | read | `1` | nose gear position (0 = up and locked, 1 = down and locked) |
+| `gear.nose.transit` | float | output | read | `0` | nose gear transit for an exterior model (0 = down with the doors closed, 0.2 = down with the doors open, 0.8 = up with the doors open, 1 = up and locked with the doors closed; gravity extension stays at 0.2) |
+| `gear.right.doorPosition` | float | output | read | `0` | right gear hydraulic doors position (0 = closed and locked, 1 = fully open) |
 | `gear.right.position` | float | light | read | `1` | right gear position (0 = up and locked, 1 = down and locked) |
+| `gear.right.transit` | float | output | read | `0` | right gear transit for an exterior model (0 = down with the doors closed, 0.2 = down with the doors open, 0.8 = up with the doors open, 1 = up and locked with the doors closed; gravity extension stays at 0.2) |
 | `wheel.brakeTemp1` | float | light | read | `15` | Brake 1 temperature (°C, as the BSCU measures it) |
 | `wheel.brakeTemp2` | float | light | read | `15` | Brake 2 temperature (°C, as the BSCU measures it) |
 | `wheel.brakeTemp3` | float | light | read | `15` | Brake 3 temperature (°C, as the BSCU measures it) |
@@ -3747,11 +3755,11 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `overhead.elec.bat1.fault` | bool | light | read | `0` | BAT 1 FAULT light |
 | `overhead.elec.bat1.off` | bool | light | read | `0` | BAT 1 OFF light |
 | `overhead.elec.bat1.pressed` | bool | pushbutton | write | `0` | BAT 1 pushbutton (1 = in) |
-| `overhead.elec.bat1Voltmeter` | float | light | read | `25.3` | BAT 1 voltmeter (V, 0.1 resolution) |
+| `overhead.elec.bat1Voltmeter` | float | light | read | `26.2` | BAT 1 voltmeter (V, 0.1 resolution) |
 | `overhead.elec.bat2.fault` | bool | light | read | `0` | BAT 2 FAULT light |
 | `overhead.elec.bat2.off` | bool | light | read | `0` | BAT 2 OFF light |
 | `overhead.elec.bat2.pressed` | bool | pushbutton | write | `0` | BAT 2 pushbutton (1 = in) |
-| `overhead.elec.bat2Voltmeter` | float | light | read | `25.3` | BAT 2 voltmeter (V, 0.1 resolution) |
+| `overhead.elec.bat2Voltmeter` | float | light | read | `26.2` | BAT 2 voltmeter (V, 0.1 resolution) |
 | `overhead.elec.busTie.off` | bool | light | read | `0` | BUS TIE OFF light |
 | `overhead.elec.busTie.pressed` | bool | pushbutton | write | `1` | BUS TIE pushbutton (1 = in) |
 | `overhead.elec.commercial.off` | bool | light | read | `0` | COMMERCIAL OFF light |
