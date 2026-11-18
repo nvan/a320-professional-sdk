@@ -1,6 +1,6 @@
 # Datarefs
 
-Every dataref of NVAN A320 Professional (4020), grouped by panel or system. Generated from Systems' catalog;
+Every dataref of NVAN A320 Professional (4023), grouped by panel or system. Generated from Systems' catalog;
 a running Systems lists the same at `http://<address>:8080/api` and over the WebSocket (`{"op":"catalog"}`).
 
 Access: **read** (only Systems writes it), **write** (a plugin or client may write it), **momentary** (a
@@ -126,7 +126,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [MIP / DDRMI](#mip--ddrmi) (2)
 - [MIP / F/O](#mip--fo) (8)
 - [MIP / ISIS](#mip--isis) (7)
-- [MIP / L/G lever, BRAKES indicator 400VU](#mip--lg-lever-brakes-indicator-400vu) (5)
+- [MIP / L/G lever, BRAKES indicator 400VU](#mip--lg-lever-brakes-indicator-400vu) (6)
 - [MIP / LDG GEAR, AUTO BRK 402VU](#mip--ldg-gear-auto-brk-402vu) (21)
 - [MIP / Loudspeakers](#mip--loudspeakers) (2)
 - [Overhead / 21VU](#overhead--21vu) (2)
@@ -188,7 +188,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Rain removal](#rain-removal) (10)
 - [Recorders](#recorders) (5)
 - [Relays (read-only discretes)](#relays-read-only-discretes) (19)
-- [Sidesticks](#sidesticks) (2)
+- [Sidesticks](#sidesticks) (4)
 - [Simulator](#simulator) (3)
 - [Surveillance](#surveillance) (6)
 - [Water / waste](#water--waste) (4)
@@ -3540,6 +3540,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `mip.brakes.leftPress` | float | light | read | `0` | Triple indicator BRAKES left needle (psi) |
 | `mip.brakes.rightPress` | float | light | read | `0` | Triple indicator BRAKES right needle (psi) |
 | `mip.gear.lever` | bool | switch | write | `1` | L/G lever (0 = UP, 1 = DOWN; locked DOWN on ground) |
+| `mip.gear.leverSolenoid` | bool | output | read | `1` | L/G lever lock solenoid engaged: lever locked DOWN (either main gear compressed, DSC-32-10-40 B) |
 | `mip.gear.redArrow` | bool | light | read | `0` | L/G lever red arrow (gear not down in landing configuration) |
 
 ## MIP / LDG GEAR, AUTO BRK 402VU
@@ -5086,6 +5087,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
+| `ctl.sidestickSolenoid.capt` | bool | output | read | `0` | Captain sidestick lock solenoid engaged: stick locked in neutral while an autopilot is engaged (released at AP disengagement) |
+| `ctl.sidestickSolenoid.fo` | bool | output | read | `0` | F/O sidestick lock solenoid engaged: stick locked in neutral while an autopilot is engaged (released at AP disengagement) |
 | `sidestick.capt.takeover.pressed` | bool | pushbutton | momentary | `0` | Captain sidestick takeover (AP disconnect) pushbutton (momentary: 1 while held) |
 | `sidestick.fo.takeover.pressed` | bool | pushbutton | momentary | `0` | F/O sidestick takeover (AP disconnect) pushbutton (momentary: 1 while held) |
 

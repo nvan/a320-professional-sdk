@@ -110,6 +110,7 @@ The **Plugin API** has its own version, `MAJOR.MINOR.PATCH`, starting at **1.0.0
 | 1.0.0 | The plugin ABI, datarefs, remote axes |
 | 1.1.0 | `deviceId` in each device's settings (C#: `DeviceSettings.DeviceId`): the device's stable id, to store per-device data |
 | 1.1.1 | Datarefs `gear.{nose,left,right}.doorPosition` and `.transit`, `hyd.rat.turbineRpm`, `hyd.rat.turbineAngleDeg` |
+| 1.1.2 | Datarefs `mip.gear.leverSolenoid` (L/G lever locked DOWN), `ctl.sidestickSolenoid.capt` / `.fo` (sidestick locked in neutral, AP engaged) |
 
 Each plugin declares the **minimum** Plugin API it needs (and a maximum only after a drastic change). It works on every
 product version that provides that API or later within the same MAJOR. NVAN may also mark specific versions compatible
