@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Client/Client.csproj" />
+    <Project Path="src/HardwarePlugin/HardwarePlugin.csproj" />
+  </Folder>
+  <Folder Name="/examples/">
+    <Project Path="examples/Datarefs/Datarefs.csproj" />
+    <Project Path="examples/Plugin/ExamplePanel.csproj" />
+  </Folder>
+</Solution>

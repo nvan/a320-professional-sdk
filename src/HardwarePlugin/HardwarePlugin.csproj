@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Helper library for writing NVAN A320 Professional Hardware plugins in C#: implements the C ABI
+       (include/nvan_hardware_plugin.h) so a plugin is a few classes plus one exported entry point, compiled with
+       NativeAOT as a shared library. -->
+  <PropertyGroup>
+    <AssemblyName>NVAN.A320.Sdk.HardwarePlugin</AssemblyName>
+    <RootNamespace>NVAN.A320.Sdk.HardwarePlugin</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IsTrimmable>true</IsTrimmable>
+  </PropertyGroup>
+</Project>

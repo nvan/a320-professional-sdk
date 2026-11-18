@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- A Hardware plugin is a native shared library built with NativeAOT:
+         dotnet publish examples/Plugin -c Release -r linux-x64   → bin/Release/net10.0/linux-x64/publish/ExamplePanel.so
+         dotnet publish examples/Plugin -c Release -r win-x64     → ...\win-x64\publish\ExamplePanel.dll (on Windows)
+       AssemblyName is the file name of the library. -->
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ExamplePanel</AssemblyName>
+    <RootNamespace>ExamplePanel</RootNamespace>
+    <PublishAot>true</PublishAot>
+    <NativeLib>Shared</NativeLib>
+    <SelfContained>true</SelfContained>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/HardwarePlugin/HardwarePlugin.csproj" />
+  </ItemGroup>
+</Project>

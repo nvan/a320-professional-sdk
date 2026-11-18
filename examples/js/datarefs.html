@@ -1,0 +1,49 @@
+<!doctype html>
+<!--
+  NVAN A320 Professional: follow, write and press datarefs from a web page. Open this file in a browser while Systems
+  runs on this PC (or add ?host=192.168.1.20 to the address for another PC). Nothing to install.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NVAN A320 datarefs</title>
+</head>
+<body>
+  <p>BAT 1: <b id="bat1">?</b></p>
+  <button id="toggle">Toggle BAT 1</button>
+  <button id="press">Press MASTER WARN</button>
+
+  <script>
+    const host = new URLSearchParams(location.search).get("host") ?? "localhost";
+    const socket = new WebSocket(`ws://${host}:8080/api/ws`);
+    let bat1 = 0;
+
+    // Follow a dataref: Systems sends its current value now, then every change.
+    socket.onopen = () => {
+      socket.send(JSON.stringify({ op: "subscribe", paths: ["overhead.elec.bat1.pressed"] }));
+    };
+
+    socket.onmessage = (event) => {
+      const message = JSON.parse(event.data);
+      if (message.op === "values" && "overhead.elec.bat1.pressed" in message.values) {
+        bat1 = message.values["overhead.elec.bat1.pressed"];
+        document.getElementById("bat1").textContent = bat1 ? "ON" : "OFF";
+      }
+    };
+
+    socket.onclose = () => {
+      document.getElementById("bat1").textContent = "no connection (reload the page)";
+    };
+
+    // Write a dataref: a switch or latching pushbutton gets its position.
+    document.getElementById("toggle").onclick = () => {
+      socket.send(JSON.stringify({ op: "set", path: "overhead.elec.bat1.pressed", value: bat1 ? 0 : 1 }));
+    };
+
+    // Press a momentary pushbutton: Systems holds it 100 ms and releases it.
+    document.getElementById("press").onclick = () => {
+      socket.send(JSON.stringify({ op: "press", path: "glare.masterWarn.capt.pressed" }));
+    };
+  </script>
+</body>
+</html>

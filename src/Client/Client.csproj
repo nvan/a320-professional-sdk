@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Client library for the public WebSocket dataref API of NVAN A320 Professional Systems. BCL only. -->
+  <PropertyGroup>
+    <AssemblyName>NVAN.A320.Sdk.Client</AssemblyName>
+    <RootNamespace>NVAN.A320.Sdk.Client</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <IsTrimmable>true</IsTrimmable>
+    <PackageId>NVAN.A320.Sdk.Client</PackageId>
+    <Description>.NET client for the NVAN A320 Professional dataref API: automatic reconnection, subscriptions, reads and writes.</Description>
+  </PropertyGroup>
+</Project>

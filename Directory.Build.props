@@ -1,0 +1,17 @@
+<Project>
+  <!-- Shared by every project of the SDK. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <IsAotCompatible>true</IsAotCompatible>
+    <Version>1.1.0</Version>
+    <Authors>NVAN</Authors>
+    <Company>NVAN</Company>
+    <Product>NVAN A320 Professional SDK</Product>
+    <Copyright>Copyright (c) 2026 NVAN</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+</Project>
