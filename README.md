@@ -113,6 +113,7 @@ The **Plugin API** has its own version, `MAJOR.MINOR.PATCH`, starting at **1.0.0
 | 1.1.2 | Datarefs `mip.gear.leverSolenoid` (L/G lever locked DOWN), `ctl.sidestickSolenoid.capt` / `.fo` (sidestick locked in neutral, AP engaged) |
 | 1.1.3 | `instructor.sim.paused` writable (1 pause, 0 resume, as the IOS PAUSE / PLAY; the value stays the simulator's state); `instructor.simRate` (writable before too) documented for clients: 1, 2, 4 or 8, any other value refused |
 | 1.1.4 | Datarefs `ped.mcdu<n>.key.blank1` / `blank2`: the two unlabeled MCDU keys (upper function row right of DATA, and right of AIRPORT), momentary like the other keys |
+| 1.1.5 | Datarefs `ped.mcdu<n>.subsystem.fmgc` / `aids` / `cfds` / `atsu`: select an MCDU MENU system directly (as MCDU MENU then its line select key), for ARINC MCDU hardware without an MCDU MENU key |
 
 Each plugin declares the **minimum** Plugin API it needs (and a maximum only after a drastic change). It works on every
 product version that provides that API or later within the same MAJOR. NVAN may also mark specific versions compatible

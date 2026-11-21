@@ -1,6 +1,6 @@
 # Datarefs
 
-Every dataref of NVAN A320 Professional (4027), grouped by panel or system. Generated from Systems' catalog;
+Every dataref of NVAN A320 Professional (4035), grouped by panel or system. Generated from Systems' catalog;
 a running Systems lists the same at `http://<address>:8080/api` and over the WebSocket (`{"op":"catalog"}`).
 
 Access: **read** (only Systems writes it), **write** (a plugin or client may write it), **momentary** (a
@@ -173,8 +173,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Pedestal / ENG 115VU](#pedestal--eng-115vu) (7)
 - [Pedestal / Flight controls](#pedestal--flight-controls) (8)
 - [Pedestal / GRAVITY GEAR EXTN](#pedestal--gravity-gear-extn) (1)
-- [Pedestal / MCDU 1](#pedestal--mcdu-1) (111)
-- [Pedestal / MCDU 2](#pedestal--mcdu-2) (111)
+- [Pedestal / MCDU 1](#pedestal--mcdu-1) (115)
+- [Pedestal / MCDU 2](#pedestal--mcdu-2) (115)
 - [Pedestal / PARKING BRK](#pedestal--parking-brk) (1)
 - [Pedestal / RMP 1](#pedestal--rmp-1) (32)
 - [Pedestal / RMP 2](#pedestal--rmp-2) (32)
@@ -4711,6 +4711,10 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `ped.mcdu1.line13.text` | string | output | read | `""` | MCDU 1 screen line 13: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
 | `ped.mcdu1.line14.color` | string | output | read | `""` | MCDU 1 screen line 14: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
 | `ped.mcdu1.line14.text` | string | output | read | `""` | MCDU 1 screen line 14: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu1.subsystem.aids` | bool | pushbutton | momentary | `0` | MCDU 1 select AIDS (momentary: a rising edge = MCDU MENU then its line select key; for MCDU hardware without an MCDU MENU key) |
+| `ped.mcdu1.subsystem.atsu` | bool | pushbutton | momentary | `0` | MCDU 1 select ATSU (momentary: a rising edge = MCDU MENU then its line select key; for MCDU hardware without an MCDU MENU key) |
+| `ped.mcdu1.subsystem.cfds` | bool | pushbutton | momentary | `0` | MCDU 1 select CFDS (momentary: a rising edge = MCDU MENU then its line select key; for MCDU hardware without an MCDU MENU key) |
+| `ped.mcdu1.subsystem.fmgc` | bool | pushbutton | momentary | `0` | MCDU 1 select FMGC (momentary: a rising edge = MCDU MENU then its line select key; for MCDU hardware without an MCDU MENU key) |
 
 ## Pedestal / MCDU 2
 
@@ -4827,6 +4831,10 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `ped.mcdu2.line13.text` | string | output | read | `""` | MCDU 2 screen line 13: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
 | `ped.mcdu2.line14.color` | string | output | read | `""` | MCDU 2 screen line 14: one letter per character of .text, the color (W white, C cyan, G green, A amber, M magenta, Y yellow, R red), upper case = large font, lower case = small font |
 | `ped.mcdu2.line14.text` | string | output | read | `""` | MCDU 2 screen line 14: its 24 monospace characters (blank while the screen is dark; symbols □ ← → ↑ ↓ ° Δ), for hardware that shows text |
+| `ped.mcdu2.subsystem.aids` | bool | pushbutton | momentary | `0` | MCDU 2 select AIDS (momentary: a rising edge = MCDU MENU then its line select key; for MCDU hardware without an MCDU MENU key) |
+| `ped.mcdu2.subsystem.atsu` | bool | pushbutton | momentary | `0` | MCDU 2 select ATSU (momentary: a rising edge = MCDU MENU then its line select key; for MCDU hardware without an MCDU MENU key) |
+| `ped.mcdu2.subsystem.cfds` | bool | pushbutton | momentary | `0` | MCDU 2 select CFDS (momentary: a rising edge = MCDU MENU then its line select key; for MCDU hardware without an MCDU MENU key) |
+| `ped.mcdu2.subsystem.fmgc` | bool | pushbutton | momentary | `0` | MCDU 2 select FMGC (momentary: a rising edge = MCDU MENU then its line select key; for MCDU hardware without an MCDU MENU key) |
 
 ## Pedestal / PARKING BRK
 
