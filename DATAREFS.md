@@ -1,6 +1,6 @@
 # Datarefs
 
-Every dataref of NVAN A320 Professional (4023), grouped by panel or system. Generated from Systems' catalog;
+Every dataref of NVAN A320 Professional (4027), grouped by panel or system. Generated from Systems' catalog;
 a running Systems lists the same at `http://<address>:8080/api` and over the WebSocket (`{"op":"catalog"}`).
 
 Access: **read** (only Systems writes it), **write** (a plugin or client may write it), **momentary** (a
@@ -173,8 +173,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Pedestal / ENG 115VU](#pedestal--eng-115vu) (7)
 - [Pedestal / Flight controls](#pedestal--flight-controls) (8)
 - [Pedestal / GRAVITY GEAR EXTN](#pedestal--gravity-gear-extn) (1)
-- [Pedestal / MCDU 1](#pedestal--mcdu-1) (109)
-- [Pedestal / MCDU 2](#pedestal--mcdu-2) (109)
+- [Pedestal / MCDU 1](#pedestal--mcdu-1) (111)
+- [Pedestal / MCDU 2](#pedestal--mcdu-2) (111)
 - [Pedestal / PARKING BRK](#pedestal--parking-brk) (1)
 - [Pedestal / RMP 1](#pedestal--rmp-1) (32)
 - [Pedestal / RMP 2](#pedestal--rmp-2) (32)
@@ -4615,6 +4615,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `ped.mcdu1.key.airport` | bool | pushbutton | momentary | `0` | MCDU 1 key AIRPORT (momentary: 1 while held) |
 | `ped.mcdu1.key.atccomm` | bool | pushbutton | momentary | `0` | MCDU 1 key ATCCOMM (momentary: 1 while held) |
 | `ped.mcdu1.key.b` | bool | pushbutton | momentary | `0` | MCDU 1 key B (momentary: 1 while held) |
+| `ped.mcdu1.key.blank1` | bool | pushbutton | momentary | `0` | MCDU 1 blank key, upper function row right of DATA (momentary: 1 while held) |
+| `ped.mcdu1.key.blank2` | bool | pushbutton | momentary | `0` | MCDU 1 blank key, right of AIRPORT (momentary: 1 while held) |
 | `ped.mcdu1.key.brt` | bool | pushbutton | momentary | `0` | MCDU 1 key BRT (momentary: 1 while held) |
 | `ped.mcdu1.key.c` | bool | pushbutton | momentary | `0` | MCDU 1 key C (momentary: 1 while held) |
 | `ped.mcdu1.key.clr` | bool | pushbutton | momentary | `0` | MCDU 1 key CLR (momentary: 1 while held) |
@@ -4729,6 +4731,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `ped.mcdu2.key.airport` | bool | pushbutton | momentary | `0` | MCDU 2 key AIRPORT (momentary: 1 while held) |
 | `ped.mcdu2.key.atccomm` | bool | pushbutton | momentary | `0` | MCDU 2 key ATCCOMM (momentary: 1 while held) |
 | `ped.mcdu2.key.b` | bool | pushbutton | momentary | `0` | MCDU 2 key B (momentary: 1 while held) |
+| `ped.mcdu2.key.blank1` | bool | pushbutton | momentary | `0` | MCDU 2 blank key, upper function row right of DATA (momentary: 1 while held) |
+| `ped.mcdu2.key.blank2` | bool | pushbutton | momentary | `0` | MCDU 2 blank key, right of AIRPORT (momentary: 1 while held) |
 | `ped.mcdu2.key.brt` | bool | pushbutton | momentary | `0` | MCDU 2 key BRT (momentary: 1 while held) |
 | `ped.mcdu2.key.c` | bool | pushbutton | momentary | `0` | MCDU 2 key C (momentary: 1 while held) |
 | `ped.mcdu2.key.clr` | bool | pushbutton | momentary | `0` | MCDU 2 key CLR (momentary: 1 while held) |
