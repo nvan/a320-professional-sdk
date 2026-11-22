@@ -1,0 +1,5 @@
+NVAN EIS font (NVANEIS-Regular.ttf) — Copyright 2026 NVAN. All rights reserved.
+
+Proprietary license: this font is NOT covered by the SDK's MIT license. It is provided only to draw displays
+connected to NVAN A320 Professional; it may not be redistributed separately, modified, or used in other products
+without NVAN's written permission.

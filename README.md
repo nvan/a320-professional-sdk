@@ -8,7 +8,8 @@ aircraft state is a **dataref** served by the *Systems* program. There are two w
   button box). The plugin itself reads, writes, presses and follows datarefs; it lets its user choose them in its own
   settings or configuration window, from the dataref catalog.
 
-Every dataref, with its type, kind, access and meaning, is listed in [DATAREFS.md](DATAREFS.md).
+Every dataref, with its type, kind, access and meaning, is listed in [DATAREFS.md](DATAREFS.md). The ready-to-draw
+PFD (display streams over the same WebSocket) is described in [DISPLAY-STREAMS.md](DISPLAY-STREAMS.md).
 
 Requires the [.NET 10 SDK](https://dotnet.microsoft.com/download). Uses no NuGet packages. MIT license (see
 [LICENSE](LICENSE)).
@@ -96,6 +97,40 @@ reply. A path ending in `*` means every dataref starting with that prefix.
 After subscribing, Systems sends `{"op":"values","tick":123,"values":{"path":value,...}}` with only the datarefs that
 changed, at most every 30 ms. Bools are 0 / 1, strings are JSON strings. If Systems restarts the connection closes:
 connect and subscribe again.
+
+## Display streams over WebSocket (the ready-to-draw PFD)
+
+For a real or home-made PFD display unit: the same connection also gives each side's PFD exactly as the simulated DMC
+computes it (every value, color, flag, shown decision and flashing phase) and the state of that side's two display
+units, up to 50 times a second. Streams: `pfd.capt`, `pfd.fo`.
+
+| Send | Systems answers |
+| --- | --- |
+| `{"op":"subscribe-display","streams":["pfd.capt","pfd.fo"],"rate":50}` | `{"op":"display-subscribed","streams":[...],"format":1,"rate":50}`, then `display` messages. `rate` optional, 10..50 Hz (default 50) |
+| `{"op":"unsubscribe-display","streams":["pfd.fo"]}` | `{"op":"display-unsubscribed","streams":["pfd.fo"]}`; no message of those streams after it |
+
+An unknown stream is an `error` and subscribes nothing. Then Systems sends
+`{"op":"display","stream":"pfd.capt","format":1,"seq":N,"tick":T,"full":true|false,"data":{...}}`:
+
+- **Full** messages (`"full":true`, every field): the first after subscribing and one every 2 s (a client that missed something has the whole PFD again within 2 s).
+- **Deltas** otherwise: only the fields that changed since the last message of that stream to this connection. Keep
+  one JSON object per stream; on a full message replace it with `data`; on a delta merge `data` into it **object by
+  object, key by key** (any non-object value, `null` included, replaces the old one; no key is ever removed; arrays
+  would be replaced whole, and format 1 has none). No message is sent while nothing changes.
+- `format` is the display-stream schema version (1): raised only for a breaking change; new fields keep it (ignore
+  keys you do not know). These ops did not change the API version (`"api":1`) nor the Plugin API version.
+- `seq` counts the stream's messages from 1 at each subscription; `tick` is the simulation tick of the frame.
+- Sizes: a full message about 6.3 KB, a delta about 125 B parked and 450 B in flight.
+
+`data` (339 fields): `status`, `dmc`, `side`, `displayUnits` (the DUs at the PFD and ND positions: state, format shown,
+DMC, brightness, CHECK / DU NOT MONITORED messages), `flags` / `flagsFlashOff` (ATT, SPD, ALT, V/S, HDG, MACH, SI, RA,
+CHECK ATT / ALT / HDG, FD, FPV, windshear), `attitude`, `speed` (scale, trend, VMAX, Mach, targets, VLS, α prot, α max,
+VSW, VFE next, green dot, F, S, V1, VR...), `altitude` (scale, window, target, baro reference, radio height, vertical
+deviation), `verticalSpeed`, `tcas` (RA zones), `heading`, `guidance` (FD bars, FPV / FPD, yaw bar), `fma` (5 columns
+× 3 lines: text, colors, boxes, flashing, span), `fctlMessage`, `landingSystem` (LOC / G/S, ILS data, course, markers,
+flags). Colors and states are names, every flag a named boolean, flashing items carry a `...FlashOff` boolean (the off
+phase, timed by Systems). **Every field, its unit and meaning, the conventions and an example session:
+[DISPLAY-STREAMS.md](DISPLAY-STREAMS.md).**
 
 ## Compatibility
 

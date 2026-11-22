@@ -1,0 +1,38 @@
+<!doctype html>
+<!--
+  NVAN A320 Professional: a basic captain PFD drawn in a web page from the "pfd.capt" display stream of Systems.
+  A didactic example (not a certified display). Open this file in a browser. Add ?host=192.168.1.20 or
+  ?host=192.168.1.20:8080 for Systems on another PC; ?stream=pfd.fo for the first officer PFD).
+  The font NVANEIS-Regular.ttf is NOT under the SDK's MIT license: see FONT-LICENSE.txt.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NVAN A320 PFD (canvas example)</title>
+  <style>
+    @font-face {
+      font-family: "NVANEIS";
+      src: url("NVANEIS-Regular.ttf") format("truetype");
+    }
+    html, body { margin: 0; height: 100%; background: #000; color: #ccc; font: 13px sans-serif; }
+    body { display: flex; flex-direction: column; align-items: center; }
+    #bar { display: flex; gap: 8px; align-items: center; padding: 6px; }
+    #bar input { width: 16em; }
+    #status { min-width: 18em; }
+    /* The canvas keeps its 768 x 768 drawing buffer and is scaled by CSS to fit the window (square). */
+    #pfd { width: min(100vw, calc(100vh - 40px)); height: min(100vw, calc(100vh - 40px)); background: #000; }
+    body.bare #bar { display: none; }
+    body.bare #pfd { width: min(100vw, 100vh); height: min(100vw, 100vh); }
+  </style>
+</head>
+<body>
+  <div id="bar">
+    <label>Systems <input id="host" spellcheck="false"></label>
+    <button id="connect">Connect</button>
+    <span id="status">not connected</span>
+  </div>
+  <canvas id="pfd" width="768" height="768"></canvas>
+  <script src="pfd.js"></script>
+</body>
+</html>
