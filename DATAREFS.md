@@ -1,6 +1,6 @@
 # Datarefs
 
-Every dataref of NVAN A320 Professional (4035), grouped by panel or system. Generated from Systems' catalog;
+Every dataref of NVAN A320 Professional (4026), grouped by panel or system. Generated from Systems' catalog;
 a running Systems lists the same at `http://<address>:8080/api` and over the WebSocket (`{"op":"catalog"}`).
 
 Access: **read** (only Systems writes it), **write** (a plugin or client may write it), **momentary** (a
@@ -52,19 +52,19 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Failures / Communications](#failures--communications) (20)
 - [Failures / Doors](#failures--doors) (6)
 - [Failures / EIS](#failures--eis) (17)
-- [Failures / Electrical](#failures--electrical) (28)
+- [Failures / Electrical](#failures--electrical) (30)
 - [Failures / Electrical contactors](#failures--electrical-contactors) (66)
 - [Failures / Engines](#failures--engines) (85)
 - [Failures / Engines (CFM)](#failures--engines-cfm) (6)
 - [Failures / Engines (IAE)](#failures--engines-iae) (28)
 - [Failures / FCU](#failures--fcu) (2)
-- [Failures / Fire](#failures--fire) (42)
+- [Failures / Fire](#failures--fire) (48)
 - [Failures / Flight controls](#failures--flight-controls) (58)
 - [Failures / FMGC](#failures--fmgc) (2)
 - [Failures / Fuel](#failures--fuel) (22)
 - [Failures / FWS](#failures--fws) (4)
 - [Failures / Hydraulic](#failures--hydraulic) (17)
-- [Failures / Ice and rain](#failures--ice-and-rain) (4)
+- [Failures / Ice and rain](#failures--ice-and-rain) (6)
 - [Failures / ISIS](#failures--isis) (5)
 - [Failures / Landing gear](#failures--landing-gear) (31)
 - [Failures / Lights](#failures--lights) (17)
@@ -79,10 +79,9 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Failures / Ventilation](#failures--ventilation) (9)
 - [Failures / Water / waste](#failures--water--waste) (4)
 - [Failures / Weather radar](#failures--weather-radar) (6)
-- [FG (indications)](#fg-indications) (33)
+- [FG (indications)](#fg-indications) (24)
 - [Fire protection (indications)](#fire-protection-indications) (16)
 - [Flight controls / State (read-only)](#flight-controls--state-read-only) (44)
-- [FMGC (diagnostics)](#fmgc-diagnostics) (12)
 - [FMGC (indications)](#fmgc-indications) (35)
 - [FMGS stand-in](#fmgs-stand-in) (3)
 - [Forward entrance](#forward-entrance) (1)
@@ -185,7 +184,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Radio (receivers)](#radio-receivers) (40)
 - [Radio (simulator)](#radio-simulator) (4)
 - [Radio (transmission)](#radio-transmission) (10)
-- [Rain removal](#rain-removal) (10)
+- [Rain removal](#rain-removal) (12)
 - [Recorders](#recorders) (5)
 - [Relays (read-only discretes)](#relays-read-only-discretes) (19)
 - [Sidesticks](#sidesticks) (4)
@@ -1947,10 +1946,12 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `failures.elec.gen1` | bool | failure | write | `0` | GEN 1 failure (GCU trip) |
 | `failures.elec.gen2` | bool | failure | write | `0` | GEN 2 failure (GCU trip) |
 | `failures.elec.gpu` | bool | failure | write | `0` | Ground power out of limits (voltage, frequency or phase sequence) |
+| `failures.elec.idg1Disc` | bool | failure | write | `0` | IDG 1 disconnected (IDG pb or thermal disconnection: GEN 1 lost; clear = reconnected, in flight too) |
 | `failures.elec.idg1FilterClog` | bool | failure | write | `0` | IDG 1 oil filter clogged |
 | `failures.elec.idg1OilLoLvl` | bool | failure | write | `0` | IDG 1 oil low level (runs hotter) |
 | `failures.elec.idg1OilLoPr` | bool | failure | write | `0` | IDG 1 oil low pressure |
 | `failures.elec.idg1OilOvht` | bool | failure | write | `0` | IDG 1 oil overheat |
+| `failures.elec.idg2Disc` | bool | failure | write | `0` | IDG 2 disconnected (IDG pb or thermal disconnection: GEN 2 lost; clear = reconnected, in flight too) |
 | `failures.elec.idg2FilterClog` | bool | failure | write | `0` | IDG 2 oil filter clogged |
 | `failures.elec.idg2OilLoLvl` | bool | failure | write | `0` | IDG 2 oil low level (runs hotter) |
 | `failures.elec.idg2OilLoPr` | bool | failure | write | `0` | IDG 2 oil low pressure |
@@ -2176,6 +2177,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
 | `failures.fire.apu` | bool | failure | write | `0` | APU fire, out after the agent |
+| `failures.fire.apuBottleDischarged` | bool | failure | write | `0` | APU AGENT discharged (bottle empty, DISCH light; clear = bottle refilled) |
 | `failures.fire.apuBottleLeak` | bool | failure | write | `0` | APU bottle leaking: loses its agent (DISCH light) |
 | `failures.fire.apuBottleSquib` | bool | failure | write | `0` | APU bottle squib failed (no discharge, no SQUIB light at the test) |
 | `failures.fire.apuFdu` | bool | failure | write | `0` | APU fire detection unit failed |
@@ -2187,6 +2189,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `failures.fire.cargoAftDetA` | bool | failure | write | `0` | Aft cargo smoke detectors, channel 1 loop, failed |
 | `failures.fire.cargoAftDetB` | bool | failure | write | `0` | Aft cargo smoke detectors, channel 2 loop, failed |
 | `failures.fire.cargoAftSmoke` | bool | failure | write | `0` | Smoke in the aft cargo compartment (SMOKE AFT CARGO SMOKE) |
+| `failures.fire.cargoBottleDischarged` | bool | failure | write | `0` | CARGO bottle discharged (bottle empty, DISCH light; clear = bottle refilled) |
 | `failures.fire.cargoBottleLeak` | bool | failure | write | `0` | Cargo bottle leaking: loses its agent (DISCH light) |
 | `failures.fire.cargoFwdDetA` | bool | failure | write | `0` | Forward cargo smoke detector, channel 1 loop, failed |
 | `failures.fire.cargoFwdDetB` | bool | failure | write | `0` | Forward cargo smoke detector, channel 2 loop, failed |
@@ -2194,8 +2197,10 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `failures.fire.cargoSquibAft` | bool | failure | write | `0` | Cargo bottle AFT discharge head squib failed (SMOKE AFT CRG BTL FAULT) |
 | `failures.fire.cargoSquibFwd` | bool | failure | write | `0` | Cargo bottle FWD discharge head squib failed (SMOKE FWD CRG BTL FAULT) |
 | `failures.fire.eng1` | bool | failure | write | `0` | Engine 1 fire, out after one agent |
+| `failures.fire.eng1Bottle1Discharged` | bool | failure | write | `0` | ENG 1 AGENT 1 discharged (bottle empty, DISCH light; clear = bottle refilled) |
 | `failures.fire.eng1Bottle1Leak` | bool | failure | write | `0` | Engine 1 bottle 1 leaking: loses its agent (DISCH light) |
 | `failures.fire.eng1Bottle1Squib` | bool | failure | write | `0` | Engine 1 bottle 1 squib failed (no discharge, no SQUIB light at the test) |
+| `failures.fire.eng1Bottle2Discharged` | bool | failure | write | `0` | ENG 1 AGENT 2 discharged (bottle empty, DISCH light; clear = bottle refilled) |
 | `failures.fire.eng1Bottle2Leak` | bool | failure | write | `0` | Engine 1 bottle 2 leaking: loses its agent (DISCH light) |
 | `failures.fire.eng1Bottle2Squib` | bool | failure | write | `0` | Engine 1 bottle 2 squib failed (no discharge, no SQUIB light at the test) |
 | `failures.fire.eng1Fdu` | bool | failure | write | `0` | Engine 1 fire detection unit failed |
@@ -2204,8 +2209,10 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `failures.fire.eng1TwoAgents` | bool | failure | write | `0` | Engine 1 fire, out only after both agents |
 | `failures.fire.eng1Unextinguishable` | bool | failure | write | `0` | Engine 1 fire, not extinguishable (still burning after both agents) |
 | `failures.fire.eng2` | bool | failure | write | `0` | Engine 2 fire, out after one agent |
+| `failures.fire.eng2Bottle1Discharged` | bool | failure | write | `0` | ENG 2 AGENT 1 discharged (bottle empty, DISCH light; clear = bottle refilled) |
 | `failures.fire.eng2Bottle1Leak` | bool | failure | write | `0` | Engine 2 bottle 1 leaking: loses its agent (DISCH light) |
 | `failures.fire.eng2Bottle1Squib` | bool | failure | write | `0` | Engine 2 bottle 1 squib failed (no discharge, no SQUIB light at the test) |
+| `failures.fire.eng2Bottle2Discharged` | bool | failure | write | `0` | ENG 2 AGENT 2 discharged (bottle empty, DISCH light; clear = bottle refilled) |
 | `failures.fire.eng2Bottle2Leak` | bool | failure | write | `0` | Engine 2 bottle 2 leaking: loses its agent (DISCH light) |
 | `failures.fire.eng2Bottle2Squib` | bool | failure | write | `0` | Engine 2 bottle 2 squib failed (no discharge, no SQUIB light at the test) |
 | `failures.fire.eng2Fdu` | bool | failure | write | `0` | Engine 2 fire detection unit failed |
@@ -2354,6 +2361,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `failures.wiper.captRplntValve` | bool | failure | write | `0` | Captain rain repellent solenoid valve failed closed (no spray) |
 | `failures.wiper.foMotor` | bool | failure | write | `0` | First officer wiper motor-converter failure (the blade stops where it is) |
 | `failures.wiper.foRplntValve` | bool | failure | write | `0` | First officer rain repellent solenoid valve failed closed (no spray) |
+| `failures.wshld.birdSplatL` | bool | failure | write | `0` | Captain windshield: bird remains on the glass (blood and feathers; the wipers do not remove them) |
+| `failures.wshld.birdSplatR` | bool | failure | write | `0` | First officer windshield: bird remains on the glass (blood and feathers; the wipers do not remove them) |
 
 ## Failures / ISIS
 
@@ -2600,15 +2609,6 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `fadec.throttle2` | float | output | read | `0` | FADEC 2 throttle command to the simulator (0..1) |
 | `fg.athrN1Pct` | float | output | read | `0` | A/THR N1 target |
 | `fg.athrStatus` | int | output | read | `0` | A/THR: 0 off, 1 armed, 2 active |
-| `fg.diag.athrSpeedKt` | float | output | read | `0` | A/THR speed (CAS with the trend's fast part) |
-| `fg.diag.athrTrendKtS` | float | output | read | `0` | A/THR speed trend (kt/s) |
-| `fg.diag.casKt` | float | output | read | `0` | CAS the FG uses |
-| `fg.diag.ilsCourseDeg` | float | output | read | `0` | ILS course used by the laws (magnetic) |
-| `fg.diag.locInterceptDeg` | float | output | read | `0` | LOC law intercept angle (+ = towards the right) |
-| `fg.diag.locOffsetM` | float | output | read | `0` | Lateral offset from the LOC axis used by the laws (m, + = left) |
-| `fg.diag.rudderOrderDeg` | float | output | read | `0` | AP rudder order of ALIGN / ROLL OUT |
-| `fg.diag.trackDeg` | float | output | read | `0` | Track used by the laws (magnetic, IR) |
-| `fg.diag.yawErrorDeg` | float | output | read | `0` | ALIGN / ROLL OUT / RWY heading order minus heading (yaw bar) |
 | `fg.fma.col1.line1` | string | output | read | `""` | FMA column 1, line 1 text ("" = blank) |
 | `fg.fma.col1.line2` | string | output | read | `""` | FMA column 1, line 2 text ("" = blank) |
 | `fg.fma.col1.line3` | string | output | read | `""` | FMA column 1, line 3 text ("" = blank) |
@@ -2699,23 +2699,6 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `fctl.thsOrderDegS` | float | output | read | `0` | Pitch computer: THS rate order (deg/s, + nose up; autotrim or the trim reset after landing) |
 | `fctl.travelLimitDeg` | float | output | read | `0` | Actual travelLimitDeg (sign conventions: SystemsCommands) |
 | `fctl.yawLaw` | int | output | read | `0` | Yaw: 0 mechanical, 1 normal, 2 alternate |
-
-## FMGC (diagnostics)
-
-| Dataref | Type | Kind | Access | Sample value | Description |
-| --- | --- | --- | --- | --- | --- |
-| `fmgc.diag.aircraftNm` | float | output | read | `0` | Aircraft position on the profile of the last computation (profile distance, 10 Hz) (NM) (-99999 = none). Diagnostic, not an aircraft indication. |
-| `fmgc.diag.crzFl` | int | output | read | `0` | CRZ FL of the FM (hundreds of feet) (-99999 = none). Diagnostic, not an aircraft indication. |
-| `fmgc.diag.decelNm` | float | output | read | `0` | DECEL in profile distance (NM) (-99999 = none). Diagnostic, not an aircraft indication. |
-| `fmgc.diag.pastTod` | bool | output | read | `0` | The aircraft is past the start of the descent path. Diagnostic, not an aircraft indication. |
-| `fmgc.diag.pathAltFt` | float | output | read | `0` | Descent path altitude at the aircraft (the cruise level before the T/D) (ft) (-99999 = none). Diagnostic, not an aircraft indication. |
-| `fmgc.diag.pathTopAltFt` | float | output | read | `0` | Altitude of the start of the descent path (the cruise level when the T/D was found) (ft) (-99999 = none). Diagnostic, not an aircraft indication. |
-| `fmgc.diag.pathTopNm` | float | output | read | `0` | Start of the descent path (its top, the T/D when at the cruise level) in profile distance (NM) (-99999 = none). Diagnostic, not an aircraft indication. |
-| `fmgc.diag.phase` | int | output | read | `0` | FM flight phase: 0 PREFLIGHT, 1 TAKEOFF, 2 CLIMB, 3 CRUISE, 4 DESCENT, 5 APPROACH, 6 GO AROUND, 7 DONE. Diagnostic, not an aircraft indication. |
-| `fmgc.diag.showLinearDev` | bool | output | read | `0` | PFD linear deviation (green VDEV dot) shown. Diagnostic, not an aircraft indication. |
-| `fmgc.diag.showVdev` | bool | output | read | `0` | PROG VDEV shown. Diagnostic, not an aircraft indication. |
-| `fmgc.diag.todNm` | float | output | read | `0` | Predicted T/D of the vertical profile from the aircraft at the last 1 Hz computation (NM) (-99999 = none). Diagnostic, not an aircraft indication. |
-| `fmgc.diag.vdevFt` | float | output | read | `0` | Vertical deviation from the descent path, + above (ft) (-99999 = none). Diagnostic, not an aircraft indication. |
 
 ## FMGC (indications)
 
@@ -5060,6 +5043,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `wipers.fo.position` | float | output | read | `0` | First officer wiper blade position (0 parked out of view .. 1 far end of the sweep) |
 | `wipers.fo.running` | bool | output | read | `0` | First officer wiper motor running |
 | `wipers.fo.speed` | int | output | read | `0` | First officer wiper motor speed (0 stopped, 1 slow, 2 fast) |
+| `wshld.birdSplatL` | int | output | read | `0` | Captain windshield bird remains decal (0 clean, 1..4 the variant shown; the failure WSHLD.BIRD_SPLAT_L) |
+| `wshld.birdSplatR` | int | output | read | `0` | First officer windshield bird remains decal (0 clean, 1..4 the variant shown; the failure WSHLD.BIRD_SPLAT_R) |
 
 ## Recorders
 
