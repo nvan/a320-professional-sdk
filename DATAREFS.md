@@ -1,6 +1,6 @@
 # Datarefs
 
-Every dataref of NVAN A320 Professional (4026), grouped by panel or system. Generated from Systems' catalog;
+Every dataref of NVAN A320 Professional (4030), grouped by panel or system. Generated from Systems' catalog;
 a running Systems lists the same at `http://<address>:8080/api` and over the WebSocket (`{"op":"catalog"}`).
 
 Access: **read** (only Systems writes it), **write** (a plugin or client may write it), **momentary** (a
@@ -59,8 +59,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Failures / Engines (IAE)](#failures--engines-iae) (28)
 - [Failures / FCU](#failures--fcu) (2)
 - [Failures / Fire](#failures--fire) (48)
-- [Failures / Flight controls](#failures--flight-controls) (58)
-- [Failures / FMGC](#failures--fmgc) (2)
+- [Failures / Flight controls](#failures--flight-controls) (60)
+- [Failures / FMGC](#failures--fmgc) (3)
 - [Failures / Fuel](#failures--fuel) (22)
 - [Failures / FWS](#failures--fws) (4)
 - [Failures / Hydraulic](#failures--hydraulic) (17)
@@ -103,7 +103,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Ground / Calls](#ground--calls) (5)
 - [Ground / EXTERNAL POWER panel](#ground--external-power-panel) (2)
 - [Ground / Water and waste](#ground--water-and-waste) (3)
-- [Ground services](#ground-services) (67)
+- [Ground services](#ground-services) (68)
 - [Ground services / Fuel](#ground-services--fuel) (9)
 - [Ground services / Load](#ground-services--load) (12)
 - [Hydraulic (parameters)](#hydraulic-parameters) (5)
@@ -2271,7 +2271,9 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `failures.fctl.sfcc2Flap` | bool | failure | write | `0` | SFCC 2 flap channel failure (FLAP SYS 2 FAULT) |
 | `failures.fctl.sfcc2Slat` | bool | failure | write | `0` | SFCC 2 slat channel failure (SLAT SYS 2 FAULT) |
 | `failures.fctl.sidestickCapt` | bool | failure | write | `0` | Captain sidestick transducers failed (L SIDESTICK FAULT) |
+| `failures.fctl.sidestickCaptLock` | bool | failure | write | `0` | Captain sidestick deactivated: F/O takeover pb held > 40 s (red arrow CAPT; clear = reactivated, as a takeover pb press) |
 | `failures.fctl.sidestickFo` | bool | failure | write | `0` | F/O sidestick transducers failed (R SIDESTICK FAULT) |
+| `failures.fctl.sidestickFoLock` | bool | failure | write | `0` | F/O sidestick deactivated: captain takeover pb held > 40 s (red arrow F/O; clear = reactivated, as a takeover pb press) |
 | `failures.fctl.sidestickPriorityLogic` | bool | failure | write | `0` | Sidestick priority logic circuit failure (F/CTL SIDESTICK PRIORITY) |
 | `failures.fctl.slatWtb` | bool | failure | write | `0` | Slat wing tip brakes applied (SLATS LOCKED) |
 | `failures.fctl.slatWtbFault` | bool | failure | write | `0` | One slat wing tip brake failed: cannot be applied (F/CTL SLAT TIP BRK FAULT) |
@@ -2292,6 +2294,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
+| `failures.autoFlt.athrLock` | bool | failure | write | `0` | A/THR lost: instinctive disconnect pb held > 15 s (A/THR and alpha floor lost; clear = reset, otherwise until an FMGC power-up on ground) |
 | `failures.fmgc.fmgc1` | bool | failure | write | `0` | FMGC 1 failure |
 | `failures.fmgc.fmgc2` | bool | failure | write | `0` | FMGC 2 failure |
 
@@ -3061,6 +3064,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
 | `ground.cargoDoorOperating` | bool | output | read | `0` | A cargo door manual selector valve at OPEN or CLOSE (starts the yellow electric pump) |
+| `ground.externalTow` | int | service | read | `0` | Tug that is not ours, as the simulator says (bits: 1 simulator pushback tug attached, 2 simulator tow in progress, 4 BetterPushback connected, 8 BetterPushback started; 0 none) |
 | `ground.fire.refillBottles` | bool | service | momentary | `0` | Recharge every fire extinguisher bottle (engines, APU, cargo; 1 while servicing) |
 | `ground.gate.armedSlides` | int | output | read | `0` | Automatic doors with the beacon: passenger doors not opened because their slide was armed (bit per door: 1 FWD L, 2 FWD R, 4 AFT L, 8 AFT R) |
 | `ground.gate.autoDoors` | bool | service | write | `0` | Systems option: automatic doors and jetway with the beacon (BEACON OFF while parked: L1, FWD / AFT / BULK cargo doors open, jetway called; BEACON ON: every door closed, jetway retracted). Saved in systems.json |

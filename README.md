@@ -150,6 +150,7 @@ The **Plugin API** has its own version, `MAJOR.MINOR.PATCH`, starting at **1.0.0
 | 1.1.4 | Datarefs `ped.mcdu<n>.key.blank1` / `blank2`: the two unlabeled MCDU keys (upper function row right of DATA, and right of AIRPORT), momentary like the other keys |
 | 1.1.5 | Datarefs `ped.mcdu<n>.subsystem.fmgc` / `aids` / `cfds` / `atsu`: select an MCDU MENU system directly (as MCDU MENU then its line select key), for ARINC MCDU hardware without an MCDU MENU key |
 | 1.1.6 | Datarefs: failures `failures.elec.idg1Disc` / `idg2Disc` (IDG disconnected; 0 reconnects, in flight too), `failures.fire.*BottleDischarged` (fire bottles discharged; 0 refills), `failures.wshld.birdSplatL` / `R` and the decals `wshld.birdSplatL` / `R` |
+| 1.1.7 | Datarefs: failures `failures.autoFlt.athrLock` (A/THR lost by the instinctive disconnect pb held > 15 s) and `failures.fctl.sidestickCaptLock` / `FoLock` (sidestick deactivated by the other takeover pb held > 40 s); `ground.externalTow` (read only: a tug that is not ours, X-Plane pushback or BetterPushback) |
 
 Each plugin declares the **minimum** Plugin API it needs (and a maximum only after a drastic change). It works on every
 product version that provides that API or later within the same MAJOR. NVAN may also mark specific versions compatible
