@@ -1,6 +1,6 @@
 # Datarefs
 
-Every dataref of NVAN A320 Professional (4030), grouped by panel or system. Generated from Systems' catalog;
+Every dataref of NVAN A320 Professional (4188), grouped by panel or system. Generated from Systems' catalog;
 a running Systems lists the same at `http://<address>:8080/api` and over the WebSocket (`{"op":"catalog"}`).
 
 Access: **read** (only Systems writes it), **write** (a plugin or client may write it), **momentary** (a
@@ -10,9 +10,10 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 ## Contents
 
-- [ADIRS (parameters)](#adirs-parameters) (24)
+- [ADIRS (parameters)](#adirs-parameters) (81)
 - [ADIRS / ATT heading (MCDU IRS MONITOR SET HDG)](#adirs--att-heading-mcdu-irs-monitor-set-hdg) (3)
 - [ADIRS / IR state](#adirs--ir-state) (6)
+- [Air (parameters)](#air-parameters) (28)
 - [Air systems (indications)](#air-systems-indications) (21)
 - [Aircraft](#aircraft) (11)
 - [Aircraft (sound sources)](#aircraft-sound-sources) (22)
@@ -40,9 +41,11 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Doors](#doors) (33)
 - [Doors / cockpit door (cabin side)](#doors--cockpit-door-cabin-side) (18)
 - [EFB](#efb) (1)
-- [Electrical (parameters)](#electrical-parameters) (25)
+- [EIS (parameters)](#eis-parameters) (2)
+- [Electrical (parameters)](#electrical-parameters) (26)
 - [Electrical contactors](#electrical-contactors) (22)
-- [Engines (parameters)](#engines-parameters) (10)
+- [Engines (parameters)](#engines-parameters) (12)
+- [FADEC (parameters)](#fadec-parameters) (6)
 - [Failures / ADIRS](#failures--adirs) (46)
 - [Failures / Air conditioning](#failures--air-conditioning) (21)
 - [Failures / APU](#failures--apu) (22)
@@ -71,21 +74,22 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Failures / MCDU](#failures--mcdu) (2)
 - [Failures / Oxygen](#failures--oxygen) (5)
 - [Failures / Pneumatic](#failures--pneumatic) (30)
-- [Failures / Pressurization](#failures--pressurization) (5)
+- [Failures / Pressurization](#failures--pressurization) (6)
 - [Failures / Probe / window heat](#failures--probe--window-heat) (21)
 - [Failures / Radio](#failures--radio) (22)
 - [Failures / Recorders](#failures--recorders) (3)
 - [Failures / Surveillance](#failures--surveillance) (7)
-- [Failures / Ventilation](#failures--ventilation) (9)
+- [Failures / Ventilation](#failures--ventilation) (13)
 - [Failures / Water / waste](#failures--water--waste) (4)
 - [Failures / Weather radar](#failures--weather-radar) (6)
-- [FG (indications)](#fg-indications) (24)
+- [FG (indications)](#fg-indications) (46)
 - [Fire protection (indications)](#fire-protection-indications) (16)
-- [Flight controls / State (read-only)](#flight-controls--state-read-only) (44)
+- [Flight controls / State (read-only)](#flight-controls--state-read-only) (47)
 - [FMGC (indications)](#fmgc-indications) (35)
 - [FMGS stand-in](#fmgs-stand-in) (3)
 - [Forward entrance](#forward-entrance) (1)
 - [Fuel (indications)](#fuel-indications) (38)
+- [FWC / ALERTS](#fwc--alerts) (2)
 - [FWC / AURAL](#fwc--aural) (10)
 - [Gates](#gates) (11)
 - [Glareshield](#glareshield) (2)
@@ -94,8 +98,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Glareshield / CHART LT](#glareshield--chart-lt) (4)
 - [Glareshield / CHRONO](#glareshield--chrono) (8)
 - [Glareshield / FCU](#glareshield--fcu) (4)
-- [Glareshield / FCU 13VU (AFS control panel)](#glareshield--fcu-13vu-afs-control-panel) (46)
-- [Glareshield / FCU 13VU (EFIS control panels)](#glareshield--fcu-13vu-efis-control-panels) (49)
+- [Glareshield / FCU 13VU (AFS control panel)](#glareshield--fcu-13vu-afs-control-panel) (47)
+- [Glareshield / FCU 13VU (EFIS control panels)](#glareshield--fcu-13vu-efis-control-panels) (53)
 - [Glareshield / INTEG LT](#glareshield--integ-lt) (1)
 - [Glareshield / SIDE STICK PRIORITY](#glareshield--side-stick-priority) (4)
 - [GPWS](#gpws) (4)
@@ -106,7 +110,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Ground services](#ground-services) (68)
 - [Ground services / Fuel](#ground-services--fuel) (9)
 - [Ground services / Load](#ground-services--load) (12)
-- [Hydraulic (parameters)](#hydraulic-parameters) (5)
+- [Hydraulic (parameters)](#hydraulic-parameters) (12)
 - [Instructor](#instructor) (7)
 - [Instructor / Simulator](#instructor--simulator) (20)
 - [Instructor / Slew](#instructor--slew) (10)
@@ -181,12 +185,12 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Pedestal / THRUST LEVERS](#pedestal--thrust-levers) (4)
 - [Pedestal / WEATHER RADAR](#pedestal--weather-radar) (7)
 - [Performance](#performance) (26)
-- [Radio (receivers)](#radio-receivers) (40)
+- [Radio (receivers)](#radio-receivers) (44)
 - [Radio (simulator)](#radio-simulator) (4)
 - [Radio (transmission)](#radio-transmission) (10)
 - [Rain removal](#rain-removal) (12)
 - [Recorders](#recorders) (5)
-- [Relays (read-only discretes)](#relays-read-only-discretes) (19)
+- [Relays (read-only discretes)](#relays-read-only-discretes) (33)
 - [Sidesticks](#sidesticks) (4)
 - [Simulator](#simulator) (3)
 - [Surveillance](#surveillance) (6)
@@ -199,28 +203,85 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `adirs.adr1.aoaDeg` | float | output | read | `0` | ADR 1 angle of attack (degrees, its AOA probe; NaN when not valid) |
 | `adirs.adr1.aoaValid` | bool | output | read | `0` | ADR 1 angle of attack valid (normal operation) |
+| `adirs.adr1.baroAltitudeCaptFt` | float | output | read |  | ADR 1 baro-corrected altitude with the captain's baro reference (ft; ARINC baro corrected altitude #1; the standard altitude in STD; NaN when not valid): the captain's PFD altitude when this ADR feeds the captain side |
+| `adirs.adr1.baroAltitudeFoFt` | float | output | read |  | ADR 1 baro-corrected altitude with the F/O's baro reference (ft; ARINC baro corrected altitude #2; the standard altitude in STD; NaN when not valid): the F/O's PFD altitude when this ADR feeds the F/O side (ADR 2, or ADR 3 with AIR DATA at F/O 3) |
+| `adirs.adr1.baroAltitudeFt` | float | output | read |  | ADR 1 baro-corrected altitude of its own side (ft; NaN when not valid): the same as adirs.adr1.baroAltitudeCaptFt (the captain EFIS baro reference; the standard altitude while that side is in STD) |
+| `adirs.adr1.baroReferenceCaptHpa` | float | output | read |  | ADR 1 captain baro reference received (hPa; 1013.25 in STD or without FCU; NaN when not valid) |
+| `adirs.adr1.baroReferenceFoHpa` | float | output | read |  | ADR 1 F/O baro reference received (hPa; 1013.25 in STD or without FCU; NaN when not valid) |
+| `adirs.adr1.baroReferenceHpa` | float | output | read |  | ADR 1 baro reference of its own side (hPa): the captain EFIS QNH, 1013.25 in STD or without FCU; NaN when not valid |
+| `adirs.adr1.casKt` | float | output | read |  | ADR 1 computed airspeed (kt; NaN when not valid) |
 | `adirs.adr1.mach` | float | output | read | `0` | ADR 1 Mach number (NaN when not valid) |
+| `adirs.adr1.pbOff` | bool | output | read | `0` | ADR 1 pushbutton released OFF (the ADIRU's latch: each press toggles it; cleared when the ADIRU loses power). Not a lamp: overhead.adirs.adr1.off is the OFF light |
+| `adirs.adr1.pressureAltitudeFt` | float | output | read |  | ADR 1 standard (1013.25 hPa) pressure altitude (ft; NaN when not valid) |
+| `adirs.adr1.satC` | float | output | read |  | ADR 1 static air temperature (°C; NaN when not valid) |
+| `adirs.adr1.tasKt` | float | output | read |  | ADR 1 true airspeed (kt; NaN when not valid) |
+| `adirs.adr1.tatC` | float | output | read |  | ADR 1 total air temperature (°C; NaN when not valid) |
+| `adirs.adr1.verticalSpeedFpm` | float | output | read |  | ADR 1 barometric vertical speed (ft/min, + up; NaN when not valid) |
 | `adirs.adr2.aoaDeg` | float | output | read | `0` | ADR 2 angle of attack (degrees, its AOA probe; NaN when not valid) |
 | `adirs.adr2.aoaValid` | bool | output | read | `0` | ADR 2 angle of attack valid (normal operation) |
+| `adirs.adr2.baroAltitudeCaptFt` | float | output | read |  | ADR 2 baro-corrected altitude with the captain's baro reference (ft; ARINC baro corrected altitude #1; the standard altitude in STD; NaN when not valid): the captain's PFD altitude when this ADR feeds the captain side |
+| `adirs.adr2.baroAltitudeFoFt` | float | output | read |  | ADR 2 baro-corrected altitude with the F/O's baro reference (ft; ARINC baro corrected altitude #2; the standard altitude in STD; NaN when not valid): the F/O's PFD altitude when this ADR feeds the F/O side (ADR 2, or ADR 3 with AIR DATA at F/O 3) |
+| `adirs.adr2.baroAltitudeFt` | float | output | read |  | ADR 2 baro-corrected altitude of its own side (ft; NaN when not valid): the same as adirs.adr2.baroAltitudeFoFt (the F/O EFIS baro reference; the standard altitude while that side is in STD) |
+| `adirs.adr2.baroReferenceCaptHpa` | float | output | read |  | ADR 2 captain baro reference received (hPa; 1013.25 in STD or without FCU; NaN when not valid) |
+| `adirs.adr2.baroReferenceFoHpa` | float | output | read |  | ADR 2 F/O baro reference received (hPa; 1013.25 in STD or without FCU; NaN when not valid) |
+| `adirs.adr2.baroReferenceHpa` | float | output | read |  | ADR 2 baro reference of its own side (hPa): the F/O EFIS QNH, 1013.25 in STD or without FCU; NaN when not valid |
+| `adirs.adr2.casKt` | float | output | read |  | ADR 2 computed airspeed (kt; NaN when not valid) |
 | `adirs.adr2.mach` | float | output | read | `0` | ADR 2 Mach number (NaN when not valid) |
+| `adirs.adr2.pbOff` | bool | output | read | `0` | ADR 2 pushbutton released OFF (the ADIRU's latch: each press toggles it; cleared when the ADIRU loses power). Not a lamp: overhead.adirs.adr2.off is the OFF light |
+| `adirs.adr2.pressureAltitudeFt` | float | output | read |  | ADR 2 standard (1013.25 hPa) pressure altitude (ft; NaN when not valid) |
+| `adirs.adr2.satC` | float | output | read |  | ADR 2 static air temperature (°C; NaN when not valid) |
+| `adirs.adr2.tasKt` | float | output | read |  | ADR 2 true airspeed (kt; NaN when not valid) |
+| `adirs.adr2.tatC` | float | output | read |  | ADR 2 total air temperature (°C; NaN when not valid) |
+| `adirs.adr2.verticalSpeedFpm` | float | output | read |  | ADR 2 barometric vertical speed (ft/min, + up; NaN when not valid) |
 | `adirs.adr3.aoaDeg` | float | output | read | `0` | ADR 3 angle of attack (degrees, its AOA probe; NaN when not valid) |
 | `adirs.adr3.aoaValid` | bool | output | read | `0` | ADR 3 angle of attack valid (normal operation) |
+| `adirs.adr3.baroAltitudeCaptFt` | float | output | read |  | ADR 3 baro-corrected altitude with the captain's baro reference (ft; ARINC baro corrected altitude #1; the standard altitude in STD; NaN when not valid): the captain's PFD altitude when this ADR feeds the captain side |
+| `adirs.adr3.baroAltitudeFoFt` | float | output | read |  | ADR 3 baro-corrected altitude with the F/O's baro reference (ft; ARINC baro corrected altitude #2; the standard altitude in STD; NaN when not valid): the F/O's PFD altitude when this ADR feeds the F/O side (ADR 2, or ADR 3 with AIR DATA at F/O 3) |
+| `adirs.adr3.baroAltitudeFt` | float | output | read |  | ADR 3 baro-corrected altitude of its own side (ft; NaN when not valid): the same as adirs.adr3.baroAltitudeCaptFt (the captain EFIS baro reference; the standard altitude while that side is in STD) |
+| `adirs.adr3.baroReferenceCaptHpa` | float | output | read |  | ADR 3 captain baro reference received (hPa; 1013.25 in STD or without FCU; NaN when not valid) |
+| `adirs.adr3.baroReferenceFoHpa` | float | output | read |  | ADR 3 F/O baro reference received (hPa; 1013.25 in STD or without FCU; NaN when not valid) |
+| `adirs.adr3.baroReferenceHpa` | float | output | read |  | ADR 3 baro reference of its own side (hPa): the captain EFIS QNH, 1013.25 in STD or without FCU; NaN when not valid |
+| `adirs.adr3.casKt` | float | output | read |  | ADR 3 computed airspeed (kt; NaN when not valid) |
 | `adirs.adr3.mach` | float | output | read | `0` | ADR 3 Mach number (NaN when not valid) |
+| `adirs.adr3.pbOff` | bool | output | read | `0` | ADR 3 pushbutton released OFF (the ADIRU's latch: each press toggles it; cleared when the ADIRU loses power). Not a lamp: overhead.adirs.adr3.off is the OFF light |
+| `adirs.adr3.pressureAltitudeFt` | float | output | read |  | ADR 3 standard (1013.25 hPa) pressure altitude (ft; NaN when not valid) |
+| `adirs.adr3.satC` | float | output | read |  | ADR 3 static air temperature (°C; NaN when not valid) |
+| `adirs.adr3.tasKt` | float | output | read |  | ADR 3 true airspeed (kt; NaN when not valid) |
+| `adirs.adr3.tatC` | float | output | read |  | ADR 3 total air temperature (°C; NaN when not valid) |
+| `adirs.adr3.verticalSpeedFpm` | float | output | read |  | ADR 3 barometric vertical speed (ft/min, + up; NaN when not valid) |
 | `adirs.ir1.fpaDeg` | float | output | read | `0` | IR 1 flight path angle (degrees, + climbing; NaN when not valid) |
+| `adirs.ir1.groundSpeedKt` | float | output | read |  | IR 1 ground speed (kt; NAV only, NaN otherwise) |
 | `adirs.ir1.headingMagDeg` | float | output | read | `0` | IR 1 magnetic heading (degrees; NaN when not valid, e.g. polar TRUE reference) |
 | `adirs.ir1.headingTrueDeg` | float | output | read | `0` | IR 1 true heading (degrees; NaN when not valid) |
+| `adirs.ir1.lateralAccelG` | float | output | read |  | IR 1 body lateral acceleration (g; the PFD sideslip index on ground is minus this value, ±0.3 g; NaN when not valid) |
+| `adirs.ir1.pbOff` | bool | output | read | `0` | IR 1 pushbutton released OFF (the ADIRU's latch: each press toggles it; cleared when the ADIRU loses power). Not a lamp: overhead.adirs.ir1.off is the OFF light |
+| `adirs.ir1.pitchDeg` | float | output | read |  | IR 1 pitch attitude (degrees, + nose up; NaN when not valid: OFF, failed, before the 30 s coarse levelling of an alignment) |
+| `adirs.ir1.rollDeg` | float | output | read |  | IR 1 roll attitude (degrees, + right wing down; NaN when not valid, as adirs.ir1.pitchDeg) |
 | `adirs.ir1.trackMagDeg` | float | output | read | `0` | IR 1 magnetic track (degrees; NaN when not valid) |
 | `adirs.ir1.trackTrueDeg` | float | output | read | `0` | IR 1 true track (degrees; NaN when not valid) |
+| `adirs.ir1.verticalSpeedFpm` | float | output | read |  | IR 1 inertial vertical speed (ft/min, + up; NAV only, NaN otherwise) |
 | `adirs.ir2.fpaDeg` | float | output | read | `0` | IR 2 flight path angle (degrees, + climbing; NaN when not valid) |
+| `adirs.ir2.groundSpeedKt` | float | output | read |  | IR 2 ground speed (kt; NAV only, NaN otherwise) |
 | `adirs.ir2.headingMagDeg` | float | output | read | `0` | IR 2 magnetic heading (degrees; NaN when not valid, e.g. polar TRUE reference) |
 | `adirs.ir2.headingTrueDeg` | float | output | read | `0` | IR 2 true heading (degrees; NaN when not valid) |
+| `adirs.ir2.lateralAccelG` | float | output | read |  | IR 2 body lateral acceleration (g; the PFD sideslip index on ground is minus this value, ±0.3 g; NaN when not valid) |
+| `adirs.ir2.pbOff` | bool | output | read | `0` | IR 2 pushbutton released OFF (the ADIRU's latch: each press toggles it; cleared when the ADIRU loses power). Not a lamp: overhead.adirs.ir2.off is the OFF light |
+| `adirs.ir2.pitchDeg` | float | output | read |  | IR 2 pitch attitude (degrees, + nose up; NaN when not valid: OFF, failed, before the 30 s coarse levelling of an alignment) |
+| `adirs.ir2.rollDeg` | float | output | read |  | IR 2 roll attitude (degrees, + right wing down; NaN when not valid, as adirs.ir2.pitchDeg) |
 | `adirs.ir2.trackMagDeg` | float | output | read | `0` | IR 2 magnetic track (degrees; NaN when not valid) |
 | `adirs.ir2.trackTrueDeg` | float | output | read | `0` | IR 2 true track (degrees; NaN when not valid) |
+| `adirs.ir2.verticalSpeedFpm` | float | output | read |  | IR 2 inertial vertical speed (ft/min, + up; NAV only, NaN otherwise) |
 | `adirs.ir3.fpaDeg` | float | output | read | `0` | IR 3 flight path angle (degrees, + climbing; NaN when not valid) |
+| `adirs.ir3.groundSpeedKt` | float | output | read |  | IR 3 ground speed (kt; NAV only, NaN otherwise) |
 | `adirs.ir3.headingMagDeg` | float | output | read | `0` | IR 3 magnetic heading (degrees; NaN when not valid, e.g. polar TRUE reference) |
 | `adirs.ir3.headingTrueDeg` | float | output | read | `0` | IR 3 true heading (degrees; NaN when not valid) |
+| `adirs.ir3.lateralAccelG` | float | output | read |  | IR 3 body lateral acceleration (g; the PFD sideslip index on ground is minus this value, ±0.3 g; NaN when not valid) |
+| `adirs.ir3.pbOff` | bool | output | read | `0` | IR 3 pushbutton released OFF (the ADIRU's latch: each press toggles it; cleared when the ADIRU loses power). Not a lamp: overhead.adirs.ir3.off is the OFF light |
+| `adirs.ir3.pitchDeg` | float | output | read |  | IR 3 pitch attitude (degrees, + nose up; NaN when not valid: OFF, failed, before the 30 s coarse levelling of an alignment) |
+| `adirs.ir3.rollDeg` | float | output | read |  | IR 3 roll attitude (degrees, + right wing down; NaN when not valid, as adirs.ir3.pitchDeg) |
 | `adirs.ir3.trackMagDeg` | float | output | read | `0` | IR 3 magnetic track (degrees; NaN when not valid) |
 | `adirs.ir3.trackTrueDeg` | float | output | read | `0` | IR 3 true track (degrees; NaN when not valid) |
+| `adirs.ir3.verticalSpeedFpm` | float | output | read |  | IR 3 inertial vertical speed (ft/min, + up; NAV only, NaN otherwise) |
 
 ## ADIRS / ATT heading (MCDU IRS MONITOR SET HDG)
 
@@ -240,6 +301,39 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `adirs.ir2.state` | int | output | read | `0` | IR 2 state: 0 OFF, 1 ALIGN (alignment), 2 NAV (aligned), 3 ATT erection, 4 ATT |
 | `adirs.ir3.alignSecondsLeft` | float | output | read | `0` | IR 3: seconds until NAV (alignment) or ATT (erection); 0 otherwise |
 | `adirs.ir3.state` | int | output | read | `0` | IR 3 state: 0 OFF, 1 ALIGN (alignment), 2 NAV (aligned), 3 ATT erection, 4 ATT |
+
+## Air (parameters)
+
+| Dataref | Type | Kind | Access | Sample value | Description |
+| --- | --- | --- | --- | --- | --- |
+| `aircond.aftCabin.trimValve` | float | output | read | `0` | AFT cabin trim air valve position (0 cold, closed .. 1 hot, open) |
+| `aircond.cockpit.trimValve` | float | output | read | `0` | Cockpit trim air valve position (0 cold, closed .. 1 hot, open) |
+| `aircond.fwdCabin.trimValve` | float | output | read | `0` | FWD cabin trim air valve position (0 cold, closed .. 1 hot, open) |
+| `aircond.hotAirValve` | float | output | read | `0` | Hot air pressure regulating valve position (0 closed .. 1 open) |
+| `aircond.pack1.bypassValve` | float | output | read | `1` | PACK 1 bypass (temperature control) valve position (0 cold, closed .. 1 hot, open) |
+| `aircond.pack1.flowRatio` | float | output | read | `0` | PACK 1 flow as a fraction of the nominal flow (0.5675 kg/s = 1; LO 0.8, NORM 1.0, HI 1.2, single pack or APU bleed 1.2) |
+| `aircond.pack1.flowValve` | float | output | read | `0` | PACK 1 flow control valve position (0 closed .. 1 open; 2 s travel) |
+| `aircond.pack1.ramInlet` | float | output | read | `0.2` | PACK 1 ram air inlet flap position (0 closed .. 1 open) |
+| `aircond.pack2.bypassValve` | float | output | read | `1` | PACK 2 bypass (temperature control) valve position (0 cold, closed .. 1 hot, open) |
+| `aircond.pack2.flowRatio` | float | output | read | `0` | PACK 2 flow as a fraction of the nominal flow (0.5675 kg/s = 1; LO 0.8, NORM 1.0, HI 1.2, single pack or APU bleed 1.2) |
+| `aircond.pack2.flowValve` | float | output | read | `0` | PACK 2 flow control valve position (0 closed .. 1 open; 2 s travel) |
+| `aircond.pack2.ramInlet` | float | output | read | `0.2` | PACK 2 ram air inlet flap position (0 closed .. 1 open) |
+| `aircond.ramAirValve` | float | output | read | `0` | Emergency RAM AIR inlet position (0 closed .. 1 open) |
+| `bleed.eng1.hpValve` | float | output | read | `0` | ENG 1 HP valve position (0 closed .. 1 open) |
+| `bleed.eng1.prv` | float | output | read | `0` | ENG 1 bleed valve (pressure regulating valve) position (0 closed .. 1 open) |
+| `bleed.eng2.hpValve` | float | output | read | `0` | ENG 2 HP valve position (0 closed .. 1 open) |
+| `bleed.eng2.prv` | float | output | read | `0` | ENG 2 bleed valve (pressure regulating valve) position (0 closed .. 1 open) |
+| `press.landingElevationFt` | float | output | read | `0` | Landing elevation the CPC in control uses (ft): the FMGS destination elevation with the LDG ELEV selector at AUTO, else the selector's value; without either, the takeoff elevation (press.landingElevationSource 2) |
+| `press.landingElevationSource` | int | output | read | `2` | Source of press.landingElevationFt: 0 FMGS (AUTO), 1 LDG ELEV selector, 2 none (LDG ELEV FAULT) |
+| `press.safetyValve` | float | output | read | `0` | Cabin safety valves position (the most open of the two; 0 closed .. 1 open) |
+| `press.safetyValve1` | float | output | read | `0` | Cabin safety valve 1 position (0 closed .. 1 open; opens at 8.6 psi or -1 psi ΔP; held open by failure PRESS.SAFETY_VALVE1_OPEN) |
+| `press.safetyValve2` | float | output | read | `0` | Cabin safety valve 2 position (0 closed .. 1 open; opens at 8.6 psi or -1 psi ΔP; held open by failure PRESS.SAFETY_VALVE2_OPEN) |
+| `vent.aircondInletValve` | float | output | read | `1` | Avionics ventilation air conditioning inlet valve position (air conditioning air to the avionics bay; 0 closed .. 1 open) |
+| `vent.extractValve` | float | output | read | `0.15` | Avionics ventilation skin air outlet (extract) valve position (0 closed .. 1 open; 0.15 partially open) |
+| `vent.inletValve` | float | output | read | `0` | Avionics ventilation skin air inlet valve position (0 closed .. 1 open) |
+| `vent.skinExchInletBypassValve` | float | output | read | `0` | Avionics ventilation skin exchange inlet bypass valve position (to the cargo underfloor; 0 closed .. 1 open) |
+| `vent.skinExchIsolationValve` | float | output | read | `1` | Avionics ventilation skin exchange isolation valve position (skin heat exchanger connected; 0 closed .. 1 open) |
+| `vent.skinExchOutletBypassValve` | float | output | read | `0` | Avionics ventilation skin exchange outlet bypass valve position (from the avionics bay; 0 closed .. 1 open) |
 
 ## Air systems (indications)
 
@@ -1174,6 +1268,13 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `efb.settingsRevision` | int | output | read | `0` | Revision of the EFB settings kept by Systems (GET /api/efb/settings): raised by every change, the EFBs fetch them again |
 
+## EIS (parameters)
+
+| Dataref | Type | Kind | Access | Sample value | Description |
+| --- | --- | --- | --- | --- | --- |
+| `eis.sdUtc` | string | output | read | `"HH:MM"` | UTC on the lower part of the SD as "HH:MM" ("23:12"; the SD writes "23 H 12"), "" before the CFDIU has a time |
+| `eis.sdUtcSeconds` | int | output | read | `-1` | UTC on the lower part of the SD (seconds since midnight; -1 none): the CFDIU's time, synchronized with the cockpit clock while it sends a time (GPS, internal or set), running on its own when the clock fails or shows dashes |
+
 ## Electrical (parameters)
 
 | Dataref | Type | Kind | Access | Sample value | Description |
@@ -1188,6 +1289,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `elec.emerGen.hz` | float | output | read | `0` | EMER GEN frequency (Hz, ELEC page) |
 | `elec.emerGen.volts` | float | output | read | `0` | EMER GEN voltage (V, ELEC page) |
 | `elec.essTr.amps` | float | output | read | `0` | ESS TR current (A, ELEC page) |
+| `elec.essTr.inputPowered` | bool | output | read | `0` | ESS TR input supplied: from the AC ESS BUS (not while the AC ESS BUS is on the static inverter) or the EMER GEN (elec.contactor.emerGenLine); the ESS TR feeds DC ESS when elec.contactor.essTr is closed. The aircraft has no separate ESS TR input contactor (C/B 4PE) |
 | `elec.essTr.volts` | float | output | read | `0` | ESS TR voltage (V, ELEC page) |
 | `elec.extPwr.hz` | float | output | read | `0` | EXT PWR frequency (Hz, ELEC page) |
 | `elec.extPwr.volts` | float | output | read | `0` | EXT PWR voltage (V, ELEC page) |
@@ -1227,7 +1329,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `elec.contactor.glc2` | bool | output | read | `0` | GEN 2 line contactor (9XU2) closed |
 | `elec.contactor.maintBus` | bool | output | read | `0` | Maintenance bus (GND/FLT) contactor (12XX) closed |
 | `elec.contactor.statInv` | bool | output | read | `0` | Static inverter contactor (2XB) closed |
-| `elec.contactor.statInvToAcEss` | bool | output | read | `0` | Static inverter to AC ESS BUS contactor (15XE) closed |
+| `elec.contactor.statInvToAcEss` | bool | output | read | `0` | AC ESS BUS switching contactor at its static inverter position (15XE) closed |
 | `elec.contactor.tr1` | bool | output | read | `0` | TR 1 contactor (5PU1) closed |
 | `elec.contactor.tr2` | bool | output | read | `0` | TR 2 contactor (5PU2) closed |
 
@@ -1237,14 +1339,27 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `engine1.egtC` | float | output | read | `0` | Engine 1 EGT (°C) |
 | `engine1.fuelFlowKgH` | float | output | read | `0` | Engine 1 fuel flow (kg/h) |
+| `engine1.nacelleTempC` | float | output | read | `0` | Engine 1 nacelle temperature (°C; ESTIMATED first-order model, as on the ENG SD page) |
 | `engine1.oilPressurePsi` | float | output | read | `0` | Engine 1 oil pressure (psi) |
 | `engine1.oilQuantityQt` | float | output | read | `0` | Engine 1 oil quantity (qt) |
 | `engine1.oilTempC` | float | output | read | `0` | Engine 1 oil temperature (°C) |
 | `engine2.egtC` | float | output | read | `0` | Engine 2 EGT (°C) |
 | `engine2.fuelFlowKgH` | float | output | read | `0` | Engine 2 fuel flow (kg/h) |
+| `engine2.nacelleTempC` | float | output | read | `0` | Engine 2 nacelle temperature (°C; ESTIMATED first-order model, as on the ENG SD page) |
 | `engine2.oilPressurePsi` | float | output | read | `0` | Engine 2 oil pressure (psi) |
 | `engine2.oilQuantityQt` | float | output | read | `0` | Engine 2 oil quantity (qt) |
 | `engine2.oilTempC` | float | output | read | `0` | Engine 2 oil temperature (°C) |
+
+## FADEC (parameters)
+
+| Dataref | Type | Kind | Access | Sample value | Description |
+| --- | --- | --- | --- | --- | --- |
+| `engine1.fadecPowered` | bool | output | read | `0` | Engine 1 FADEC (ECU / EEC) powered: by the aircraft (ENG FADEC GND PWR, start, the ground timing rules) or its own alternator (N2 above 15 %) |
+| `engine1.n1TlaPct` | float | output | read |  | Engine 1 N1 the thrust lever asks for (%; the lever's N1 between the detents, idle N1 at IDLE, reverse not included; NaN when its FADEC is not powered or IAE in N1 unrated mode) |
+| `engine2.fadecPowered` | bool | output | read | `0` | Engine 2 FADEC (ECU / EEC) powered: by the aircraft (ENG FADEC GND PWR, start, the ground timing rules) or its own alternator (N2 above 15 %) |
+| `engine2.n1TlaPct` | float | output | read |  | Engine 2 N1 the thrust lever asks for (%; the lever's N1 between the detents, idle N1 at IDLE, reverse not included; NaN when its FADEC is not powered or IAE in N1 unrated mode) |
+| `fadec.n1LimitPct` | float | output | read |  | N1 limit of fadec.thrustLimitMode (%; NaN with no FADEC powered, in MREV or none). IAE in EPR mode: the E/WD shows the EPR equivalent of this limit |
+| `fadec.thrustLimitMode` | int | output | read | `0` | FADEC thrust limit mode (E/WD): 0 none (no FADEC powered, or IAE in N1 unrated mode on both engines), 1 TOGA, 2 FLX, 3 CLB, 4 MCT, 5 MREV; the higher of the two FADECs |
 
 ## Failures / ADIRS
 
@@ -2018,9 +2133,9 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `failures.elec.maintBusCoil` | bool | failure | write | `0` | Maintenance bus (GND/FLT) contactor (12XX) coil failure (open circuit) |
 | `failures.elec.maintBusStuckClosed` | bool | failure | write | `0` | Maintenance bus (GND/FLT) contactor (12XX) stuck closed (welded) |
 | `failures.elec.maintBusStuckOpen` | bool | failure | write | `0` | Maintenance bus (GND/FLT) contactor (12XX) stuck open |
-| `failures.elec.statInvAcEssCoil` | bool | failure | write | `0` | Static inverter to AC ESS BUS contactor (15XE) coil failure (open circuit) |
-| `failures.elec.statInvAcEssStuckClosed` | bool | failure | write | `0` | Static inverter to AC ESS BUS contactor (15XE) stuck closed (welded) |
-| `failures.elec.statInvAcEssStuckOpen` | bool | failure | write | `0` | Static inverter to AC ESS BUS contactor (15XE) stuck open |
+| `failures.elec.statInvAcEssCoil` | bool | failure | write | `0` | AC ESS BUS switching contactor at its static inverter position (15XE) coil failure (open circuit) |
+| `failures.elec.statInvAcEssStuckClosed` | bool | failure | write | `0` | AC ESS BUS switching contactor at its static inverter position (15XE) stuck closed (welded) |
+| `failures.elec.statInvAcEssStuckOpen` | bool | failure | write | `0` | AC ESS BUS switching contactor at its static inverter position (15XE) stuck open |
 | `failures.elec.statInvCoil` | bool | failure | write | `0` | Static inverter contactor (2XB) coil failure (open circuit) |
 | `failures.elec.statInvStuckClosed` | bool | failure | write | `0` | Static inverter contactor (2XB) stuck closed (welded) |
 | `failures.elec.statInvStuckOpen` | bool | failure | write | `0` | Static inverter contactor (2XB) stuck open |
@@ -2495,7 +2610,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `failures.press.cpc2` | bool | failure | write | `0` | Cabin pressure controller 2 failure |
 | `failures.press.doorSealLeak` | bool | failure | write | `0` | Excessive cabin leakage (door seal) |
 | `failures.press.outflowValveJammed` | bool | failure | write | `0` | Outflow valve jammed in its present position (all motors) |
-| `failures.press.safetyValveOpen` | bool | failure | write | `0` | Safety valve failed open |
+| `failures.press.safetyValve1Open` | bool | failure | write | `0` | Cabin safety valve 1 failed open |
+| `failures.press.safetyValve2Open` | bool | failure | write | `0` | Cabin safety valve 2 failed open |
 
 ## Failures / Probe / window heat
 
@@ -2575,6 +2691,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
 | `failures.vent.aevc` | bool | failure | write | `0` | Avionics equipment ventilation controller failure |
+| `failures.vent.aircondInletValve` | bool | failure | write | `0` | Avionics ventilation air conditioning inlet valve stuck |
 | `failures.vent.blowerFan` | bool | failure | write | `0` | Avionics ventilation blower fan failure (low blowing pressure) |
 | `failures.vent.crgAftFan` | bool | failure | write | `0` | Aft cargo extraction fan failure (AFT CRG VENT FAULT) |
 | `failures.vent.crgAftIsolValve` | bool | failure | write | `0` | Aft cargo inlet isolation valve jammed where it is (AFT CRG ISOL VALVE) |
@@ -2583,6 +2700,9 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `failures.vent.extractFan` | bool | failure | write | `0` | Avionics ventilation extract fan failure (low extract pressure) |
 | `failures.vent.inletValve` | bool | failure | write | `0` | Avionics ventilation skin air inlet valve stuck |
 | `failures.vent.outletValve` | bool | failure | write | `0` | Avionics ventilation skin air outlet (extract) valve stuck |
+| `failures.vent.skinExchInletBypassValve` | bool | failure | write | `0` | Avionics ventilation skin exchange inlet bypass valve stuck |
+| `failures.vent.skinExchIsolValve` | bool | failure | write | `0` | Avionics ventilation skin exchange isolation valve stuck |
+| `failures.vent.skinExchOutletBypassValve` | bool | failure | write | `0` | Avionics ventilation skin exchange outlet bypass valve stuck |
 
 ## Failures / Water / waste
 
@@ -2610,8 +2730,27 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `fadec.throttle1` | float | output | read | `0` | FADEC 1 throttle command to the simulator (0..1) |
 | `fadec.throttle2` | float | output | read | `0` | FADEC 2 throttle command to the simulator (0..1) |
+| `fg.appNav` | bool | output | read | `0` | NAV (engaged or armed) is APP NAV (non-ILS approach); with fg.verticalMode FINAL engaged and NAV engaged the FMA shows FINAL APP |
+| `fg.approachCapability` | int | output | read | `0` | Landing capability (FMA column 4 lines 1-2, with APPR armed or engaged): 0 none, 1 CAT 1, 2 CAT 2, 3 CAT 3 SINGLE, 4 CAT 3 DUAL |
+| `fg.athrMode` | int | output | read | `0` | A/THR mode of FMA column 1 lines 1-2: 0 none, 1 MAN TOGA, 2 MAN FLX (temperature: fmgc.perf.flexTempC), 3 MAN MCT, 4 MAN THR (A/THR armed, levers beyond CL), 5 SPEED, 6 MACH, 7 THR CLB, 8 THR MCT, 9 THR IDLE, 10 THR LVR, 11 IDLE (RETARD), 12 A. FLOOR, 13 TOGA LK (A/THR active) |
 | `fg.athrN1Pct` | float | output | read | `0` | A/THR N1 target |
-| `fg.athrStatus` | int | output | read | `0` | A/THR: 0 off, 1 armed, 2 active |
+| `fg.athrStatus` | int | output | read | `0` | A/THR status: 0 off, 1 armed (FMA "A/THR" blue, FCU light on), 2 active (FMA "A/THR" white) |
+| `fg.fd.capt.engaged` | bool | output | read | `0` | Captain FD engaged (shown on the Captain PFD: FD pb on and an FMGC driving it; FMA column 5 "1 FD 2") |
+| `fg.fd.capt.flag` | bool | output | read | `0` | Captain PFD red FD flag (FD pb on with the FD not engaged, or both FMGCs lost) |
+| `fg.fd.capt.pitchBar` | bool | output | read | `0` | Captain FD pitch bar shown (FD engaged with a vertical mode; the PFD also needs a valid attitude) |
+| `fg.fd.capt.pitchBarDeg` | float | output | read | `0` | Captain FD pitch bar deflection (degrees, + = bar above the aircraft symbol: pitch up ordered; FPD in TRK-FPA: FPA order − FPA); 0 without the bar |
+| `fg.fd.capt.rollBar` | bool | output | read | `0` | Captain FD roll bar shown (FD engaged with a lateral mode, not in RWY; the PFD also needs a valid attitude) |
+| `fg.fd.capt.rollBarDeg` | float | output | read | `0` | Captain FD roll bar deflection (degrees, ordered bank − bank, + = bar right: roll right ordered); 0 without the bar |
+| `fg.fd.capt.yawBar` | bool | output | read | `0` | Captain FD yaw bar shown (below 30 ft with a LOC signal, RWY at takeoff, FLARE, ROLL OUT) |
+| `fg.fd.capt.yawBarDeg` | float | output | read | `0` | Captain FD yaw bar (degrees, heading order − heading, + = bar right); 0 without the bar |
+| `fg.fd.fo.engaged` | bool | output | read | `0` | F/O FD engaged (shown on the F/O PFD: FD pb on and an FMGC driving it; FMA column 5 "1 FD 2") |
+| `fg.fd.fo.flag` | bool | output | read | `0` | F/O PFD red FD flag (FD pb on with the FD not engaged, or both FMGCs lost) |
+| `fg.fd.fo.pitchBar` | bool | output | read | `0` | F/O FD pitch bar shown (FD engaged with a vertical mode; the PFD also needs a valid attitude) |
+| `fg.fd.fo.pitchBarDeg` | float | output | read | `0` | F/O FD pitch bar deflection (degrees, + = bar above the aircraft symbol: pitch up ordered; FPD in TRK-FPA: FPA order − FPA); 0 without the bar |
+| `fg.fd.fo.rollBar` | bool | output | read | `0` | F/O FD roll bar shown (FD engaged with a lateral mode, not in RWY; the PFD also needs a valid attitude) |
+| `fg.fd.fo.rollBarDeg` | float | output | read | `0` | F/O FD roll bar deflection (degrees, ordered bank − bank, + = bar right: roll right ordered); 0 without the bar |
+| `fg.fd.fo.yawBar` | bool | output | read | `0` | F/O FD yaw bar shown (below 30 ft with a LOC signal, RWY at takeoff, FLARE, ROLL OUT) |
+| `fg.fd.fo.yawBarDeg` | float | output | read | `0` | F/O FD yaw bar (degrees, heading order − heading, + = bar right); 0 without the bar |
 | `fg.fma.col1.line1` | string | output | read | `""` | FMA column 1, line 1 text ("" = blank) |
 | `fg.fma.col1.line2` | string | output | read | `""` | FMA column 1, line 2 text ("" = blank) |
 | `fg.fma.col1.line3` | string | output | read | `""` | FMA column 1, line 3 text ("" = blank) |
@@ -2627,11 +2766,14 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `fg.fma.col5.line1` | string | output | read | `""` | FMA column 5, line 1 text ("" = blank) |
 | `fg.fma.col5.line2` | string | output | read | `""` | FMA column 5, line 2 text ("" = blank) |
 | `fg.fma.col5.line3` | string | output | read | `""` | FMA column 5, line 3 text ("" = blank) |
-| `fg.lateralMode` | int | output | read | `0` | Engaged lateral mode (Fg.LateralMode) |
-| `fg.pitchCommandDeg` | float | output | read | `0` | Ordered pitch attitude (FD / AP) |
-| `fg.rollCommandDeg` | float | output | read | `0` | Ordered bank angle (FD / AP) |
+| `fg.landMode` | bool | output | read | `0` | LAND engaged (FMA columns 2-3 LAND, then FLARE with fg.verticalMode 17, ROLL OUT with fg.lateralMode 9) |
+| `fg.lateralArmed` | int | output | read | `0` | Armed lateral modes (bit flags, FMA column 3 line 2): 1 NAV (APP NAV with fg.appNav), 2 LOC; 0 none |
+| `fg.lateralMode` | int | output | read | `0` | Engaged lateral mode: 0 none, 1 HDG, 2 TRK, 3 NAV (APP NAV with fg.appNav), 4 RWY, 5 RWY TRK, 6 GA TRK, 7 LOC*, 8 LOC, 9 ROLL OUT |
+| `fg.pitchCommandDeg` | float | output | read | `0` | Ordered pitch attitude (degrees, + nose up) of the engaged vertical mode, AP or FD. Without a pitch order (no AP / FD, no vertical mode, on ground) it is not an order (about the present pitch); frozen while both FMGCs are lost. Whether a bar is shown: fg.fd.capt / fo.pitchBar |
+| `fg.rollCommandDeg` | float | output | read | `0` | Ordered bank angle (degrees, + right wing down) of the engaged lateral mode, AP or FD. Without a roll order (no AP / FD, no lateral mode, RWY, ROLL OUT, on ground) it is not an order: 0 without a lateral law, else the law's bank; frozen while both FMGCs are lost. Whether a bar is shown: fg.fd.capt / fo.rollBar |
 | `fg.speedTargetKt` | float | output | read | `0` | Speed target as a CAS (managed or selected) |
-| `fg.verticalMode` | int | output | read | `0` | Engaged vertical mode (Fg.VerticalMode) |
+| `fg.verticalArmed` | int | output | read | `0` | Armed vertical modes (bit flags, FMA column 2 line 2): 1 CLB, 2 DES, 4 ALT (blue: FCU altitude), 8 ALT as a constraint (magenta; shown instead of the blue ALT), 16 G/S, 32 FINAL; 0 none |
+| `fg.verticalMode` | int | output | read | `0` | Engaged vertical mode: 0 none, 1 SRS, 2 CLB, 3 OP CLB, 4 DES, 5 OP DES, 6 EXP CLB, 7 EXP DES, 8 ALT*, 9 ALT, 10 ALT CST*, 11 ALT CST, 12 ALT CRZ, 13 V/S, 14 FPA, 15 G/S*, 16 G/S, 17 FLARE, 18 FINAL, 19 TCAS (V/S 0 after a level-off shows ALT; LAND / FINAL APP span columns 2-3: fg.landMode, fg.appNav) |
 
 ## Fire protection (indications)
 
@@ -2661,7 +2803,10 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `fac.alphaFloor` | bool | output | read | `0` | FAC alpha floor signal |
 | `fac.alphaMaxKt` | float | output | read | `0` | FAC VαMAX (kt) |
 | `fac.alphaProtKt` | float | output | read | `0` | FAC VαPROT (kt) |
-| `fac.greenDotKt` | float | output | read | `0` | FAC green dot (kt) |
+| `fac.betaTargetDeg` | float | output | read |  | FAC β target (degrees, same sign as fac.sideslipDeg): the blue PFD index (engine-out asymmetry at takeoff / go-around thrust); NaN when not shown |
+| `fac.greenDotKt` | float | output | read | `0` | FAC green dot (kt): always computed (from the weight and altitude, whatever the configuration; the PFD shows it with the FLAPS lever at 0); 0 with both FACs lost |
+| `fac.sideslipDeg` | float | output | read |  | FAC sideslip (degrees; the PFD sideslip index in flight is the lateral acceleration −0.015 g per degree, limited to ±0.3 g; negative with the wind from the right or an engine 1 failure: index to the right); NaN when not valid (no ADR or IR). On ground the PFD index shows minus the IR lateral acceleration instead (adirs.irN.lateralAccelG) |
+| `fac.vfeNextKt` | float | output | read | `0` | FAC VFE of the next FLAPS lever position (kt; 0 = none: lever FULL, or above 15000 ft; the PFD shows it in flight) |
 | `fac.vlsKt` | float | output | read | `0` | FAC VLS (kt) |
 | `fac.vmaxKt` | float | output | read | `0` | FAC VMAX (kt) |
 | `fac.vswKt` | float | output | read | `0` | FAC VSW (kt) |
@@ -2800,6 +2945,13 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `fuel.xfrValvesLeft` | float | light | read | `0` | Left transfer valves open (0, 1 or 2; fractions in transit) |
 | `fuel.xfrValvesRight` | float | light | read | `0` | Right transfer valves open (0, 1 or 2; fractions in transit) |
 
+## FWC / ALERTS
+
+| Dataref | Type | Kind | Access | Sample value | Description |
+| --- | --- | --- | --- | --- | --- |
+| `fwc.alertCount` | int | output | read | `0` | Number of warnings and cautions in fwc.alerts (on the E/WD, not cleared) |
+| `fwc.alerts` | string | output | read | `"[]"` | The warnings and cautions the FWC in use shows on the E/WD (not cleared by CLR, not canceled), in display order (level 3, 2, 1, each in the FWC priority order), as a JSON array written when it changes: [{"id":"ELEC.GEN1_FAULT","code":"24-00-020","level":2,"system":"ELEC","title":"GEN 1 FAULT","primary":true,"lines":[{"text":"-GEN 1..........OFF THEN ON","color":"cyan"}]}]. level 3 red warning, 2 amber caution with MASTER CAUT, 1 amber caution without; code: the FWC logic code (null if none); primary: boxed title (primary failure); lines: the action lines in force (conditions met, not done yet), colors cyan / white / amber / green / red / magenta. All of them, also those scrolled below the E/WD's seven lines. "[]": none or both FWCs lost |
+
 ## FWC / AURAL
 
 | Dataref | Type | Kind | Access | Sample value | Description |
@@ -2812,7 +2964,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `fwc.aural.singleChime` | int | output | read | `0` | Single chime requests of level 2 cautions (counter, +1 per chime, wraps at 65536) |
 | `fwc.aural.tripleClick` | int | output | read | `0` | Triple click requests (counter, +1 per triple click, wraps at 65536) |
 | `fwc.aural.voice` | int | output | read | `0` | Synthetic voice: sequence * 128 + AuralVoice id of the last message started (a change: say it now) |
-| `fwc.callouts` | int | service | write | `0` | Automatic callouts (FWC pin programming, setting saved in systems.json): bit mask 0 TWO THOUSAND FIVE HUNDRED, 1 TWENTY FIVE HUNDRED, 2 2000, 3 1000, 4 500, 5 400, 6 300, 7 200, 8 100, 9 50, 10 40, 11 30, 12 20, 13 10, 14 5, 15 HUNDRED ABOVE, 16 MINIMUM, 17 intermediate callout |
+| `fwc.callouts` | int | service | write | `0` | Automatic callouts (FWC pin programming, setting saved in systems.json): bit mask 0 TWO THOUSAND FIVE HUNDRED, 1 retired (former TWENTY FIVE HUNDRED, read as bit 0), 2 2000, 3 1000, 4 500, 5 400, 6 300, 7 200, 8 100, 9 50, 10 40, 11 30, 12 20, 13 10, 14 5, 15 HUNDRED ABOVE, 16 MINIMUM, 17 intermediate callout |
 | `fwc.flightPhase` | int | output | read | `0` | FWC flight phase (1-10, 0 = FWCs lost) |
 
 ## Gates
@@ -2916,6 +3068,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `glare.fcu.hdgLabel` | bool | light | read | `0` | HDG legend of the AFS display |
 | `glare.fcu.hdgPull` | bool | pushbutton | momentary | `0` | HDG/TRK knob pulled (selected heading / track) (momentary: 1 while held) |
 | `glare.fcu.hdgPush` | bool | pushbutton | momentary | `0` | HDG/TRK knob pushed (NAV) (momentary: 1 while held) |
+| `glare.fcu.hdgValue` | int | encoder | write | `-1` | HDG/TRK value as the window shows it (degrees 0..359, heading or track: glare.fcu.trkFpa.on; a preview while managed; -1 dashed or dark). Writable for external FCU panels: a new value acts as the knob turned to it (while managed: the 45 s preview, a pull selects it), nothing without FCU power; 360 = 0 |
 | `glare.fcu.hdgVsLabel` | bool | light | read | `0` | HDG V/S legend of the AFS display |
 | `glare.fcu.hdgVsTrkFpa.pressed` | bool | pushbutton | momentary | `0` | HDG-V/S / TRK-FPA pushbutton (momentary: 1 while held) |
 | `glare.fcu.hdgWindow` | string | light | read | `"005"` | HDG/TRK window: "005", "---" (managed), "" dark |
@@ -2940,7 +3093,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `glare.fcu.vsLabel` | bool | light | read | `0` | V/S legend of the AFS display |
 | `glare.fcu.vsPull` | bool | pushbutton | momentary | `0` | V/S-FPA knob pulled (V/S or FPA) (momentary: 1 while held) |
 | `glare.fcu.vsPush` | bool | pushbutton | momentary | `0` | V/S-FPA knob pushed (level off) (momentary: 1 while held) |
-| `glare.fcu.vsWindow` | string | light | read | `"+25oo"` | V/S-FPA window: "+25oo" (ft/min, last two digits small), "-1.5" (FPA), "-----", "" dark |
+| `glare.fcu.vsWindow` | string | light | read | `"+25oo"` | V/S-FPA window: "+25oo" (ft/min: sign, hundreds, the last two digits as small "oo"; "+00oo" at 0), "-1.5 " (FPA: sign, units, tenths and a trailing space; " 0.0 " at 0), "-----" dashed, "+8888" ANN LT TEST, "" dark |
 
 ## Glareshield / FCU 13VU (EFIS control panels)
 
@@ -2949,12 +3102,14 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `efis.syncSides` | bool | service | write | `0` | Sync CPT and F/O EFIS (simulator setting saved in systems.json, for cockpits with one EFIS control panel): both EFIS control panels act as one; switching it on aligns the F/O side on the captain's |
 | `glare.efisCapt.arpt.on` | bool | light | read | `0` | Captain EFIS ARPT ON light |
 | `glare.efisCapt.arpt.pressed` | bool | pushbutton | momentary | `0` | Captain EFIS ARPT pushbutton (momentary: 1 while held) |
+| `glare.efisCapt.baroHpa` | float | encoder | write | `-1` | Captain EFIS baro reference set (hPa, the window's value in hPa whatever the unit; -1 in STD or dark). Writable for external EFIS panels: a new value acts as the BARO knob turned to it (745..1050, in the window's unit and resolution; nothing in STD or without FCU power) |
+| `glare.efisCapt.baroInHg` | float | encoder | write | `-1` | Captain EFIS baro reference set (in Hg, the window's value in in Hg whatever the unit; -1 in STD or dark). Writable as baroHpa (21.99..31.00) |
 | `glare.efisCapt.baroKnob` | int | encoder | write | `0` | Captain EFIS BARO knob rotation counter (+1 per clockwise click: 1 hPa or 0.01 in Hg) |
 | `glare.efisCapt.baroPull` | bool | pushbutton | momentary | `0` | Captain EFIS BARO knob pulled (STD) (momentary: 1 while held) |
 | `glare.efisCapt.baroPush` | bool | pushbutton | momentary | `0` | Captain EFIS BARO knob pushed (QNH) (momentary: 1 while held) |
 | `glare.efisCapt.baroQnh` | bool | light | read | `0` | Captain EFIS QNH legend of the baro window (lit in QNH) |
 | `glare.efisCapt.baroUnit` | int | rotary | write | `0` | Captain EFIS BARO outer ring (0 = in Hg, 1 = hPa) |
-| `glare.efisCapt.baroWindow` | string | light | read | `"1013"` | Captain EFIS baro reference window: "1013", "29.92", "Std", "" dark |
+| `glare.efisCapt.baroWindow` | string | light | read | `"1013"` | Captain EFIS baro reference window: "1013" (hPa, 4 digits: "0745".."1050"), "29.92" (in Hg, "21.99".."31.00"), "Std", "8888" ANN LT TEST, "" dark |
 | `glare.efisCapt.cstr.on` | bool | light | read | `0` | Captain EFIS CSTR ON light |
 | `glare.efisCapt.cstr.pressed` | bool | pushbutton | momentary | `0` | Captain EFIS CSTR pushbutton (momentary: 1 while held) |
 | `glare.efisCapt.fd.on` | bool | light | read | `0` | Captain EFIS FD ON light |
@@ -2973,12 +3128,14 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `glare.efisCapt.wpt.pressed` | bool | pushbutton | momentary | `0` | Captain EFIS WPT pushbutton (momentary: 1 while held) |
 | `glare.efisFo.arpt.on` | bool | light | read | `0` | First officer EFIS ARPT ON light |
 | `glare.efisFo.arpt.pressed` | bool | pushbutton | momentary | `0` | First officer EFIS ARPT pushbutton (momentary: 1 while held) |
+| `glare.efisFo.baroHpa` | float | encoder | write | `-1` | First officer EFIS baro reference set (hPa, the window's value in hPa whatever the unit; -1 in STD or dark). Writable for external EFIS panels: a new value acts as the BARO knob turned to it (745..1050, in the window's unit and resolution; nothing in STD or without FCU power) |
+| `glare.efisFo.baroInHg` | float | encoder | write | `-1` | First officer EFIS baro reference set (in Hg, the window's value in in Hg whatever the unit; -1 in STD or dark). Writable as baroHpa (21.99..31.00) |
 | `glare.efisFo.baroKnob` | int | encoder | write | `0` | First officer EFIS BARO knob rotation counter (+1 per clockwise click: 1 hPa or 0.01 in Hg) |
 | `glare.efisFo.baroPull` | bool | pushbutton | momentary | `0` | First officer EFIS BARO knob pulled (STD) (momentary: 1 while held) |
 | `glare.efisFo.baroPush` | bool | pushbutton | momentary | `0` | First officer EFIS BARO knob pushed (QNH) (momentary: 1 while held) |
 | `glare.efisFo.baroQnh` | bool | light | read | `0` | First officer EFIS QNH legend of the baro window (lit in QNH) |
 | `glare.efisFo.baroUnit` | int | rotary | write | `0` | First officer EFIS BARO outer ring (0 = in Hg, 1 = hPa) |
-| `glare.efisFo.baroWindow` | string | light | read | `"1013"` | First officer EFIS baro reference window: "1013", "29.92", "Std", "" dark |
+| `glare.efisFo.baroWindow` | string | light | read | `"1013"` | First officer EFIS baro reference window: "1013" (hPa, 4 digits: "0745".."1050"), "29.92" (in Hg, "21.99".."31.00"), "Std", "8888" ANN LT TEST, "" dark |
 | `glare.efisFo.cstr.on` | bool | light | read | `0` | First officer EFIS CSTR ON light |
 | `glare.efisFo.cstr.pressed` | bool | pushbutton | momentary | `0` | First officer EFIS CSTR pushbutton (momentary: 1 while held) |
 | `glare.efisFo.fd.on` | bool | light | read | `0` | First officer EFIS FD ON light |
@@ -3048,8 +3205,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
-| `ground.extPwrPanel.adiruAvncs` | bool | light | read | `0` | ADIRU and AVNCS light (amber, 2019 DSC-34-NAV-10-20) |
-| `ground.extPwrPanel.horn` | bool | light | read | `0` | External horn: an ADIRU on battery on the ground |
+| `ground.extPwrPanel.adiruAvncs` | bool | light | read | `0` | ADIRU and AVNCS VENT light (amber, 108VU; 2019 DSC-34-NAV-10-20, DSC-21-30-60): an ADIRU on battery or the avionics ventilation warning, on the ground |
+| `ground.extPwrPanel.horn` | bool | light | read | `0` | External horn (nose gear bay): an ADIRU on battery on the ground (after 15 s), the avionics ventilation low pressure on the ground with the engines stopped (after 30 s), the cockpit MECH call, an APU fire on the ground |
 
 ## Ground / Water and waste
 
@@ -3070,9 +3227,9 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `ground.gate.autoDoors` | bool | service | write | `0` | Systems option: automatic doors and jetway with the beacon (BEACON OFF while parked: L1, FWD / AFT / BULK cargo doors open, jetway called; BEACON ON: every door closed, jetway retracted). Saved in systems.json |
 | `ground.gate.jetway` | int | output | read | `0` | Automatic doors with the beacon: last jetway request sent to the simulator (0 none, 1 dock, 2 retract) |
 | `ground.gate.status` | int | output | read | `0` | Automatic doors with the beacon: 0 idle, 1 beacon off, waiting for the aircraft to be parked (engines spooled down, PARK BRK set), 2 arrival doors opened, 3 doors closed for departure |
-| `ground.gpu.autoConnect` | bool | output | read | `0` | Systems option: the ground crew connects the GPU when the parking brake is set on ground with the engines stopped, and removes it when the brake is released |
+| `ground.gpu.autoConnect` | bool | output | read | `0` | Systems option: the ground crew connects the GPU when the parking brake is set on ground with the engines spooled down and the BEACON off, and removes it when the brake is released |
 | `ground.gpu.connected` | bool | service | write | `0` | Ground power unit plugged in |
-| `ground.gpu.refused` | int | output | read | `0` | Last GPU connection refused by the ground crew while its reason lasts: 0 none, 1 airborne, 2 moving, 3 engines running |
+| `ground.gpu.refused` | int | output | read | `0` | Last GPU connection refused by the ground crew while its reason lasts: 0 none, 1 airborne, 2 moving, 3 engines running, 4 BEACON on |
 | `ground.gpu.withEnginesRunning` | bool | service | write | `0` | Systems option: the ground crew connects the GPU even with the engines running (not standard practice; still refused airborne or moving). Saved in systems.json |
 | `ground.hpAir.connected` | bool | service | write | `0` | HP ground air cart connected and supplying (GND HP connection, engine start air) |
 | `ground.idgReconnect` | bool | service | momentary | `0` | Maintenance: reconnect disconnected IDGs (on ground, engine stopped) |
@@ -3168,10 +3325,17 @@ for texts, else what a running Systems reported when the list was made (cold and
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
 | `hyd.blue.pressurePsi` | float | output | read | `0` | Blue hydraulic system pressure (psi) |
+| `hyd.blue.reservoirL` | float | output | read | `6.5` | Blue reservoir fluid quantity (litres; normal 6.5, low level 2.4) |
+| `hyd.blueElecPump.lowPressure` | bool | output | read | `1` | Blue electric pump pressure switch LO (HYD SD page LO; ≤ 1450 psi, reset ≥ 1750 psi) |
+| `hyd.eng1Pump.lowPressure` | bool | output | read | `1` | ENG 1 (green) pump pressure switch LO (HYD SD page LO; ≤ 1750 psi, reset ≥ 2200 psi) |
+| `hyd.eng2Pump.lowPressure` | bool | output | read | `1` | ENG 2 (yellow) pump pressure switch LO (HYD SD page LO; ≤ 1750 psi, reset ≥ 2200 psi) |
 | `hyd.green.pressurePsi` | float | output | read | `0` | Green hydraulic system pressure (psi) |
+| `hyd.green.reservoirL` | float | output | read | `14.5` | Green reservoir fluid quantity (litres; normal 14.5, low level 3.5) |
 | `hyd.rat.turbineAngleDeg` | float | output | read | `0` | RAT turbine angle (degrees 0..360, turning with its speed; for an exterior model) |
 | `hyd.rat.turbineRpm` | float | output | read | `0` | RAT turbine speed (rpm; 0 stowed or without airflow; ESTIMATED governed 6000 rpm from 140 kt) |
 | `hyd.yellow.pressurePsi` | float | output | read | `0` | Yellow hydraulic system pressure (psi) |
+| `hyd.yellow.reservoirL` | float | output | read | `12.5` | Yellow reservoir fluid quantity (litres; normal 12.5, low level 3.5) |
+| `hyd.yellowElecPump.lowPressure` | bool | output | read | `1` | Yellow electric pump pressure switch LO (≤ 1450 psi, reset ≥ 1750 psi; the SD shows no LO for it) |
 
 ## Instructor
 
@@ -3179,7 +3343,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `instructor.apuQuickStart` | bool | service | write | `0` | IOS: APU running at once (BAT and APU MASTER SW ON, AVAIL), written back to 0 |
 | `instructor.engineQuickStart` | bool | service | write | `0` | IOS: both engines running at once (ENG MASTERs ON), written back to 0 |
-| `instructor.instantAlign` | bool | service | write | `0` | IOS: every IR aligning finishes its alignment now (as adirs.instantAlign), written back to 0 |
+| `instructor.instantAlign` | bool | service | write | `0` | IOS: the three IR mode selectors to NAV and every IR aligning finishes its alignment now (as adirs.instantAlign), written back to 0 |
 | `instructor.preset` | int | service | write | `0` | IOS state preset, applied once (on ground) and written back to 0: 1 COLD & DARK, 2 APU RUNNING, 3 ENGINES RUNNING |
 | `instructor.simRate` | int | service | write | `0` | IOS sim rate, writable by any client (the IOS header's x1 / x2 / x4 / x8): 1, 2, 4 or 8 (x1 real time; any other value is refused and the last valid one kept). Commanded x1 while slewing (the selection is kept); the rate reached is instructor.sim.rateAchieved |
 | `instructor.status` | string | output | read | `""` | Result of the last instructor command |
@@ -4571,7 +4735,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `pedestal.flaps.lever` | int | rotary | write | `0` | FLAPS lever (0, 1, 2, 3, 4 = FULL) |
 | `pedestal.pitchTrim.wheel` | float | analog | write | `0` | Pitch trim wheel = THS position (degrees, + nose up, -4 .. 13.5); writing another value moves the wheel (manual trim) |
 | `pedestal.rudTrim.dashed` | bool | output | read | `0` | RUD TRIM position indicator dashed (powered, no rudder trim position from either FAC; ESTIMATED) |
-| `pedestal.rudTrim.display` | string | light | read | `"L 2.3"` | RUD TRIM position indicator ("L 2.3", "R 0.0", " --.-" dashed: no FAC data, "" = dark) |
+| `pedestal.rudTrim.display` | string | light | read | `"L 2.3"` | RUD TRIM position indicator ("L 2.3", "R 12.0", "R 0.0", " --.-" dashed: no FAC data, " 88.8" ANN LT TEST, "" = dark: DC BUS 2 unpowered) |
 | `pedestal.rudTrim.reset.pressed` | bool | pushbutton | momentary | `0` | RUD TRIM RESET pushbutton (momentary: 1 while held) |
 | `pedestal.rudTrim.selector` | int | rotary | write | `0` | RUD TRIM rotary selector (-1 L, 0 neutral, 1 R; spring-loaded: the cockpit writes 0 on release) |
 | `pedestal.speedBrake.armed` | bool | switch | write | `0` | SPEED BRAKE lever pulled up at RET: ground spoilers armed (1) |
@@ -4980,13 +5144,17 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `radio.dme2.ident` | string | output | read | `""` | DME 2 received station ident ("" = no station received): the Morse ident Audio plays |
 | `radio.marker` | int | output | read | `0` | Marker beacon received (0 none, 1 outer, 2 middle, 3 inner) |
 | `radio.mmr1.frequencyKhz` | int | output | read | `0` | MMR 1 ILS tuned frequency (kHz) |
-| `radio.mmr1.gsDeviationDots` | float | output | read | `0` | MMR 1 G/S deviation (dots, + = fly up) |
+| `radio.mmr1.gsDeviationDots` | float | output | read | `0` | MMR 1 G/S deviation (dots, + = fly up; 0 without signal) |
+| `radio.mmr1.gsValid` | bool | output | read | `0` | MMR 1 G/S received (deviation valid) |
 | `radio.mmr1.ident` | string | output | read | `""` | MMR 1 received station ident ("" = no station received): the Morse ident Audio plays |
 | `radio.mmr1.locDeviationDots` | float | output | read | `0` | MMR 1 LOC deviation (dots, + = fly right; NaN-free, 0 without signal) |
+| `radio.mmr1.locValid` | bool | output | read | `0` | MMR 1 LOC received (deviation valid; radio.mmr1.ident is the station's while true) |
 | `radio.mmr2.frequencyKhz` | int | output | read | `0` | MMR 2 ILS tuned frequency (kHz) |
-| `radio.mmr2.gsDeviationDots` | float | output | read | `0` | MMR 2 G/S deviation (dots, + = fly up) |
+| `radio.mmr2.gsDeviationDots` | float | output | read | `0` | MMR 2 G/S deviation (dots, + = fly up; 0 without signal) |
+| `radio.mmr2.gsValid` | bool | output | read | `0` | MMR 2 G/S received (deviation valid) |
 | `radio.mmr2.ident` | string | output | read | `""` | MMR 2 received station ident ("" = no station received): the Morse ident Audio plays |
 | `radio.mmr2.locDeviationDots` | float | output | read | `0` | MMR 2 LOC deviation (dots, + = fly right; NaN-free, 0 without signal) |
+| `radio.mmr2.locValid` | bool | output | read | `0` | MMR 2 LOC received (deviation valid; radio.mmr2.ident is the station's while true) |
 | `radio.ra1.heightFt` | float | output | read | `0` | Radio altimeter 1 height (ft, -1 invalid or above its 5000 ft range) |
 | `radio.ra2.heightFt` | float | output | read | `0` | Radio altimeter 2 height (ft, -1 invalid or above its 5000 ft range) |
 | `radio.vhf1.active` | string | output | read | `"122.800"` | VHF 1 active frequency ("122.800") |
@@ -5066,19 +5234,33 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `aircond.cockpitAirFlow` | bool | output | read | `0` | Air flowing into the cockpit (a pack, ram air or the cabin recirculation fans through the mixer unit) |
 | `elec.bus.acBus1.powered` | bool | output | read | `0` | AC BUS 1 powered |
+| `elec.bus.acBus1.volts` | float | output | read | `0` | AC BUS 1 voltage (V; 0 unpowered): its source's (AC 116 V from a generator, the GPU's, 115 V on the static inverter; DC 28.8 V from a TR, the battery voltage on the batteries) |
 | `elec.bus.acBus2.powered` | bool | output | read | `0` | AC BUS 2 powered |
+| `elec.bus.acBus2.volts` | float | output | read | `0` | AC BUS 2 voltage (V; 0 unpowered): its source's (AC 116 V from a generator, the GPU's, 115 V on the static inverter; DC 28.8 V from a TR, the battery voltage on the batteries) |
 | `elec.bus.acEss.powered` | bool | output | read | `0` | AC ESS BUS powered |
+| `elec.bus.acEss.volts` | float | output | read | `0` | AC ESS BUS voltage (V; 0 unpowered): its source's (AC 116 V from a generator, the GPU's, 115 V on the static inverter; DC 28.8 V from a TR, the battery voltage on the batteries) |
 | `elec.bus.acEssShed.powered` | bool | output | read | `0` | AC ESS SHED BUS powered |
+| `elec.bus.acEssShed.volts` | float | output | read | `0` | AC ESS SHED BUS voltage (V; 0 unpowered): its source's (AC 116 V from a generator, the GPU's, 115 V on the static inverter; DC 28.8 V from a TR, the battery voltage on the batteries) |
 | `elec.bus.acGndFlt.powered` | bool | output | read | `0` | AC GND/FLT BUS powered |
+| `elec.bus.acGndFlt.volts` | float | output | read | `0` | AC GND/FLT BUS voltage (V; 0 unpowered): its source's (AC 116 V from a generator, the GPU's, 115 V on the static inverter; DC 28.8 V from a TR, the battery voltage on the batteries) |
 | `elec.bus.acStatInv.powered` | bool | output | read | `0` | AC STAT INV BUS powered |
+| `elec.bus.acStatInv.volts` | float | output | read | `0` | AC STAT INV BUS voltage (V; 0 unpowered): its source's (AC 116 V from a generator, the GPU's, 115 V on the static inverter; DC 28.8 V from a TR, the battery voltage on the batteries) |
 | `elec.bus.dcBat.powered` | bool | output | read | `0` | DC BAT BUS powered |
+| `elec.bus.dcBat.volts` | float | output | read | `0` | DC BAT BUS voltage (V; 0 unpowered): its source's (AC 116 V from a generator, the GPU's, 115 V on the static inverter; DC 28.8 V from a TR, the battery voltage on the batteries) |
 | `elec.bus.dcBus1.powered` | bool | output | read | `0` | DC BUS 1 powered |
+| `elec.bus.dcBus1.volts` | float | output | read | `0` | DC BUS 1 voltage (V; 0 unpowered): its source's (AC 116 V from a generator, the GPU's, 115 V on the static inverter; DC 28.8 V from a TR, the battery voltage on the batteries) |
 | `elec.bus.dcBus2.powered` | bool | output | read | `0` | DC BUS 2 powered |
+| `elec.bus.dcBus2.volts` | float | output | read | `0` | DC BUS 2 voltage (V; 0 unpowered): its source's (AC 116 V from a generator, the GPU's, 115 V on the static inverter; DC 28.8 V from a TR, the battery voltage on the batteries) |
 | `elec.bus.dcEss.powered` | bool | output | read | `0` | DC ESS BUS powered |
+| `elec.bus.dcEss.volts` | float | output | read | `0` | DC ESS BUS voltage (V; 0 unpowered): its source's (AC 116 V from a generator, the GPU's, 115 V on the static inverter; DC 28.8 V from a TR, the battery voltage on the batteries) |
 | `elec.bus.dcEssShed.powered` | bool | output | read | `0` | DC ESS SHED BUS powered |
+| `elec.bus.dcEssShed.volts` | float | output | read | `0` | DC ESS SHED BUS voltage (V; 0 unpowered): its source's (AC 116 V from a generator, the GPU's, 115 V on the static inverter; DC 28.8 V from a TR, the battery voltage on the batteries) |
 | `elec.bus.dcGndFlt.powered` | bool | output | read | `0` | DC GND/FLT BUS powered |
+| `elec.bus.dcGndFlt.volts` | float | output | read | `0` | DC GND/FLT BUS voltage (V; 0 unpowered): its source's (AC 116 V from a generator, the GPU's, 115 V on the static inverter; DC 28.8 V from a TR, the battery voltage on the batteries) |
 | `elec.bus.hotBus1.powered` | bool | output | read | `0` | HOT BUS 1 powered |
+| `elec.bus.hotBus1.volts` | float | output | read | `26.3` | HOT BUS 1 voltage (V; 0 unpowered): its source's (AC 116 V from a generator, the GPU's, 115 V on the static inverter; DC 28.8 V from a TR, the battery voltage on the batteries) |
 | `elec.bus.hotBus2.powered` | bool | output | read | `0` | HOT BUS 2 powered |
+| `elec.bus.hotBus2.volts` | float | output | read | `26.3` | HOT BUS 2 voltage (V; 0 unpowered): its source's (AC 116 V from a generator, the GPU's, 115 V on the static inverter; DC 28.8 V from a TR, the battery voltage on the batteries) |
 | `fg.ap.anyEngaged` | bool | output | read | `0` | An autopilot (AP 1 or AP 2) engaged |
 | `fg.ap.noneEngaged` | bool | output | read | `0` | No autopilot engaged (inverse of fg.ap.anyEngaged) |
 | `mip.clock.powered` | bool | output | read | `0` | Cockpit clock powered (its displays lit) |
