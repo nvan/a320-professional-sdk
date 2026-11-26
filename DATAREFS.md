@@ -1,6 +1,6 @@
 # Datarefs
 
-Every dataref of NVAN A320 Professional (4188), grouped by panel or system. Generated from Systems' catalog;
+Every dataref of NVAN A320 Professional (4269), grouped by panel or system. Generated from Systems' catalog;
 a running Systems lists the same at `http://<address>:8080/api` and over the WebSocket (`{"op":"catalog"}`).
 
 Access: **read** (only Systems writes it), **write** (a plugin or client may write it), **momentary** (a
@@ -17,7 +17,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Air systems (indications)](#air-systems-indications) (21)
 - [Aircraft](#aircraft) (11)
 - [Aircraft (sound sources)](#aircraft-sound-sources) (22)
-- [Aircraft options](#aircraft-options) (3)
+- [Aircraft options](#aircraft-options) (6)
 - [APU (indications)](#apu-indications) (14)
 - [ATSU](#atsu) (7)
 - [Audio management (AMU)](#audio-management-amu) (70)
@@ -50,6 +50,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Failures / Air conditioning](#failures--air-conditioning) (21)
 - [Failures / APU](#failures--apu) (22)
 - [Failures / ATSU](#failures--atsu) (1)
+- [Failures / CFDS](#failures--cfds) (1)
 - [Failures / Circuit breakers](#failures--circuit-breakers) (500)
 - [Failures / Clock](#failures--clock) (1)
 - [Failures / Communications](#failures--communications) (20)
@@ -62,9 +63,9 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Failures / Engines (IAE)](#failures--engines-iae) (28)
 - [Failures / FCU](#failures--fcu) (2)
 - [Failures / Fire](#failures--fire) (48)
-- [Failures / Flight controls](#failures--flight-controls) (60)
+- [Failures / Flight controls](#failures--flight-controls) (66)
 - [Failures / FMGC](#failures--fmgc) (3)
-- [Failures / Fuel](#failures--fuel) (22)
+- [Failures / Fuel](#failures--fuel) (29)
 - [Failures / FWS](#failures--fws) (4)
 - [Failures / Hydraulic](#failures--hydraulic) (17)
 - [Failures / Ice and rain](#failures--ice-and-rain) (6)
@@ -82,13 +83,13 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Failures / Ventilation](#failures--ventilation) (13)
 - [Failures / Water / waste](#failures--water--waste) (4)
 - [Failures / Weather radar](#failures--weather-radar) (6)
-- [FG (indications)](#fg-indications) (46)
+- [FG (indications)](#fg-indications) (48)
 - [Fire protection (indications)](#fire-protection-indications) (16)
 - [Flight controls / State (read-only)](#flight-controls--state-read-only) (47)
 - [FMGC (indications)](#fmgc-indications) (35)
 - [FMGS stand-in](#fmgs-stand-in) (3)
 - [Forward entrance](#forward-entrance) (1)
-- [Fuel (indications)](#fuel-indications) (38)
+- [Fuel (indications)](#fuel-indications) (40)
 - [FWC / ALERTS](#fwc--alerts) (2)
 - [FWC / AURAL](#fwc--aural) (10)
 - [Gates](#gates) (11)
@@ -99,13 +100,14 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Glareshield / CHRONO](#glareshield--chrono) (8)
 - [Glareshield / FCU](#glareshield--fcu) (4)
 - [Glareshield / FCU 13VU (AFS control panel)](#glareshield--fcu-13vu-afs-control-panel) (47)
-- [Glareshield / FCU 13VU (EFIS control panels)](#glareshield--fcu-13vu-efis-control-panels) (53)
+- [Glareshield / FCU 13VU (EFIS control panels)](#glareshield--fcu-13vu-efis-control-panels) (55)
 - [Glareshield / INTEG LT](#glareshield--integ-lt) (1)
 - [Glareshield / SIDE STICK PRIORITY](#glareshield--side-stick-priority) (4)
-- [GPWS](#gpws) (4)
+- [GPWS](#gpws) (7)
 - [GPWS / RAAS](#gpws--raas) (9)
 - [Ground / Calls](#ground--calls) (5)
 - [Ground / EXTERNAL POWER panel](#ground--external-power-panel) (2)
+- [Ground / Refuel panel 800VU](#ground--refuel-panel-800vu) (23)
 - [Ground / Water and waste](#ground--water-and-waste) (3)
 - [Ground services](#ground-services) (68)
 - [Ground services / Fuel](#ground-services--fuel) (9)
@@ -134,7 +136,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [MIP / Loudspeakers](#mip--loudspeakers) (2)
 - [Overhead / 21VU](#overhead--21vu) (2)
 - [Overhead / 22VU](#overhead--22vu) (2)
-- [Overhead / ADIRS 41VU](#overhead--adirs-41vu) (22)
+- [Overhead / ADIRS 41VU](#overhead--adirs-41vu) (25)
+- [Overhead / ADIRS CDU](#overhead--adirs-cdu) (20)
 - [Overhead / AIR COND 30VU](#overhead--air-cond-30vu) (25)
 - [Overhead / ANTI ICE 25VU](#overhead--anti-ice-25vu) (11)
 - [Overhead / APU 25VU](#overhead--apu-25vu) (6)
@@ -179,13 +182,14 @@ for texts, else what a running Systems reported when the list was made (cold and
 - [Pedestal / MCDU 1](#pedestal--mcdu-1) (115)
 - [Pedestal / MCDU 2](#pedestal--mcdu-2) (115)
 - [Pedestal / PARKING BRK](#pedestal--parking-brk) (1)
+- [Pedestal / PRINTER](#pedestal--printer) (3)
 - [Pedestal / RMP 1](#pedestal--rmp-1) (32)
 - [Pedestal / RMP 2](#pedestal--rmp-2) (32)
 - [Pedestal / SWITCHING](#pedestal--switching) (4)
 - [Pedestal / THRUST LEVERS](#pedestal--thrust-levers) (4)
 - [Pedestal / WEATHER RADAR](#pedestal--weather-radar) (7)
-- [Performance](#performance) (26)
-- [Radio (receivers)](#radio-receivers) (44)
+- [Performance](#performance) (30)
+- [Radio (receivers)](#radio-receivers) (46)
 - [Radio (simulator)](#radio-simulator) (4)
 - [Radio (transmission)](#radio-transmission) (10)
 - [Rain removal](#rain-removal) (12)
@@ -409,7 +413,10 @@ for texts, else what a running Systems reported when the list was made (cold and
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
 | `ddrmi.vorOnly` | bool | service | write | `0` | DDRMI type (aircraft option saved in systems.json): 0 = VOR/ADF (selectors for each pointer), 1 = VOR-only (both pointers always VOR 1 / VOR 2, no selectors) |
+| `efis.qfe.installed` | bool | service | write | `0` | QFE BARO setting option (aircraft option saved in systems.json, off by default): the BARO knob push alternates QNH and QFE; PFD "QFE" and heights above the field; FMGC and EGPWS QFE pin program |
 | `elec.acEssFeedAuto` | bool | service | write | `0` | AC ESS FEED auto switching (aircraft option saved in systems.json): 1 = installed (AC BUS 2 supplies the AC ESS BUS automatically when AC BUS 1 is lost), 0 = not installed (the crew selects AC ESS FEED ALTN) |
+| `overhead.adirs.cdu.installed` | bool | service | write | `0` | ADIRS panel variant (aircraft option saved in systems.json): 0 = the panel without CDU (2019 FCOM: IR pbs FAULT/OFF), 1 = the older panel with the ADIRS CDU (2006 FCOM 1.34.10: display, DATA and SYS selectors, keyboard, IR lights FAULT/ALIGN) |
+| `radio.gls.installed` | bool | service | write | `0` | GLS (GBAS landing system) installed (aircraft option saved in systems.json, off by default: not on the aircraft of the 2019 FCOM): MMR GLS channels, GLS approaches with LOC / G/S and the FMA AUTOLAND capability |
 | `wheel.tpis.installed` | bool | service | write | `0` | Tire pressure indicating system installed (aircraft option saved in systems.json): WHEEL page tire pressures, WHEEL TYRE LO PR |
 
 ## APU (indications)
@@ -1375,11 +1382,11 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `failures.adirs.adr3Fault` | bool | failure | write | `0` | ADR 3 fault (detected: FAULT light and ECAM caution) |
 | `failures.adirs.adr3SpeedError` | bool | failure | write | `0` | ADR 3 airspeed erroneous, undetected (Value: kt CAS error, default -30): unreliable speed / ADR DISAGREE |
 | `failures.adirs.aoaCaptFault` | bool | failure | write | `0` | CAPT AOA sensor failed: ADR 1 AOA not available (NAV CAPT AOA FAULT) |
-| `failures.adirs.aoaCaptStuck` | bool | failure | write | `0` | CAPT AOA vane stuck at its present angle (undetected): ADR 1 AOA erroneous |
+| `failures.adirs.aoaCaptStuck` | bool | failure | write | `0` | CAPT AOA vane stuck (undetected): at its present angle, or at Value degrees (a damaged vane, e.g. 35 for the spurious normal law stall warning); ADR 1 AOA erroneous |
 | `failures.adirs.aoaFoFault` | bool | failure | write | `0` | F/O AOA sensor failed: ADR 2 AOA not available (NAV F/O AOA FAULT) |
-| `failures.adirs.aoaFoStuck` | bool | failure | write | `0` | F/O AOA vane stuck at its present angle (undetected): ADR 2 AOA erroneous |
+| `failures.adirs.aoaFoStuck` | bool | failure | write | `0` | F/O AOA vane stuck (undetected): at its present angle, or at Value degrees (a damaged vane, e.g. 35 for the spurious normal law stall warning); ADR 2 AOA erroneous |
 | `failures.adirs.aoaStbyFault` | bool | failure | write | `0` | STBY AOA sensor failed: ADR 3 AOA not available (NAV STBY AOA FAULT) |
-| `failures.adirs.aoaStbyStuck` | bool | failure | write | `0` | STBY AOA vane stuck at its present angle (undetected): ADR 3 AOA erroneous |
+| `failures.adirs.aoaStbyStuck` | bool | failure | write | `0` | STBY AOA vane stuck (undetected): at its present angle, or at Value degrees (a damaged vane, e.g. 35 for the spurious normal law stall warning); ADR 3 AOA erroneous |
 | `failures.adirs.ir1AlignFault` | bool | failure | write | `0` | IR 1 alignment fault: alignment cannot complete (NAV IR NOT ALIGNED) |
 | `failures.adirs.ir1AttDrift` | bool | failure | write | `0` | IR 1 attitude drift, undetected (Value: °/min, default 1): pitch and roll errors grow (ATT DISCREPANCY, IR DISAGREE) |
 | `failures.adirs.ir1Fault` | bool | failure | write | `0` | IR 1 hard fault: IR lost in every mode (FAULT steady) |
@@ -1470,6 +1477,12 @@ for texts, else what a running Systems reported when the list was made (cold and
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
 | `failures.atsu.atsu` | bool | failure | write | `0` | ATSU failure (no datalink) |
+
+## Failures / CFDS
+
+| Dataref | Type | Kind | Access | Sample value | Description |
+| --- | --- | --- | --- | --- | --- |
+| `failures.cfds.cfdiu` | bool | failure | write | `0` | CFDIU main channel failure (CFDS backup mode: on the ground, MCDU 1, SYSTEM REPORT/TEST only) |
 
 ## Failures / Circuit breakers
 
@@ -2361,9 +2374,15 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `failures.fctl.elevRServoB` | bool | failure | write | `0` | Right elevator blue servo jack failed (F/CTL ELEV SERVO FAULT) |
 | `failures.fctl.elevRServoY` | bool | failure | write | `0` | Right elevator yellow servo jack failed (F/CTL ELEV SERVO FAULT) |
 | `failures.fctl.fac1` | bool | failure | write | `0` | FAC 1 failure (FAULT light: yaw functions and flight envelope lost) |
+| `failures.fctl.fac1RudTrim` | bool | failure | write | `0` | Rudder trim actuator 1 failed (AUTO FLT RUD TRIM 1 FAULT; with the other one: RUD TRIM SYS) |
+| `failures.fctl.fac1RudTrvLim` | bool | failure | write | `0` | Rudder travel limiter actuator 1 failed (AUTO FLT RUD TRV LIM 1; with the other one: RUD TRV LIM SYS) |
 | `failures.fctl.fac1Windshear` | bool | failure | write | `0` | FAC 1 reactive windshear detection failure (both FACs: AUTO FLT REAC W/S DET FAULT) |
+| `failures.fctl.fac1YawDamper` | bool | failure | write | `0` | Yaw damper actuator 1 failed (AUTO FLT YAW DAMPER 1; with the other one: YAW DAMPER SYS) |
 | `failures.fctl.fac2` | bool | failure | write | `0` | FAC 2 failure (FAULT light: yaw functions and flight envelope lost) |
+| `failures.fctl.fac2RudTrim` | bool | failure | write | `0` | Rudder trim actuator 2 failed (AUTO FLT RUD TRIM 2 FAULT; with the other one: RUD TRIM SYS) |
+| `failures.fctl.fac2RudTrvLim` | bool | failure | write | `0` | Rudder travel limiter actuator 2 failed (AUTO FLT RUD TRV LIM 2; with the other one: RUD TRV LIM SYS) |
 | `failures.fctl.fac2Windshear` | bool | failure | write | `0` | FAC 2 reactive windshear detection failure (both FACs: AUTO FLT REAC W/S DET FAULT) |
+| `failures.fctl.fac2YawDamper` | bool | failure | write | `0` | Yaw damper actuator 2 failed (AUTO FLT YAW DAMPER 2; with the other one: YAW DAMPER SYS) |
 | `failures.fctl.fcdc1` | bool | failure | write | `0` | FCDC 1 failure |
 | `failures.fctl.fcdc2` | bool | failure | write | `0` | FCDC 2 failure |
 | `failures.fctl.flapAttachSensor` | bool | failure | write | `0` | Flap attachment failure detection sensor failed (F/CTL FLAP ATTACH SENSOR) |
@@ -2422,8 +2441,15 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `failures.fuel.autoFeed` | bool | failure | write | `0` | Center tank pump AUTO control failure (pumps do not stop) |
 | `failures.fuel.ctrTkPump1` | bool | failure | write | `0` | Center tank pump 1 failure |
 | `failures.fuel.ctrTkPump2` | bool | failure | write | `0` | Center tank pump 2 failure |
+| `failures.fuel.fqiCadensiconL` | bool | failure | write | `0` | Left inner tank densitometer (cadensicon) failed (alone: the right one is used) |
+| `failures.fuel.fqiCadensiconR` | bool | failure | write | `0` | Right inner tank densitometer (cadensicon) failed (both: every tank degraded) |
 | `failures.fuel.fqiCh1` | bool | failure | write | `0` | FQI channel 1 failure |
 | `failures.fuel.fqiCh2` | bool | failure | write | `0` | FQI channel 2 failure |
+| `failures.fuel.fqiProbeCenter` | bool | failure | write | `0` | FQI probes of the center tank failed (FQI degraded mode: quantity and FOB dashed) |
+| `failures.fuel.fqiProbeLInner` | bool | failure | write | `0` | FQI probes of the left inner cell failed (FQI degraded mode: quantity and FOB dashed) |
+| `failures.fuel.fqiProbeLOuter` | bool | failure | write | `0` | FQI probes of the left outer cell failed (FQI degraded mode: quantity and FOB dashed) |
+| `failures.fuel.fqiProbeRInner` | bool | failure | write | `0` | FQI probes of the right inner cell failed (FQI degraded mode: quantity and FOB dashed) |
+| `failures.fuel.fqiProbeROuter` | bool | failure | write | `0` | FQI probes of the right outer cell failed (FQI degraded mode: quantity and FOB dashed) |
 | `failures.fuel.lTkPump1` | bool | failure | write | `0` | Left tank pump 1 failure |
 | `failures.fuel.lTkPump2` | bool | failure | write | `0` | Left tank pump 2 failure |
 | `failures.fuel.leakEng1` | bool | failure | write | `0` | Fuel leak on engine 1, downstream of its LP valve (2000 kg/h) |
@@ -2767,8 +2793,10 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `fg.fma.col5.line2` | string | output | read | `""` | FMA column 5, line 2 text ("" = blank) |
 | `fg.fma.col5.line3` | string | output | read | `""` | FMA column 5, line 3 text ("" = blank) |
 | `fg.landMode` | bool | output | read | `0` | LAND engaged (FMA columns 2-3 LAND, then FLARE with fg.verticalMode 17, ROLL OUT with fg.lateralMode 9) |
+| `fg.landingInop` | int | output | read | `0` | FMGC landing capability inop discretes from the equipment (bit flags; the FWC STATUS INOP SYS CAT lines): 1 CAT 2 inop (LAND 2), 2 CAT 3 inop (LAND 3 FAIL PASSIVE), 4 CAT 3 DUAL inop (LAND 3 FAIL OPERATIVE), 8 GLS AUTOLAND inop (GLS option); 0 none |
 | `fg.lateralArmed` | int | output | read | `0` | Armed lateral modes (bit flags, FMA column 3 line 2): 1 NAV (APP NAV with fg.appNav), 2 LOC; 0 none |
 | `fg.lateralMode` | int | output | read | `0` | Engaged lateral mode: 0 none, 1 HDG, 2 TRK, 3 NAV (APP NAV with fg.appNav), 4 RWY, 5 RWY TRK, 6 GA TRK, 7 LOC*, 8 LOC, 9 ROLL OUT |
+| `fg.locCaptureAssist` | int | output | read | `0` | LOC capture assistance now (DSC-22_30-80-30-10): 0 none, 1 LOC convergence (NAV engaged, LOC armed: 20° converging track), 2 LOC* in the pre-capture zone (beyond 2.3 dots, GPS PRIMARY: 15° convergence), 3 LOC* from a pre-capture on the beam |
 | `fg.pitchCommandDeg` | float | output | read | `0` | Ordered pitch attitude (degrees, + nose up) of the engaged vertical mode, AP or FD. Without a pitch order (no AP / FD, no vertical mode, on ground) it is not an order (about the present pitch); frozen while both FMGCs are lost. Whether a bar is shown: fg.fd.capt / fo.pitchBar |
 | `fg.rollCommandDeg` | float | output | read | `0` | Ordered bank angle (degrees, + right wing down) of the engaged lateral mode, AP or FD. Without a roll order (no AP / FD, no lateral mode, RWY, ROLL OUT, on ground) it is not an order: 0 without a lateral law, else the law's bank; frozen while both FMGCs are lost. Whether a bar is shown: fg.fd.capt / fo.rollBar |
 | `fg.speedTargetKt` | float | output | read | `0` | Speed target as a CAS (managed or selected) |
@@ -2912,6 +2940,8 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `fuel.engine2Fed` | bool | light | read | `0` | Fuel reaches engine 2 (pump pressure or suction feed); 0 = starved |
 | `fuel.engine2Suction` | bool | light | read | `0` | Engine 2 fed by suction (gravity) only |
 | `fuel.fobKg` | float | light | read | `0` | Fuel on board (kg, FQI; -1 without the FQI) |
+| `fuel.fqiDegraded` | bool | light | read | `0` | FQI in degraded mode: the FOB's last two digits dashed (DSC-28-20) |
+| `fuel.fqiDegradedTanks` | int | light | read | `0` | Tanks in FQI degraded mode, bit mask (1 L outer, 2 L inner, 4 center, 8 R inner, 16 R outer): quantity dashed on the FUEL page |
 | `fuel.fqiValid` | bool | light | read | `0` | FQI computing (a channel powered and working) |
 | `fuel.frv1Open` | bool | light | read | `0` | Engine 1 IDG fuel return valve open |
 | `fuel.frv2Open` | bool | light | read | `0` | Engine 2 IDG fuel return valve open |
@@ -3107,6 +3137,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `glare.efisCapt.baroKnob` | int | encoder | write | `0` | Captain EFIS BARO knob rotation counter (+1 per clockwise click: 1 hPa or 0.01 in Hg) |
 | `glare.efisCapt.baroPull` | bool | pushbutton | momentary | `0` | Captain EFIS BARO knob pulled (STD) (momentary: 1 while held) |
 | `glare.efisCapt.baroPush` | bool | pushbutton | momentary | `0` | Captain EFIS BARO knob pushed (QNH) (momentary: 1 while held) |
+| `glare.efisCapt.baroQfe` | bool | light | read | `0` | Captain EFIS QFE legend of the baro window (lit in QFE: QFE option, efis.qfe.installed) |
 | `glare.efisCapt.baroQnh` | bool | light | read | `0` | Captain EFIS QNH legend of the baro window (lit in QNH) |
 | `glare.efisCapt.baroUnit` | int | rotary | write | `0` | Captain EFIS BARO outer ring (0 = in Hg, 1 = hPa) |
 | `glare.efisCapt.baroWindow` | string | light | read | `"1013"` | Captain EFIS baro reference window: "1013" (hPa, 4 digits: "0745".."1050"), "29.92" (in Hg, "21.99".."31.00"), "Std", "8888" ANN LT TEST, "" dark |
@@ -3133,6 +3164,7 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `glare.efisFo.baroKnob` | int | encoder | write | `0` | First officer EFIS BARO knob rotation counter (+1 per clockwise click: 1 hPa or 0.01 in Hg) |
 | `glare.efisFo.baroPull` | bool | pushbutton | momentary | `0` | First officer EFIS BARO knob pulled (STD) (momentary: 1 while held) |
 | `glare.efisFo.baroPush` | bool | pushbutton | momentary | `0` | First officer EFIS BARO knob pushed (QNH) (momentary: 1 while held) |
+| `glare.efisFo.baroQfe` | bool | light | read | `0` | First officer EFIS QFE legend of the baro window (lit in QFE: QFE option, efis.qfe.installed) |
 | `glare.efisFo.baroQnh` | bool | light | read | `0` | First officer EFIS QNH legend of the baro window (lit in QNH) |
 | `glare.efisFo.baroUnit` | int | rotary | write | `0` | First officer EFIS BARO outer ring (0 = in Hg, 1 = hPa) |
 | `glare.efisFo.baroWindow` | string | light | read | `"1013"` | First officer EFIS baro reference window: "1013" (hPa, 4 digits: "0745".."1050"), "29.92" (in Hg, "21.99".."31.00"), "Std", "8888" ANN LT TEST, "" dark |
@@ -3173,6 +3205,9 @@ for texts, else what a running Systems reported when the list was made (cold and
 | Dataref | Type | Kind | Access | Sample value | Description |
 | --- | --- | --- | --- | --- | --- |
 | `gpws.alert` | bool | output | read | `0` | A GPWS aural alert is active |
+| `gpws.obstacleAlert` | bool | output | read | `0` | The predictive alert (gpws.tad) is an obstacle's: OBSTACLE AHEAD (PULL UP), OBST AHEAD on the NDs |
+| `gpws.obstacleDatabase` | string | output | read | `"MISSING (/home/maduranma/Projects/nvan/a320-professional/a320-professional/src/Systems/bin/Debug/net10.0/obstacles)"` | Obstacle database (OpenStreetMap, ODbL): folder and state (READY, MISSING: none installed, no obstacle function; OFF: option off) |
+| `gpws.obstacles` | int | output | read | `0` | Obstacles in the loaded obstacle database |
 | `gpws.tad` | int | output | read | `0` | Predictive terrain alert: 0 none, 1 caution (TERRAIN AHEAD), 2 warning (PULL UP) |
 | `gpws.terrainDatabase` | string | output | read | `""` | Terrain database: folder and state (READY, MISSING: no terrain data installed → TERR FAULT) |
 | `gpws.terrainTiles` | int | output | read | `0` | Terrain database tiles (1°) loaded around the aircraft |
@@ -3207,6 +3242,34 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `ground.extPwrPanel.adiruAvncs` | bool | light | read | `0` | ADIRU and AVNCS VENT light (amber, 108VU; 2019 DSC-34-NAV-10-20, DSC-21-30-60): an ADIRU on battery or the avionics ventilation warning, on the ground |
 | `ground.extPwrPanel.horn` | bool | light | read | `0` | External horn (nose gear bay): an ADIRU on battery on the ground (after 15 s), the avionics ventilation low pressure on the ground with the engines stopped (after 30 s), the cockpit MECH call, an APU fire on the ground |
+
+## Ground / Refuel panel 800VU
+
+| Dataref | Type | Kind | Access | Sample value | Description |
+| --- | --- | --- | --- | --- | --- |
+| `ground.refuelPanel.actualKg` | float | output | read | `-1` | ACTUAL display: fuel on board (kg, FQI; display x 1000; -1 = blank) |
+| `ground.refuelPanel.battPower` | bool | switch | momentary | `0` | BATT POWER toggle held at ON (momentary; 0 = NORM): HOT BUS 1 supplies the FQI |
+| `ground.refuelPanel.battSupply` | bool | output | read | `0` | FQI supplied by HOT BUS 1 through BATT POWER (about 40 s of tests before the indications) |
+| `ground.refuelPanel.displayTest` | bool | output | read | `0` | TEST LTS: every display shows all 8s |
+| `ground.refuelPanel.doorOpen` | bool | switch | write | `0` | Refuel panel access door open (panel energized; REFUELG memo) |
+| `ground.refuelPanel.end` | bool | light | read | `0` | END light (green): steady when the automatic refuel is complete, flashing when it was aborted (lamp state) |
+| `ground.refuelPanel.hiLvl.center` | bool | light | read | `0` | HI LVL CENTER light (blue): high level sensor wet, its refuel valve closed |
+| `ground.refuelPanel.hiLvl.left` | bool | light | read | `0` | HI LVL LEFT light (blue): high level sensor wet, its refuel valve closed |
+| `ground.refuelPanel.hiLvl.right` | bool | light | read | `0` | HI LVL RIGHT light (blue): high level sensor wet, its refuel valve closed |
+| `ground.refuelPanel.modeSelect` | int | rotary | write | `1` | MODE SELECT (0 = REFUEL, 1 = OFF, 2 = DEFUEL XFR; guarded at OFF) |
+| `ground.refuelPanel.open` | bool | light | read | `0` | OPEN light (amber): defuel / transfer valve open |
+| `ground.refuelPanel.powered` | bool | output | read | `0` | Panel energized (door open and the FQI computing): displays and lights alive |
+| `ground.refuelPanel.preselectedDisplayKg` | float | output | read | `-1` | PRESELECTED display (kg; display x 1000; -1 = blank) |
+| `ground.refuelPanel.preselectedKg` | float | encoder | write | `0` | Preselected total fuel (kg, 0 to 18968); also moved by the INC / DEC switch |
+| `ground.refuelPanel.preselectorDec` | bool | pushbutton | momentary | `0` | Preselector switch pressed on DEC (momentary: -100 kg, repeating while held) |
+| `ground.refuelPanel.preselectorInc` | bool | pushbutton | momentary | `0` | Preselector switch pressed on INC (momentary: +100 kg, repeating while held) |
+| `ground.refuelPanel.qty.centerKg` | float | output | read | `-1` | FUEL QTY indicator CENTER (kg, FQI; display x 1000; -1 = blank) |
+| `ground.refuelPanel.qty.leftKg` | float | output | read | `-1` | FUEL QTY indicator LEFT (kg, FQI; display x 1000; -1 = blank) |
+| `ground.refuelPanel.qty.rightKg` | float | output | read | `-1` | FUEL QTY indicator RIGHT (kg, FQI; display x 1000; -1 = blank) |
+| `ground.refuelPanel.test` | int | switch | write | `1` | TEST switch (0 = HI LVL, 1 = neutral, 2 = LTS; spring-loaded to neutral) |
+| `ground.refuelPanel.valve.center` | int | switch | write | `1` | REFUEL VALVES CENTER (0 = OPEN, 1 = NORM, 2 = SHUT; guarded in NORM) |
+| `ground.refuelPanel.valve.left` | int | switch | write | `1` | REFUEL VALVES LEFT (0 = OPEN, 1 = NORM, 2 = SHUT; guarded in NORM) |
+| `ground.refuelPanel.valve.right` | int | switch | write | `1` | REFUEL VALVES RIGHT (0 = OPEN, 1 = NORM, 2 = SHUT; guarded in NORM) |
 
 ## Ground / Water and waste
 
@@ -3754,19 +3817,47 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `overhead.adirs.adr3.fault` | bool | light | read | `0` | ADR 3 FAULT light |
 | `overhead.adirs.adr3.off` | bool | light | read | `0` | ADR 3 OFF light |
 | `overhead.adirs.adr3.pressed` | bool | pushbutton | momentary | `0` | ADR 3 pushbutton (momentary: 1 while held) |
+| `overhead.adirs.ir1.align` | bool | light | read | `0` | IR 1 ALIGN light (white, the panel with the ADIRS CDU only): steady while aligning (and the 30 s ATT erection), flashing on an alignment problem, off when aligned |
 | `overhead.adirs.ir1.fault` | bool | light | read | `0` | IR 1 FAULT light |
 | `overhead.adirs.ir1.off` | bool | light | read | `0` | IR 1 OFF light |
 | `overhead.adirs.ir1.pressed` | bool | pushbutton | momentary | `0` | IR 1 pushbutton (momentary: 1 while held) |
 | `overhead.adirs.ir1Mode` | int | rotary | write | `0` | IR 1 mode selector (0 = OFF, 1 = NAV, 2 = ATT) |
+| `overhead.adirs.ir2.align` | bool | light | read | `0` | IR 2 ALIGN light (white, the panel with the ADIRS CDU only): steady while aligning (and the 30 s ATT erection), flashing on an alignment problem, off when aligned |
 | `overhead.adirs.ir2.fault` | bool | light | read | `0` | IR 2 FAULT light |
 | `overhead.adirs.ir2.off` | bool | light | read | `0` | IR 2 OFF light |
 | `overhead.adirs.ir2.pressed` | bool | pushbutton | momentary | `0` | IR 2 pushbutton (momentary: 1 while held) |
 | `overhead.adirs.ir2Mode` | int | rotary | write | `0` | IR 2 mode selector (0 = OFF, 1 = NAV, 2 = ATT) |
+| `overhead.adirs.ir3.align` | bool | light | read | `0` | IR 3 ALIGN light (white, the panel with the ADIRS CDU only): steady while aligning (and the 30 s ATT erection), flashing on an alignment problem, off when aligned |
 | `overhead.adirs.ir3.fault` | bool | light | read | `0` | IR 3 FAULT light |
 | `overhead.adirs.ir3.off` | bool | light | read | `0` | IR 3 OFF light |
 | `overhead.adirs.ir3.pressed` | bool | pushbutton | momentary | `0` | IR 3 pushbutton (momentary: 1 while held) |
 | `overhead.adirs.ir3Mode` | int | rotary | write | `0` | IR 3 mode selector (0 = OFF, 1 = NAV, 2 = ATT) |
 | `overhead.adirs.onBat` | bool | light | read | `0` | ON BAT light (amber) |
+
+## Overhead / ADIRS CDU
+
+| Dataref | Type | Kind | Access | Sample value | Description |
+| --- | --- | --- | --- | --- | --- |
+| `overhead.adirs.cdu.clrLight` | bool | light | read | `0` | ADIRS CDU CLR key cue light: the value entered is unreasonable (clear it and key it again); TEST |
+| `overhead.adirs.cdu.dataSelector` | int | rotary | write | `2` | ADIRS CDU DATA selector: 0 TEST, 1 TK/GS, 2 PPOS, 3 WIND, 4 HDG, 5 STS (clockwise on the knob: WIND, PPOS, HDG, STS, TK/GS, TEST) |
+| `overhead.adirs.cdu.display` | string | output | read | `"N 43\u00b037.3  E  1\u00b022.5"` | ADIRS CDU display, 16 cells as shown: a '°' after a cell is its degree marker, a '.' its decimal point ("N 43°37.3  E  1°22.5"); "" dark (SYS OFF, unpowered, the panel without CDU) |
+| `overhead.adirs.cdu.entLight` | bool | light | read | `0` | ADIRS CDU ENT key cue light: a complete value keyed in (N, S, E, W or heading), ready to be entered; TEST |
+| `overhead.adirs.cdu.key.0` | bool | pushbutton | momentary | `0` | ADIRS CDU key 0 (momentary: 1 while held) |
+| `overhead.adirs.cdu.key.1` | bool | pushbutton | momentary | `0` | ADIRS CDU key 1 (momentary: 1 while held) |
+| `overhead.adirs.cdu.key.2` | bool | pushbutton | momentary | `0` | ADIRS CDU key 2 / N (momentary: 1 while held) |
+| `overhead.adirs.cdu.key.3` | bool | pushbutton | momentary | `0` | ADIRS CDU key 3 (momentary: 1 while held) |
+| `overhead.adirs.cdu.key.4` | bool | pushbutton | momentary | `0` | ADIRS CDU key 4 / W (momentary: 1 while held) |
+| `overhead.adirs.cdu.key.5` | bool | pushbutton | momentary | `0` | ADIRS CDU key 5 (momentary: 1 while held) |
+| `overhead.adirs.cdu.key.6` | bool | pushbutton | momentary | `0` | ADIRS CDU key 6 / E (momentary: 1 while held) |
+| `overhead.adirs.cdu.key.7` | bool | pushbutton | momentary | `0` | ADIRS CDU key 7 (momentary: 1 while held) |
+| `overhead.adirs.cdu.key.8` | bool | pushbutton | momentary | `0` | ADIRS CDU key 8 / S (momentary: 1 while held) |
+| `overhead.adirs.cdu.key.9` | bool | pushbutton | momentary | `0` | ADIRS CDU key 9 (momentary: 1 while held) |
+| `overhead.adirs.cdu.key.clr` | bool | pushbutton | momentary | `0` | ADIRS CDU CLR key: clears the data keyed in but not yet entered (momentary: 1 while held) |
+| `overhead.adirs.cdu.key.ent` | bool | pushbutton | momentary | `0` | ADIRS CDU ENT key: enters the keyed data into the ADIRS (momentary: 1 while held) |
+| `overhead.adirs.cdu.left` | string | output | read | `""` | ADIRS CDU display, left field (cells 0-7, markers as in overhead.adirs.cdu.display): latitude, track, wind direction, heading |
+| `overhead.adirs.cdu.powered` | bool | output | read | `0` | ADIRS CDU display energized (CDU fitted, SYS selector not OFF, an ADIRU energized) |
+| `overhead.adirs.cdu.right` | string | output | read | `""` | ADIRS CDU display, right field (cells 8-15, markers as in overhead.adirs.cdu.display): longitude, ground speed, wind speed, minutes to NAV |
+| `overhead.adirs.cdu.sysSelector` | int | rotary | write | `1` | ADIRS CDU SYS selector: 0 OFF (display not energized), 1 / 2 / 3 the ADIRU displayed and keyed into (clockwise on the knob: OFF, 1, 3, 2) |
 
 ## Overhead / AIR COND 30VU
 
@@ -4993,6 +5084,14 @@ for texts, else what a running Systems reported when the list was made (cold and
 | --- | --- | --- | --- | --- | --- |
 | `pedestal.parkingBrake.set` | bool | switch | write | `0` | PARK BRK handle (1 = ON) |
 
+## Pedestal / PRINTER
+
+| Dataref | Type | Kind | Access | Sample value | Description |
+| --- | --- | --- | --- | --- | --- |
+| `pedestal.printer.slew.pressed` | bool | pushbutton | momentary | `0` | Printer SLEW switch (momentary: feeds paper while held) |
+| `printer.jobCount` | int | output | read | `0` | Printouts since Systems started (+1 at every print; the Hardware Printer devices fetch them) |
+| `printer.powered` | bool | output | read | `0` | Cockpit printer powered (C/B 6TW PTR SPLY, AC BUS 1) |
+
 ## Pedestal / RMP 1
 
 | Dataref | Type | Kind | Access | Sample value | Description |
@@ -5111,9 +5210,13 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `perf.mcdu.toShift` | string | output | read | `""` | PERF TAKE OFF TO SHIFT entry (m; "" without a shift) |
 | `perf.mcdu.zfwZfwCg` | string | output | read | `"62.4/27.5"` | INIT B ZFW/ZFWCG entry of the applied load ("62.4/27.5") |
 | `perf.to.airport` | string | output | read | `""` | Airport of the applied takeoff performance |
+| `perf.to.condition` | string | output | read | `"dry"` | Runway condition of the takeoff performance kept ("dry", "wet", "standingWater", "slush", "wetSnow", "drySnow", "compactedSnow"; "" none) |
 | `perf.to.conf` | int | output | read | `0` | Takeoff CONF (1 = 1+F, 2, 3) |
+| `perf.to.depthMm` | float | output | read | `0` | Contaminant depth of the takeoff performance kept (mm, 0 = none) |
 | `perf.to.flexTempC` | int | output | read | `0` | Calculated FLEX temperature (°C, -99 = TOGA) |
+| `perf.to.limiting` | string | output | read | `"runwayLength"` | What limits the takeoff weight of the performance kept ("runwayLength", "brakeEnergy", "vmu", "contaminated", "tireSpeed", ...; "" none) |
 | `perf.to.runway` | string | output | read | `""` | Runway of the applied takeoff performance |
+| `perf.to.rwycc` | int | output | read | `-1` | ICAO runway condition code of the takeoff performance kept (6 dry … 1; -1 none) |
 | `perf.to.shiftM` | float | output | read | `0` | Takeoff shift of the calculation (m, 0 = none) |
 | `perf.to.status` | string | output | read | `" none asked, "` | Why a takeoff performance is (not) kept: "" none asked, "kept", "noRunway" (load applied without a runway), "errors" |
 | `perf.to.thsDeg` | float | output | read | `0` | Takeoff trim (THS °, + UP) |
@@ -5143,13 +5246,15 @@ for texts, else what a running Systems reported when the list was made (cold and
 | `radio.dme2.distanceNm` | float | output | read | `0` | DME 2 distance (NM, -1 without signal) |
 | `radio.dme2.ident` | string | output | read | `""` | DME 2 received station ident ("" = no station received): the Morse ident Audio plays |
 | `radio.marker` | int | output | read | `0` | Marker beacon received (0 none, 1 outer, 2 middle, 3 inner) |
-| `radio.mmr1.frequencyKhz` | int | output | read | `0` | MMR 1 ILS tuned frequency (kHz) |
+| `radio.mmr1.frequencyKhz` | int | output | read | `0` | MMR 1 ILS tuned frequency (kHz), or the GLS channel (20001..39999, GLS option; radio.mmr1.gls) |
+| `radio.mmr1.gls` | bool | output | read | `0` | MMR 1 in GLS mode (GLS option, a GLS channel tuned): the LOC / G/S deviations are the GLS lateral / vertical ones |
 | `radio.mmr1.gsDeviationDots` | float | output | read | `0` | MMR 1 G/S deviation (dots, + = fly up; 0 without signal) |
 | `radio.mmr1.gsValid` | bool | output | read | `0` | MMR 1 G/S received (deviation valid) |
 | `radio.mmr1.ident` | string | output | read | `""` | MMR 1 received station ident ("" = no station received): the Morse ident Audio plays |
 | `radio.mmr1.locDeviationDots` | float | output | read | `0` | MMR 1 LOC deviation (dots, + = fly right; NaN-free, 0 without signal) |
 | `radio.mmr1.locValid` | bool | output | read | `0` | MMR 1 LOC received (deviation valid; radio.mmr1.ident is the station's while true) |
-| `radio.mmr2.frequencyKhz` | int | output | read | `0` | MMR 2 ILS tuned frequency (kHz) |
+| `radio.mmr2.frequencyKhz` | int | output | read | `0` | MMR 2 ILS tuned frequency (kHz), or the GLS channel (20001..39999, GLS option; radio.mmr2.gls) |
+| `radio.mmr2.gls` | bool | output | read | `0` | MMR 2 in GLS mode (GLS option, a GLS channel tuned): the LOC / G/S deviations are the GLS lateral / vertical ones |
 | `radio.mmr2.gsDeviationDots` | float | output | read | `0` | MMR 2 G/S deviation (dots, + = fly up; 0 without signal) |
 | `radio.mmr2.gsValid` | bool | output | read | `0` | MMR 2 G/S received (deviation valid) |
 | `radio.mmr2.ident` | string | output | read | `""` | MMR 2 received station ident ("" = no station received): the Morse ident Audio plays |

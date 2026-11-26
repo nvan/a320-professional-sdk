@@ -7,7 +7,7 @@
     <LangVersion>latest</LangVersion>
     <InvariantGlobalization>true</InvariantGlobalization>
     <IsAotCompatible>true</IsAotCompatible>
-    <Version>1.1.8</Version>
+    <Version>1.1.9</Version>
     <Authors>NVAN</Authors>
     <Company>NVAN</Company>
     <Product>NVAN A320 Professional SDK</Product>
